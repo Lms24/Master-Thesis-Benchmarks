@@ -552,6 +552,19 @@
 
   <build>
     <plugins>
+
+      <!-- Added for JSR Benchmarking -->
+      <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>1.7.2</version>
+        <configuration>
+          <exportLineCoverage>true</exportLineCoverage>
+          <skipFailingTests>true</skipFailingTests>
+          <failWhenNoMutations>false</failWhenNoMutations>
+        </configuration>
+      </plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -582,6 +595,8 @@
         </configuration>
       </plugin>
       -->
+
+      <!-- Added for JSR Benchmarking -->
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
         <version>3.3.0</version>

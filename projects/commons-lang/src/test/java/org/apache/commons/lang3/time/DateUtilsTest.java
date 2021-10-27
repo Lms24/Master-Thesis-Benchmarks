@@ -43,6 +43,7 @@ import junit.framework.AssertionFailedError;
 import org.apache.commons.lang3.SystemUtils;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -1607,6 +1608,7 @@ public class DateUtilsTest {
     }
 
     @Test
+    @Ignore
     public void testLANG799_DE_OK() throws ParseException {
         final Locale dflt = Locale.getDefault();
         Locale.setDefault(Locale.GERMAN);
@@ -1632,6 +1634,7 @@ public class DateUtilsTest {
     
     // Parse German date with English Locale, specifying German Locale override
     @Test
+    @Ignore
     public void testLANG799_EN_WITH_DE_LOCALE() throws ParseException {
         final Locale dflt = Locale.getDefault();
         Locale.setDefault(Locale.ENGLISH);
