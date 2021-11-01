@@ -27,6 +27,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Vector;
 import org.junit.Test;
+import org.junit.Ignore;
 
 /**
  * Test case for the PatternOptionBuilder class.
@@ -127,6 +128,7 @@ public class PatternOptionBuilderTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testURLPattern() throws Exception {
         Options options = PatternOptionBuilder.parsePattern("u/v/");
         CommandLineParser parser = new PosixParser();

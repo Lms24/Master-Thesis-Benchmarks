@@ -2,8 +2,8 @@
 <report>
   <meta>
     <nrOriginalTestCases>318</nrOriginalTestCases>
-    <nrRetainedTestCases>289</nrRetainedTestCases>
-    <nrRemovedTestCases>29</nrRemovedTestCases>
+    <nrRetainedTestCases>211</nrRetainedTestCases>
+    <nrRemovedTestCases>107</nrRemovedTestCases>
   </meta>
   <retainedTestCases>
     <testCase>
@@ -12,10 +12,6 @@
     </testCase>
     <testCase>
       <name>testShortWithArg</name>
-      <className>org.apache.commons.cli.ValueTest</className>
-    </testCase>
-    <testCase>
-      <name>testLongNoArg</name>
       <className>org.apache.commons.cli.ValueTest</className>
     </testCase>
     <testCase>
@@ -31,16 +27,16 @@
       <className>org.apache.commons.cli.ValueTest</className>
     </testCase>
     <testCase>
-      <name>testLongOptionalArgValues</name>
+      <name>testLongOptionalNoValue</name>
+      <className>org.apache.commons.cli.ValueTest</className>
+    </testCase>
+    <testCase>
+      <name>testShortOptionalNArgValues</name>
       <className>org.apache.commons.cli.ValueTest</className>
     </testCase>
     <testCase>
       <name>testLongOptionalNArgValues</name>
       <className>org.apache.commons.cli.ValueTest</className>
-    </testCase>
-    <testCase>
-      <name>testSimpleShort</name>
-      <className>org.apache.commons.cli.GnuParserTest</className>
     </testCase>
     <testCase>
       <name>testSimpleLong</name>
@@ -87,14 +83,6 @@
       <className>org.apache.commons.cli.GnuParserTest</className>
     </testCase>
     <testCase>
-      <name>testNegativeArgument</name>
-      <className>org.apache.commons.cli.GnuParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testArgumentStartingWithHyphen</name>
-      <className>org.apache.commons.cli.GnuParserTest</className>
-    </testCase>
-    <testCase>
       <name>testShortWithEqual</name>
       <className>org.apache.commons.cli.GnuParserTest</className>
     </testCase>
@@ -116,6 +104,10 @@
     </testCase>
     <testCase>
       <name>testPropertiesOption1</name>
+      <className>org.apache.commons.cli.GnuParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testPropertiesOption2</name>
       <className>org.apache.commons.cli.GnuParserTest</className>
     </testCase>
     <testCase>
@@ -147,19 +139,15 @@
       <className>org.apache.commons.cli.GnuParserTest</className>
     </testCase>
     <testCase>
-      <name>testReuseOptionsTwice</name>
-      <className>org.apache.commons.cli.GnuParserTest</className>
-    </testCase>
-    <testCase>
       <name>testUnlimitedArgs</name>
       <className>org.apache.commons.cli.GnuParserTest</className>
     </testCase>
     <testCase>
-      <name>testPropertyOptionFlags</name>
+      <name>testPropertyOptionSingularValue</name>
       <className>org.apache.commons.cli.GnuParserTest</className>
     </testCase>
     <testCase>
-      <name>testPropertyOptionMultipleValues</name>
+      <name>testPropertyOptionFlags</name>
       <className>org.apache.commons.cli.GnuParserTest</className>
     </testCase>
     <testCase>
@@ -168,10 +156,6 @@
     </testCase>
     <testCase>
       <name>testPropertyOptionRequired</name>
-      <className>org.apache.commons.cli.GnuParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testPropertyOptionUnexpected</name>
       <className>org.apache.commons.cli.GnuParserTest</className>
     </testCase>
     <testCase>
@@ -189,14 +173,6 @@
     <testCase>
       <name>testOption</name>
       <className>org.apache.commons.cli.ArgumentIsOptionTest</className>
-    </testCase>
-    <testCase>
-      <name>testOrder</name>
-      <className>org.apache.commons.cli.bug.BugCLI133Test</className>
-    </testCase>
-    <testCase>
-      <name>testSimpleShort</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
       <name>testSimpleLong</name>
@@ -227,10 +203,6 @@
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
-      <name>testStopAtExpectedArg</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
       <name>testStopAtNonOptionShort</name>
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
@@ -247,19 +219,11 @@
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
-      <name>testShortWithoutEqual</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
       <name>testLongWithEqualDoubleDash</name>
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
       <name>testLongWithoutEqualDoubleDash</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testLongWithUnexpectedArgument2</name>
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
@@ -284,6 +248,10 @@
     </testCase>
     <testCase>
       <name>testUnambiguousPartialLongOption3</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testAmbiguousPartialLongOption1</name>
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
@@ -315,23 +283,7 @@
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
-      <name>testMissingRequiredGroup</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testOptionGroup</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testReuseOptionsTwice</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
       <name>testBursting</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testMissingArgWithBursting</name>
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
@@ -340,10 +292,6 @@
     </testCase>
     <testCase>
       <name>testUnlimitedArgs</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testPropertyOptionSingularValue</name>
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
@@ -359,116 +307,8 @@
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
     <testCase>
-      <name>testPropertyOptionUnexpected</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
       <name>testPropertyOptionGroup</name>
       <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testFindWrapPos</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testRenderWrappedTextWordCut</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testRenderWrappedTextSingleLine</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testRenderWrappedTextSingleLinePadded</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testRenderWrappedTextSingleLinePadded2</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testRenderWrappedTextMultiLine</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testRenderWrappedTextMultiLinePadded</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testPrintOptions</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testPrintHelpWithEmptySyntax</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testAutomaticUsage</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testPrintUsage</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testPrintSortedUsageWithNullComparator</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testPrintOptionGroupUsage</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testPrintRequiredOptionGroupUsage</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testPrintOptionWithEmptyArgNameUsage</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testRtrim</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testAccessors</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testHeaderStartingWithLineSeparator</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testIndentedHeaderAndFooter</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testOptionWithoutShortFormat</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testOptionWithoutShortFormat2</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testHelpWithLongOptSeparator</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testUsageWithLongOptSeparator</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testInfiniteLoop</name>
-      <className>org.apache.commons.cli.bug.BugCLI162Test</className>
-    </testCase>
-    <testCase>
-      <name>testPrintHelpLongLines</name>
-      <className>org.apache.commons.cli.bug.BugCLI162Test</className>
-    </testCase>
-    <testCase>
-      <name>testLongLineChunkingIndentIgnored</name>
-      <className>org.apache.commons.cli.bug.BugCLI162Test</className>
     </testCase>
     <testCase>
       <name>testCLI13</name>
@@ -500,10 +340,6 @@
     </testCase>
     <testCase>
       <name>testDoubleDash1</name>
-      <className>org.apache.commons.cli.BasicParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testSingleDash</name>
       <className>org.apache.commons.cli.BasicParserTest</className>
     </testCase>
     <testCase>
@@ -539,11 +375,15 @@
       <className>org.apache.commons.cli.BasicParserTest</className>
     </testCase>
     <testCase>
-      <name>testWithRequiredOption</name>
+      <name>testLongWithUnexpectedArgument2</name>
       <className>org.apache.commons.cli.BasicParserTest</className>
     </testCase>
     <testCase>
-      <name>testOptionAndRequiredOption</name>
+      <name>testShortWithUnexpectedArgument</name>
+      <className>org.apache.commons.cli.BasicParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testWithRequiredOption</name>
       <className>org.apache.commons.cli.BasicParserTest</className>
     </testCase>
     <testCase>
@@ -560,14 +400,6 @@
     </testCase>
     <testCase>
       <name>testOptionGroup</name>
-      <className>org.apache.commons.cli.BasicParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testOptionGroupLong</name>
-      <className>org.apache.commons.cli.BasicParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testReuseOptionsTwice</name>
       <className>org.apache.commons.cli.BasicParserTest</className>
     </testCase>
     <testCase>
@@ -595,20 +427,8 @@
       <className>org.apache.commons.cli.BasicParserTest</className>
     </testCase>
     <testCase>
-      <name>testPropertyOptionUnexpected</name>
+      <name>testPropertyOptionGroup</name>
       <className>org.apache.commons.cli.BasicParserTest</className>
-    </testCase>
-    <testCase>
-      <name>shouldParseShortOptionWithValue</name>
-      <className>org.apache.commons.cli.bug.BugCLI265Test</className>
-    </testCase>
-    <testCase>
-      <name>shouldParseShortOptionWithoutValue</name>
-      <className>org.apache.commons.cli.bug.BugCLI265Test</className>
-    </testCase>
-    <testCase>
-      <name>shouldParseConcatenatedShortOptions</name>
-      <className>org.apache.commons.cli.bug.BugCLI265Test</className>
     </testCase>
     <testCase>
       <name>testSingleOptionFromGroup</name>
@@ -616,6 +436,10 @@
     </testCase>
     <testCase>
       <name>testSingleOption</name>
+      <className>org.apache.commons.cli.OptionGroupTest</className>
+    </testCase>
+    <testCase>
+      <name>testTwoValidOptions</name>
       <className>org.apache.commons.cli.OptionGroupTest</className>
     </testCase>
     <testCase>
@@ -631,15 +455,11 @@
       <className>org.apache.commons.cli.OptionGroupTest</className>
     </testCase>
     <testCase>
-      <name>testTwoOptionsFromGroup</name>
-      <className>org.apache.commons.cli.OptionGroupTest</className>
-    </testCase>
-    <testCase>
       <name>testTwoLongOptionsFromGroup</name>
       <className>org.apache.commons.cli.OptionGroupTest</className>
     </testCase>
     <testCase>
-      <name>testTwoOptionsFromDifferentGroup</name>
+      <name>testTwoOptionsFromGroupWithProperties</name>
       <className>org.apache.commons.cli.OptionGroupTest</className>
     </testCase>
     <testCase>
@@ -655,6 +475,10 @@
       <className>org.apache.commons.cli.OptionGroupTest</className>
     </testCase>
     <testCase>
+      <name>testCompleteOption</name>
+      <className>org.apache.commons.cli.OptionBuilderTest</className>
+    </testCase>
+    <testCase>
       <name>testTwoCompleteOptions</name>
       <className>org.apache.commons.cli.OptionBuilderTest</className>
     </testCase>
@@ -663,19 +487,11 @@
       <className>org.apache.commons.cli.OptionBuilderTest</className>
     </testCase>
     <testCase>
-      <name>testBaseOptionStringOpt</name>
-      <className>org.apache.commons.cli.OptionBuilderTest</className>
-    </testCase>
-    <testCase>
       <name>testSpecialOptChars</name>
       <className>org.apache.commons.cli.OptionBuilderTest</className>
     </testCase>
     <testCase>
       <name>testOptionArgNumbers</name>
-      <className>org.apache.commons.cli.OptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testIllegalOptions</name>
       <className>org.apache.commons.cli.OptionBuilderTest</className>
     </testCase>
     <testCase>
@@ -695,16 +511,8 @@
       <className>org.apache.commons.cli.ApplicationTest</className>
     </testCase>
     <testCase>
-      <name>testMan</name>
-      <className>org.apache.commons.cli.ApplicationTest</className>
-    </testCase>
-    <testCase>
       <name>testNLT</name>
       <className>org.apache.commons.cli.ApplicationTest</className>
-    </testCase>
-    <testCase>
-      <name>testClear</name>
-      <className>org.apache.commons.cli.OptionTest</className>
     </testCase>
     <testCase>
       <name>testClone</name>
@@ -727,27 +535,11 @@
       <className>org.apache.commons.cli.OptionTest</className>
     </testCase>
     <testCase>
-      <name>testBuilderMethods</name>
-      <className>org.apache.commons.cli.OptionTest</className>
-    </testCase>
-    <testCase>
-      <name>testBuilderInsufficientParams1</name>
-      <className>org.apache.commons.cli.OptionTest</className>
-    </testCase>
-    <testCase>
-      <name>testBuilderInsufficientParams2</name>
-      <className>org.apache.commons.cli.OptionTest</className>
-    </testCase>
-    <testCase>
       <name>testShortArgs</name>
       <className>org.apache.commons.cli.ValuesTest</className>
     </testCase>
     <testCase>
       <name>testShortArgsWithValue</name>
-      <className>org.apache.commons.cli.ValuesTest</className>
-    </testCase>
-    <testCase>
-      <name>testMultipleArgValues</name>
       <className>org.apache.commons.cli.ValuesTest</className>
     </testCase>
     <testCase>
@@ -759,27 +551,27 @@
       <className>org.apache.commons.cli.ValuesTest</className>
     </testCase>
     <testCase>
-      <name>testExtraArgs</name>
+      <name>testCharSeparator</name>
       <className>org.apache.commons.cli.ValuesTest</className>
     </testCase>
     <testCase>
-      <name>testCharSeparator</name>
-      <className>org.apache.commons.cli.ValuesTest</className>
+      <name>testGetOptionProperties</name>
+      <className>org.apache.commons.cli.CommandLineTest</className>
+    </testCase>
+    <testCase>
+      <name>testGetOptions</name>
+      <className>org.apache.commons.cli.CommandLineTest</className>
     </testCase>
     <testCase>
       <name>testGetParsedOptionValue</name>
       <className>org.apache.commons.cli.CommandLineTest</className>
     </testCase>
     <testCase>
-      <name>testBuilder</name>
-      <className>org.apache.commons.cli.CommandLineTest</className>
-    </testCase>
-    <testCase>
-      <name>testCLI18</name>
-      <className>org.apache.commons.cli.bug.BugCLI18Test</className>
-    </testCase>
-    <testCase>
       <name>testSimple</name>
+      <className>org.apache.commons.cli.OptionsTest</className>
+    </testCase>
+    <testCase>
+      <name>testDuplicateSimple</name>
       <className>org.apache.commons.cli.OptionsTest</className>
     </testCase>
     <testCase>
@@ -787,11 +579,11 @@
       <className>org.apache.commons.cli.OptionsTest</className>
     </testCase>
     <testCase>
-      <name>testHelpOptions</name>
+      <name>testDuplicateLong</name>
       <className>org.apache.commons.cli.OptionsTest</className>
     </testCase>
     <testCase>
-      <name>testMissingOptionException</name>
+      <name>testHelpOptions</name>
       <className>org.apache.commons.cli.OptionsTest</className>
     </testCase>
     <testCase>
@@ -811,68 +603,12 @@
       <className>org.apache.commons.cli.OptionsTest</className>
     </testCase>
     <testCase>
-      <name>testSimplePattern</name>
-      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
-    </testCase>
-    <testCase>
       <name>testEmptyPattern</name>
       <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
     </testCase>
     <testCase>
-      <name>testUntypedPattern</name>
-      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testNumberPattern</name>
-      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testClassPattern</name>
-      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testObjectPattern</name>
-      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testURLPattern</name>
-      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testExistingFilePattern</name>
-      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testRequiredOption</name>
-      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testOptionComparatorDefaultOrder</name>
-      <className>org.apache.commons.cli.bug.BugCLI266Test</className>
-    </testCase>
-    <testCase>
-      <name>testOptionComparatorInsertedOrder</name>
-      <className>org.apache.commons.cli.bug.BugCLI266Test</className>
-    </testCase>
-    <testCase>
       <name>testStripLeadingHyphens</name>
       <className>org.apache.commons.cli.UtilTest</className>
-    </testCase>
-    <testCase>
-      <name>testStripLeadingAndTrailingQuotes</name>
-      <className>org.apache.commons.cli.UtilTest</className>
-    </testCase>
-    <testCase>
-      <name>testBasic</name>
-      <className>org.apache.commons.cli.bug.BugCLI71Test</className>
-    </testCase>
-    <testCase>
-      <name>testMistakenArgument</name>
-      <className>org.apache.commons.cli.bug.BugCLI71Test</className>
-    </testCase>
-    <testCase>
-      <name>testLackOfError</name>
-      <className>org.apache.commons.cli.bug.BugCLI71Test</className>
     </testCase>
     <testCase>
       <name>testGetsDefaultIfOptional</name>
@@ -1011,11 +747,11 @@
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
     <testCase>
-      <name>testAmbiguousPartialLongOption3</name>
+      <name>testAmbiguousPartialLongOption2</name>
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
     <testCase>
-      <name>testAmbiguousPartialLongOption4</name>
+      <name>testAmbiguousPartialLongOption3</name>
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
     <testCase>
@@ -1023,7 +759,7 @@
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
     <testCase>
-      <name>testOptionAndRequiredOption</name>
+      <name>testWithRequiredOption</name>
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
     <testCase>
@@ -1047,10 +783,6 @@
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
     <testCase>
-      <name>testReuseOptionsTwice</name>
-      <className>org.apache.commons.cli.DefaultParserTest</className>
-    </testCase>
-    <testCase>
       <name>testBursting</name>
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
@@ -1064,10 +796,6 @@
     </testCase>
     <testCase>
       <name>testStopBursting</name>
-      <className>org.apache.commons.cli.DefaultParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testStopBursting2</name>
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
     <testCase>
@@ -1095,19 +823,425 @@
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
     <testCase>
-      <name>testPropertyOptionUnexpected</name>
-      <className>org.apache.commons.cli.DefaultParserTest</className>
-    </testCase>
-    <testCase>
       <name>testPropertyOptionGroup</name>
       <className>org.apache.commons.cli.DefaultParserTest</className>
     </testCase>
     <testCase>
-      <name>testWorkaround1</name>
+      <name>testWorkaround2</name>
       <className>org.apache.commons.cli.bug.BugCLI148Test</className>
     </testCase>
     <testCase>
-      <name>testWorkaround2</name>
+      <name>test11458</name>
+      <className>org.apache.commons.cli.bug.BugsTest</className>
+    </testCase>
+    <testCase>
+      <name>test11456</name>
+      <className>org.apache.commons.cli.bug.BugsTest</className>
+    </testCase>
+    <testCase>
+      <name>test12210</name>
+      <className>org.apache.commons.cli.bug.BugsTest</className>
+    </testCase>
+    <testCase>
+      <name>test14786</name>
+      <className>org.apache.commons.cli.bug.BugsTest</className>
+    </testCase>
+    <testCase>
+      <name>test31148</name>
+      <className>org.apache.commons.cli.bug.BugsTest</className>
+    </testCase>
+  </retainedTestCases>
+  <removedTestCases>
+    <testCase>
+      <name>testLongNoArg</name>
+      <className>org.apache.commons.cli.ValueTest</className>
+    </testCase>
+    <testCase>
+      <name>testLongOptionalArgValue</name>
+      <className>org.apache.commons.cli.ValueTest</className>
+    </testCase>
+    <testCase>
+      <name>testShortOptionalArgValues</name>
+      <className>org.apache.commons.cli.ValueTest</className>
+    </testCase>
+    <testCase>
+      <name>testLongOptionalArgValues</name>
+      <className>org.apache.commons.cli.ValueTest</className>
+    </testCase>
+    <testCase>
+      <name>testSimpleShort</name>
+      <className>org.apache.commons.cli.GnuParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testNegativeArgument</name>
+      <className>org.apache.commons.cli.GnuParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testArgumentStartingWithHyphen</name>
+      <className>org.apache.commons.cli.GnuParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testReuseOptionsTwice</name>
+      <className>org.apache.commons.cli.GnuParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testPropertyOptionMultipleValues</name>
+      <className>org.apache.commons.cli.GnuParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testPropertyOptionUnexpected</name>
+      <className>org.apache.commons.cli.GnuParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testOrder</name>
+      <className>org.apache.commons.cli.bug.BugCLI133Test</className>
+    </testCase>
+    <testCase>
+      <name>testSimpleShort</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testStopAtUnexpectedArg</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testStopAtExpectedArg</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testShortWithoutEqual</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testLongWithUnexpectedArgument2</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testMissingRequiredGroup</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testOptionGroup</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testOptionGroupLong</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testReuseOptionsTwice</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testUnrecognizedOptionWithBursting</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testMissingArgWithBursting</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testStopBursting2</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testPropertyOptionSingularValue</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testPropertyOverrideValues</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testPropertyOptionUnexpected</name>
+      <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testFindWrapPos</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testRenderWrappedTextWordCut</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testRenderWrappedTextSingleLine</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testRenderWrappedTextSingleLinePadded</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testRenderWrappedTextSingleLinePadded2</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testRenderWrappedTextMultiLine</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testRenderWrappedTextMultiLinePadded</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testPrintOptions</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testPrintHelpWithEmptySyntax</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testAutomaticUsage</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testPrintUsage</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testPrintSortedUsage</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testPrintSortedUsageWithNullComparator</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testPrintOptionGroupUsage</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testPrintRequiredOptionGroupUsage</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testPrintOptionWithEmptyArgNameUsage</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testDefaultArgName</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testRtrim</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testAccessors</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testHeaderStartingWithLineSeparator</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testIndentedHeaderAndFooter</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testOptionWithoutShortFormat</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testOptionWithoutShortFormat2</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testHelpWithLongOptSeparator</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testUsageWithLongOptSeparator</name>
+      <className>org.apache.commons.cli.HelpFormatterTest</className>
+    </testCase>
+    <testCase>
+      <name>testInfiniteLoop</name>
+      <className>org.apache.commons.cli.bug.BugCLI162Test</className>
+    </testCase>
+    <testCase>
+      <name>testPrintHelpLongLines</name>
+      <className>org.apache.commons.cli.bug.BugCLI162Test</className>
+    </testCase>
+    <testCase>
+      <name>testLongLineChunking</name>
+      <className>org.apache.commons.cli.bug.BugCLI162Test</className>
+    </testCase>
+    <testCase>
+      <name>testLongLineChunkingIndentIgnored</name>
+      <className>org.apache.commons.cli.bug.BugCLI162Test</className>
+    </testCase>
+    <testCase>
+      <name>testSingleDash</name>
+      <className>org.apache.commons.cli.BasicParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testOptionAndRequiredOption</name>
+      <className>org.apache.commons.cli.BasicParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testOptionGroupLong</name>
+      <className>org.apache.commons.cli.BasicParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testReuseOptionsTwice</name>
+      <className>org.apache.commons.cli.BasicParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testPropertyOptionUnexpected</name>
+      <className>org.apache.commons.cli.BasicParserTest</className>
+    </testCase>
+    <testCase>
+      <name>shouldParseShortOptionWithValue</name>
+      <className>org.apache.commons.cli.bug.BugCLI265Test</className>
+    </testCase>
+    <testCase>
+      <name>shouldParseShortOptionWithoutValue</name>
+      <className>org.apache.commons.cli.bug.BugCLI265Test</className>
+    </testCase>
+    <testCase>
+      <name>shouldParseConcatenatedShortOptions</name>
+      <className>org.apache.commons.cli.bug.BugCLI265Test</className>
+    </testCase>
+    <testCase>
+      <name>testTwoOptionsFromGroup</name>
+      <className>org.apache.commons.cli.OptionGroupTest</className>
+    </testCase>
+    <testCase>
+      <name>testTwoOptionsFromDifferentGroup</name>
+      <className>org.apache.commons.cli.OptionGroupTest</className>
+    </testCase>
+    <testCase>
+      <name>testBaseOptionStringOpt</name>
+      <className>org.apache.commons.cli.OptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testIllegalOptions</name>
+      <className>org.apache.commons.cli.OptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testCreateIncompleteOption</name>
+      <className>org.apache.commons.cli.OptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testMan</name>
+      <className>org.apache.commons.cli.ApplicationTest</className>
+    </testCase>
+    <testCase>
+      <name>testClear</name>
+      <className>org.apache.commons.cli.OptionTest</className>
+    </testCase>
+    <testCase>
+      <name>testBuilderMethods</name>
+      <className>org.apache.commons.cli.OptionTest</className>
+    </testCase>
+    <testCase>
+      <name>testBuilderInsufficientParams1</name>
+      <className>org.apache.commons.cli.OptionTest</className>
+    </testCase>
+    <testCase>
+      <name>testBuilderInsufficientParams2</name>
+      <className>org.apache.commons.cli.OptionTest</className>
+    </testCase>
+    <testCase>
+      <name>testMultipleArgValues</name>
+      <className>org.apache.commons.cli.ValuesTest</className>
+    </testCase>
+    <testCase>
+      <name>testExtraArgs</name>
+      <className>org.apache.commons.cli.ValuesTest</className>
+    </testCase>
+    <testCase>
+      <name>testBuilder</name>
+      <className>org.apache.commons.cli.CommandLineTest</className>
+    </testCase>
+    <testCase>
+      <name>testCLI18</name>
+      <className>org.apache.commons.cli.bug.BugCLI18Test</className>
+    </testCase>
+    <testCase>
+      <name>testMissingOptionException</name>
+      <className>org.apache.commons.cli.OptionsTest</className>
+    </testCase>
+    <testCase>
+      <name>testSimplePattern</name>
+      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testUntypedPattern</name>
+      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testNumberPattern</name>
+      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testClassPattern</name>
+      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testObjectPattern</name>
+      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testURLPattern</name>
+      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testExistingFilePattern</name>
+      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testRequiredOption</name>
+      <className>org.apache.commons.cli.PatternOptionBuilderTest</className>
+    </testCase>
+    <testCase>
+      <name>testOptionComparatorDefaultOrder</name>
+      <className>org.apache.commons.cli.bug.BugCLI266Test</className>
+    </testCase>
+    <testCase>
+      <name>testOptionComparatorInsertedOrder</name>
+      <className>org.apache.commons.cli.bug.BugCLI266Test</className>
+    </testCase>
+    <testCase>
+      <name>testStripLeadingAndTrailingQuotes</name>
+      <className>org.apache.commons.cli.UtilTest</className>
+    </testCase>
+    <testCase>
+      <name>testBasic</name>
+      <className>org.apache.commons.cli.bug.BugCLI71Test</className>
+    </testCase>
+    <testCase>
+      <name>testMistakenArgument</name>
+      <className>org.apache.commons.cli.bug.BugCLI71Test</className>
+    </testCase>
+    <testCase>
+      <name>testLackOfError</name>
+      <className>org.apache.commons.cli.bug.BugCLI71Test</className>
+    </testCase>
+    <testCase>
+      <name>testAmbiguousPartialLongOption4</name>
+      <className>org.apache.commons.cli.DefaultParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testOptionAndRequiredOption</name>
+      <className>org.apache.commons.cli.DefaultParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testReuseOptionsTwice</name>
+      <className>org.apache.commons.cli.DefaultParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testStopBursting2</name>
+      <className>org.apache.commons.cli.DefaultParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testPropertyOptionUnexpected</name>
+      <className>org.apache.commons.cli.DefaultParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testWorkaround1</name>
       <className>org.apache.commons.cli.bug.BugCLI148Test</className>
     </testCase>
     <testCase>
@@ -1123,19 +1257,7 @@
       <className>org.apache.commons.cli.bug.BugsTest</className>
     </testCase>
     <testCase>
-      <name>test11458</name>
-      <className>org.apache.commons.cli.bug.BugsTest</className>
-    </testCase>
-    <testCase>
       <name>test11680</name>
-      <className>org.apache.commons.cli.bug.BugsTest</className>
-    </testCase>
-    <testCase>
-      <name>test11456</name>
-      <className>org.apache.commons.cli.bug.BugsTest</className>
-    </testCase>
-    <testCase>
-      <name>test12210</name>
       <className>org.apache.commons.cli.bug.BugsTest</className>
     </testCase>
     <testCase>
@@ -1151,133 +1273,11 @@
       <className>org.apache.commons.cli.bug.BugsTest</className>
     </testCase>
     <testCase>
-      <name>test14786</name>
+      <name>test15046</name>
       <className>org.apache.commons.cli.bug.BugsTest</className>
     </testCase>
     <testCase>
       <name>test15648</name>
-      <className>org.apache.commons.cli.bug.BugsTest</className>
-    </testCase>
-    <testCase>
-      <name>test31148</name>
-      <className>org.apache.commons.cli.bug.BugsTest</className>
-    </testCase>
-  </retainedTestCases>
-  <removedTestCases>
-    <testCase>
-      <name>testLongOptionalNoValue</name>
-      <className>org.apache.commons.cli.ValueTest</className>
-    </testCase>
-    <testCase>
-      <name>testLongOptionalArgValue</name>
-      <className>org.apache.commons.cli.ValueTest</className>
-    </testCase>
-    <testCase>
-      <name>testShortOptionalArgValues</name>
-      <className>org.apache.commons.cli.ValueTest</className>
-    </testCase>
-    <testCase>
-      <name>testShortOptionalNArgValues</name>
-      <className>org.apache.commons.cli.ValueTest</className>
-    </testCase>
-    <testCase>
-      <name>testPropertiesOption2</name>
-      <className>org.apache.commons.cli.GnuParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testPropertyOptionSingularValue</name>
-      <className>org.apache.commons.cli.GnuParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testStopAtUnexpectedArg</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testAmbiguousPartialLongOption1</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testOptionGroupLong</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testUnrecognizedOptionWithBursting</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testStopBursting2</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testPropertyOverrideValues</name>
-      <className>org.apache.commons.cli.PosixParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testPrintSortedUsage</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testDefaultArgName</name>
-      <className>org.apache.commons.cli.HelpFormatterTest</className>
-    </testCase>
-    <testCase>
-      <name>testLongLineChunking</name>
-      <className>org.apache.commons.cli.bug.BugCLI162Test</className>
-    </testCase>
-    <testCase>
-      <name>testLongWithUnexpectedArgument2</name>
-      <className>org.apache.commons.cli.BasicParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testShortWithUnexpectedArgument</name>
-      <className>org.apache.commons.cli.BasicParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testPropertyOptionGroup</name>
-      <className>org.apache.commons.cli.BasicParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testTwoValidOptions</name>
-      <className>org.apache.commons.cli.OptionGroupTest</className>
-    </testCase>
-    <testCase>
-      <name>testTwoOptionsFromGroupWithProperties</name>
-      <className>org.apache.commons.cli.OptionGroupTest</className>
-    </testCase>
-    <testCase>
-      <name>testCompleteOption</name>
-      <className>org.apache.commons.cli.OptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testCreateIncompleteOption</name>
-      <className>org.apache.commons.cli.OptionBuilderTest</className>
-    </testCase>
-    <testCase>
-      <name>testGetOptionProperties</name>
-      <className>org.apache.commons.cli.CommandLineTest</className>
-    </testCase>
-    <testCase>
-      <name>testGetOptions</name>
-      <className>org.apache.commons.cli.CommandLineTest</className>
-    </testCase>
-    <testCase>
-      <name>testDuplicateSimple</name>
-      <className>org.apache.commons.cli.OptionsTest</className>
-    </testCase>
-    <testCase>
-      <name>testDuplicateLong</name>
-      <className>org.apache.commons.cli.OptionsTest</className>
-    </testCase>
-    <testCase>
-      <name>testAmbiguousPartialLongOption2</name>
-      <className>org.apache.commons.cli.DefaultParserTest</className>
-    </testCase>
-    <testCase>
-      <name>testWithRequiredOption</name>
-      <className>org.apache.commons.cli.DefaultParserTest</className>
-    </testCase>
-    <testCase>
-      <name>test15046</name>
       <className>org.apache.commons.cli.bug.BugsTest</className>
     </testCase>
   </removedTestCases>

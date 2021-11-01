@@ -37,7 +37,6 @@ import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.Parser;
 import org.apache.commons.cli.PosixParser;
 import org.junit.Test;
-import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -247,7 +246,6 @@ public class BugsTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void test15046() throws Exception {
         CommandLineParser parser = new PosixParser();
         String[] CLI_ARGS = new String[] { "-z", "c" };

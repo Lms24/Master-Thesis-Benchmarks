@@ -68,6 +68,7 @@ public class OptionBuilderTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testBaseOptionStringOpt() {
         Option base = OptionBuilder.withDescription("option description").create("o");
         assertEquals("o", base.getOpt());

@@ -102,7 +102,6 @@ public class BugsTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void test11456() throws Exception {
         // Posix
         Options options = new Options();
@@ -123,7 +122,6 @@ public class BugsTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void test12210() throws Exception {
         // create the main options object which will handle the first parameter
         Options mainOptions = new Options();
@@ -269,6 +267,7 @@ public class BugsTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void test15648() throws Exception {
         CommandLineParser parser = new PosixParser();
         final String[] args = new String[] { "-m", "\"Two Words\"" };

@@ -23,7 +23,6 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Comparator;
 import org.junit.Test;
-import org.junit.Ignore;
 
 /**
  * Test case for the HelpFormatter class.
@@ -112,7 +111,6 @@ public class HelpFormatterTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testRenderWrappedTextMultiLinePadded() {
         // multi-line padded text
         int width = 16;
@@ -345,7 +343,6 @@ public class HelpFormatterTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testIndentedHeaderAndFooter() {
         // related to CLI-207
         Options options = new Options();

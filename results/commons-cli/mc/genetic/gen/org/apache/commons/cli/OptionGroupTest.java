@@ -57,6 +57,7 @@ public class OptionGroupTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testSingleOptionFromGroup() throws Exception {
         String[] args = new String[] { "-f" };
         CommandLine cl = parser.parse(_options, args);
@@ -81,7 +82,6 @@ public class OptionGroupTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testTwoValidOptions() throws Exception {
         String[] args = new String[] { "-r", "-f" };
         CommandLine cl = parser.parse(_options, args);
@@ -168,7 +168,6 @@ public class OptionGroupTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testTwoOptionsFromGroupWithProperties() throws Exception {
         String[] args = new String[] { "-f" };
         Properties properties = new Properties();

@@ -27,7 +27,6 @@ import org.apache.commons.cli.OptionGroup;
 import org.apache.commons.cli.Options;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Ignore;
 
 public class BugCLI162Test {
 
@@ -147,7 +146,6 @@ public class BugCLI162Test {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLongLineChunking() {
         Options options = new Options();
         options.addOption("x", "extralongarg", false, "This description has ReallyLongValuesThatAreLongerThanTheWidthOfTheColumns " + "and also other ReallyLongValuesThatAreHugerAndBiggerThanTheWidthOfTheColumnsBob, " + "yes. ");

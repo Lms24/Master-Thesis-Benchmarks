@@ -58,6 +58,7 @@ public class BugCLI71Test {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testMistakenArgument() throws Exception {
         String[] args = new String[] { "-a", "Caesar", "-k", "A" };
         CommandLine line = parser.parse(options, args);

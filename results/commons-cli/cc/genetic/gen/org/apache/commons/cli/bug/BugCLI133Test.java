@@ -23,12 +23,14 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.PosixParser;
 import org.junit.Test;
+import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
 public class BugCLI133Test {
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testOrder() throws ParseException {
         Option optionA = new Option("a", "first");
         Options opts = new Options();

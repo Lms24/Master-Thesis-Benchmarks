@@ -20,6 +20,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import java.util.Properties;
 import org.junit.Test;
+import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -44,6 +45,7 @@ public class CommandLineTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetOptions() {
         CommandLine cmd = new CommandLine();
         assertNotNull(cmd.getOptions());

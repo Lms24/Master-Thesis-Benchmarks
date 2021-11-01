@@ -25,12 +25,14 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.PosixParser;
 import org.junit.Test;
+import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
 public class BugCLI13Test {
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testCLI13() throws ParseException {
         final String debugOpt = "debug";
         @SuppressWarnings("static-access")

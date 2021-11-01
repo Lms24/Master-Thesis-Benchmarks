@@ -23,6 +23,7 @@ import static org.junit.Assert.fail;
 import java.util.Properties;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -128,6 +129,7 @@ public class OptionGroupTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testTwoOptionsFromGroup() throws Exception {
         String[] args = new String[] { "-f", "-d" };
         try {
@@ -154,6 +156,7 @@ public class OptionGroupTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testTwoOptionsFromDifferentGroup() throws Exception {
         String[] args = new String[] { "-f", "-s" };
         CommandLine cl = parser.parse(_options, args);

@@ -41,6 +41,7 @@ public class OptionTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testClear() {
         TestOption option = new TestOption("x", true, "");
         assertEquals(0, option.getValuesList().size());

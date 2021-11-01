@@ -22,7 +22,6 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -51,7 +50,6 @@ public class ValuesTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testShortArgs() {
         assertTrue("Option a is not set", cmd.hasOption("a"));
         assertTrue("Option c is not set", cmd.hasOption("c"));
@@ -89,7 +87,6 @@ public class ValuesTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testExtraArgs() {
         assertArrayEquals("Extra args", new String[] { "arg1", "arg2", "arg3" }, cmd.getArgs());
     }

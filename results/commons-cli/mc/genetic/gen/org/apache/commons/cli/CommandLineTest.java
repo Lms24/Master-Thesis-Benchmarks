@@ -20,14 +20,12 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import java.util.Properties;
 import org.junit.Test;
-import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
 public class CommandLineTest {
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetOptionProperties() throws Exception {
         String[] args = new String[] { "-Dparam1=value1", "-Dparam2=value2", "-Dparam3", "-Dparam4=value4", "-D", "--property", "foo=bar" };
         Options options = new Options();
@@ -46,7 +44,6 @@ public class CommandLineTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetOptions() {
         CommandLine cmd = new CommandLine();
         assertNotNull(cmd.getOptions());

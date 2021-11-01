@@ -41,6 +41,7 @@ import org.junit.Ignore;
 public class ApplicationTest {
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLs() throws Exception {
         // create the command line parser
         CommandLineParser parser = new PosixParser();
@@ -62,6 +63,7 @@ public class ApplicationTest {
      * Ant test
      */
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testAnt() throws Exception {
         // use the GNU parser
         CommandLineParser parser = new GnuParser();
@@ -117,7 +119,6 @@ public class ApplicationTest {
      * author Slawek Zachcial
      */
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testMan() {
         String cmdLine = "man [-c|-f|-k|-w|-tZT device] [-adlhu7V] [-Mpath] [-Ppager] [-Slist] " + "[-msystem] [-pstring] [-Llocale] [-eextension] [section] page ...";
         Options options = new Options().addOption("a", "all", false, "find all matching manual pages.").addOption("d", "debug", false, "emit debugging messages.").addOption("e", "extension", false, "limit search to extension type 'extension'.").addOption("f", "whatis", false, "equivalent to whatis.").addOption("k", "apropos", false, "equivalent to apropos.").addOption("w", "location", false, "print physical location of man page(s).").addOption("l", "local-file", false, "interpret 'page' argument(s) as local filename(s)").addOption("u", "update", false, "force a cache consistency check.").// FIXME - should generate -r,--prompt string

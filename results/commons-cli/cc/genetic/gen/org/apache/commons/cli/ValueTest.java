@@ -50,14 +50,12 @@ public class ValueTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testShortNoArg() {
         assertTrue(_cl.hasOption("a"));
         assertNull(_cl.getOptionValue("a"));
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testShortWithArg() {
         assertTrue(_cl.hasOption("b"));
         assertNotNull(_cl.getOptionValue("b"));
@@ -65,6 +63,7 @@ public class ValueTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLongNoArg() {
         assertTrue(_cl.hasOption("c"));
         assertNull(_cl.getOptionValue("c"));
@@ -78,7 +77,6 @@ public class ValueTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testShortOptionalArgNoValue() throws Exception {
         String[] args = new String[] { "-e" };
         Parser parser = new PosixParser();
@@ -97,7 +95,6 @@ public class ValueTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLongOptionalNoValue() throws Exception {
         String[] args = new String[] { "--fish" };
         Parser parser = new PosixParser();
@@ -107,6 +104,7 @@ public class ValueTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLongOptionalArgValue() throws Exception {
         String[] args = new String[] { "--fish", "face" };
         Parser parser = new PosixParser();
@@ -156,7 +154,6 @@ public class ValueTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLongOptionalNArgValues() throws Exception {
         String[] args = new String[] { "--hide", "house", "hair", "head" };
         Parser parser = new PosixParser();

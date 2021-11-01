@@ -37,7 +37,6 @@ public class ArgumentIsOptionTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testOptionAndOptionWithArgument() throws Exception {
         String[] args = new String[] { "-p", "-attr", "p" };
         CommandLine cl = parser.parse(options, args);

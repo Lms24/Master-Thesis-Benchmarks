@@ -23,7 +23,6 @@ import static org.junit.Assert.fail;
 import java.util.Properties;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -177,7 +176,6 @@ public class OptionGroupTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testValidLongOnlyOptions() throws Exception {
         CommandLine cl1 = parser.parse(_options, new String[] { "--export" });
         assertTrue("Confirm --export is set", cl1.hasOption("export"));
