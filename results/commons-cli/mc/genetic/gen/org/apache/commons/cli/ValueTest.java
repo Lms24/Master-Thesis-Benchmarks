@@ -50,13 +50,13 @@ public class ValueTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testShortNoArg() {
         assertTrue(_cl.hasOption("a"));
         assertNull(_cl.getOptionValue("a"));
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testShortWithArg() {
         assertTrue(_cl.hasOption("b"));
         assertNotNull(_cl.getOptionValue("b"));

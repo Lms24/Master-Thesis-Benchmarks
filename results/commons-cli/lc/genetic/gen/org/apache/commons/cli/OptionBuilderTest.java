@@ -21,7 +21,6 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import org.junit.Test;
-import org.junit.Ignore;
 
 // OptionBuilder is marked deprecated
 @SuppressWarnings("deprecation")
@@ -60,7 +59,6 @@ public class OptionBuilderTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testBaseOptionCharOpt() {
         Option base = OptionBuilder.withDescription("option description").create('o');
         assertEquals("o", base.getOpt());

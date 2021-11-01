@@ -155,4 +155,22 @@ public class GnuParserTest extends ParserTestCase {
     @Ignore("not supported by the GnuParser")
     public void testStopBursting2() throws Exception {
     }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testMissingRequiredGroup() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testOptionGroup() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testReuseOptionsTwice() {
+    }
 }

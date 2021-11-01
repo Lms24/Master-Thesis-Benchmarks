@@ -40,6 +40,7 @@ public class OptionBuilderTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testTwoCompleteOptions() {
         Option simple = OptionBuilder.withLongOpt("simple option").hasArg().isRequired().hasArgs().withType(Float.class).withDescription("this is a simple option").create('s');
         assertEquals("s", simple.getOpt());
@@ -60,6 +61,7 @@ public class OptionBuilderTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testBaseOptionCharOpt() {
         Option base = OptionBuilder.withDescription("option description").create('o');
         assertEquals("o", base.getOpt());
@@ -68,7 +70,6 @@ public class OptionBuilderTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testBaseOptionStringOpt() {
         Option base = OptionBuilder.withDescription("option description").create("o");
         assertEquals("o", base.getOpt());
@@ -77,6 +78,7 @@ public class OptionBuilderTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testSpecialOptChars() throws Exception {
         // '?'
         Option opt1 = OptionBuilder.withDescription("help options").create('?');
@@ -94,7 +96,6 @@ public class OptionBuilderTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testOptionArgNumbers() {
         Option opt = OptionBuilder.withDescription("option description").hasArgs(2).create('o');
         assertEquals(2, opt.getArgs());
@@ -138,6 +139,7 @@ public class OptionBuilderTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testBuilderIsResettedAlways() {
         try {
             OptionBuilder.withDescription("JUnit").create('"');

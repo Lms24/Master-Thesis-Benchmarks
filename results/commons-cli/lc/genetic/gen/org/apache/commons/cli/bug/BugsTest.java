@@ -37,12 +37,14 @@ import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.Parser;
 import org.apache.commons.cli.PosixParser;
 import org.junit.Test;
+import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
 public class BugsTest {
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void test11457() throws Exception {
         Options options = new Options();
         options.addOption(OptionBuilder.withLongOpt("verbose").create());
@@ -99,6 +101,7 @@ public class BugsTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void test11456() throws Exception {
         // Posix
         Options options = new Options();

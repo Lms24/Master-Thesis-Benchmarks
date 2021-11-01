@@ -19,7 +19,6 @@ package org.apache.commons.cli;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import org.junit.Test;
-import org.junit.Ignore;
 
 public class UtilTest {
 
@@ -32,7 +31,6 @@ public class UtilTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testStripLeadingAndTrailingQuotes() {
         assertEquals("foo", Util.stripLeadingAndTrailingQuotes("\"foo\""));
         assertEquals("foo \"bar\"", Util.stripLeadingAndTrailingQuotes("foo \"bar\""));

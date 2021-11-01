@@ -69,7 +69,6 @@ public class ValuesTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testMultipleArgValues() {
         assertTrue("Option e is not set", cmd.hasOption("e"));
         assertArrayEquals(new String[] { "one", "two" }, cmd.getOptionValues("e"));
@@ -82,6 +81,7 @@ public class ValuesTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testComplexValues() {
         assertTrue("Option i is not set", cmd.hasOption("i"));
         assertTrue("Option h is not set", cmd.hasOption("h"));

@@ -24,7 +24,6 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.PosixParser;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Ignore;
 
 /**
  * http://issues.apache.org/jira/browse/CLI-148
@@ -43,7 +42,6 @@ public class BugCLI148Test {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testWorkaround1() throws Exception {
         CommandLineParser parser = new PosixParser();
         String[] args = new String[] { "-t-something" };

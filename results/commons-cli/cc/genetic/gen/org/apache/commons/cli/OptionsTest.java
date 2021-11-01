@@ -23,7 +23,6 @@ import static org.junit.Assert.fail;
 import java.util.ArrayList;
 import java.util.Collection;
 import org.junit.Test;
-import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -91,7 +90,6 @@ public class OptionsTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testMissingOptionException() throws ParseException {
         Options options = new Options();
         options.addOption(OptionBuilder.isRequired().create("f"));

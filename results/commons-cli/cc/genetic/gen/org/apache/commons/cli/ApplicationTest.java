@@ -41,6 +41,7 @@ import org.junit.Ignore;
 public class ApplicationTest {
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLs() throws Exception {
         // create the command line parser
         CommandLineParser parser = new PosixParser();
@@ -62,6 +63,7 @@ public class ApplicationTest {
      * Ant test
      */
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testAnt() throws Exception {
         // use the GNU parser
         CommandLineParser parser = new GnuParser();
@@ -140,6 +142,7 @@ public class ApplicationTest {
      * Real world test with long and short options.
      */
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testNLT() throws Exception {
         Option help = new Option("h", "help", false, "print this message");
         Option version = new Option("v", "version", false, "print version information");

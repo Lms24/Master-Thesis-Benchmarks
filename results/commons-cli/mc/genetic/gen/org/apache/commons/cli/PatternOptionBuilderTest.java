@@ -78,6 +78,7 @@ public class PatternOptionBuilderTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testEmptyPattern() throws Exception {
         Options options = PatternOptionBuilder.parsePattern("");
         assertTrue(options.getOptions().isEmpty());

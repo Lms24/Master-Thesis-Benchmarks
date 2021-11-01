@@ -23,6 +23,7 @@ import static org.junit.Assert.fail;
 import java.util.ArrayList;
 import java.util.Collection;
 import org.junit.Test;
+import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -38,6 +39,7 @@ public class OptionsTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testDuplicateSimple() {
         Options opts = new Options();
         opts.addOption("a", false, "toggle -a");
@@ -126,6 +128,7 @@ public class OptionsTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetOptionsGroups() {
         Options options = new Options();
         OptionGroup group1 = new OptionGroup();

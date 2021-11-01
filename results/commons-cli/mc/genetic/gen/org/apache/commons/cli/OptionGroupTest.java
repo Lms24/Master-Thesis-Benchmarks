@@ -143,6 +143,7 @@ public class OptionGroupTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testTwoLongOptionsFromGroup() throws Exception {
         String[] args = new String[] { "--file", "--directory" };
         try {

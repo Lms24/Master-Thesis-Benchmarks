@@ -27,6 +27,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+import org.junit.Ignore;
 
 /**
  * Test for CLI-265.
@@ -67,6 +68,7 @@ public class BugCLI265Test {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void shouldParseConcatenatedShortOptions() throws Exception {
         String[] concatenatedShortOptions = new String[] { "-t1", "-ab" };
         final CommandLine commandLine = parser.parse(options, concatenatedShortOptions);

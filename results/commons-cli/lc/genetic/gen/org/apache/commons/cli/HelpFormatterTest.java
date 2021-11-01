@@ -23,6 +23,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Comparator;
 import org.junit.Test;
+import org.junit.Ignore;
 
 /**
  * Test case for the HelpFormatter class.
@@ -123,6 +124,7 @@ public class HelpFormatterTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testPrintOptions() throws Exception {
         StringBuffer sb = new StringBuffer();
         HelpFormatter hf = new HelpFormatter();

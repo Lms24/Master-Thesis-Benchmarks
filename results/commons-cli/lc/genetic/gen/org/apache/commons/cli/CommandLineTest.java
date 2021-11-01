@@ -45,7 +45,6 @@ public class CommandLineTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetOptions() {
         CommandLine cmd = new CommandLine();
         assertNotNull(cmd.getOptions());
@@ -57,6 +56,7 @@ public class CommandLineTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetParsedOptionValue() throws Exception {
         Options options = new Options();
         options.addOption(OptionBuilder.hasArg().withType(Number.class).create("i"));

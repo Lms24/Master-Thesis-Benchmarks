@@ -20,7 +20,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -47,7 +46,6 @@ public class ArgumentIsOptionTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testOptionWithArgument() throws Exception {
         String[] args = new String[] { "-attr", "p" };
         CommandLine cl = parser.parse(options, args);

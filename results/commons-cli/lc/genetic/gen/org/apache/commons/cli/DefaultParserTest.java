@@ -17,6 +17,8 @@
 package org.apache.commons.cli;
 
 import org.junit.Before;
+import org.junit.Test;
+import org.junit.Ignore;
 
 public class DefaultParserTest extends ParserTestCase {
 
@@ -24,5 +26,41 @@ public class DefaultParserTest extends ParserTestCase {
     public void setUp() {
         super.setUp();
         parser = new DefaultParser();
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testMissingArg() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testArgumentStartingWithHyphen() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testAmbiguousPartialLongOption2() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testAmbiguousPartialLongOption3() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testBursting() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testPropertyOverrideValues() {
     }
 }

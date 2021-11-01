@@ -26,6 +26,7 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.PosixParser;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -56,6 +57,7 @@ public class BugCLI71Test {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testMistakenArgument() throws Exception {
         String[] args = new String[] { "-a", "Caesar", "-k", "A" };
         CommandLine line = parser.parse(options, args);

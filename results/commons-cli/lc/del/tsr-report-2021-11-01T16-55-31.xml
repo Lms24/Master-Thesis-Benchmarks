@@ -517,10 +517,6 @@
       <className>org.apache.commons.cli.ArgumentIsOptionTest</className>
     </testCase>
     <testCase>
-      <name>testOrder</name>
-      <className>org.apache.commons.cli.bug.BugCLI133Test</className>
-    </testCase>
-    <testCase>
       <name>testSimpleShort</name>
       <className>org.apache.commons.cli.PosixParserTest</className>
     </testCase>
@@ -683,6 +679,10 @@
     <testCase>
       <name>testPropertyOptionGroup</name>
       <className>org.apache.commons.cli.PosixParserTest</className>
+    </testCase>
+    <testCase>
+      <name>testOrder</name>
+      <className>org.apache.commons.cli.bug.BugCLI133Test</className>
     </testCase>
     <testCase>
       <name>testRenderWrappedTextWordCut</name>

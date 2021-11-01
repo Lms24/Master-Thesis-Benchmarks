@@ -69,7 +69,6 @@ public class BugCLI71Test {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLackOfError() throws Exception {
         String[] args = new String[] { "-k", "-a", "Caesar" };
         try {

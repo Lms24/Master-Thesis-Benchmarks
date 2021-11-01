@@ -22,6 +22,7 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 
 // tests some deprecated classes
 @SuppressWarnings("deprecation")
@@ -80,6 +81,7 @@ public class ValuesTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testComplexValues() {
         assertTrue("Option i is not set", cmd.hasOption("i"));
         assertTrue("Option h is not set", cmd.hasOption("h"));

@@ -22,6 +22,7 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.junit.Test;
+import org.junit.Ignore;
 
 /**
  * http://issues.apache.org/jira/browse/CLI-18
@@ -29,6 +30,7 @@ import org.junit.Test;
 public class BugCLI18Test {
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testCLI18() {
         Options options = new Options();
         options.addOption(new Option("a", "aaa", false, "aaaaaaa"));

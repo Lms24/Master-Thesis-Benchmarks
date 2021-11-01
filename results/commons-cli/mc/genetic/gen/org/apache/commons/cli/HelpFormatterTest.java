@@ -65,7 +65,6 @@ public class HelpFormatterTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testRenderWrappedTextSingleLine() {
         // single line text
         int width = 12;
@@ -178,6 +177,7 @@ public class HelpFormatterTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testAutomaticUsage() throws Exception {
         HelpFormatter hf = new HelpFormatter();
         Options options = null;
@@ -200,7 +200,6 @@ public class HelpFormatterTest {
     // This test ensures the options are properly sorted
     // See https://issues.apache.org/jira/browse/CLI-131
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testPrintUsage() {
         Option optionA = new Option("a", "first");
         Option optionB = new Option("b", "second");
@@ -251,6 +250,7 @@ public class HelpFormatterTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testPrintOptionGroupUsage() {
         OptionGroup group = new OptionGroup();
         group.addOption(Option.builder("a").build());
@@ -280,6 +280,7 @@ public class HelpFormatterTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testPrintOptionWithEmptyArgNameUsage() {
         Option option = new Option("f", true, null);
         option.setArgName("");
@@ -334,7 +335,6 @@ public class HelpFormatterTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testHeaderStartingWithLineSeparator() {
         // related to Bugzilla #21215
         Options options = new Options();

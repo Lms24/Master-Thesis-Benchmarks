@@ -21,7 +21,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
-import org.junit.Ignore;
 
 public class OptionTest {
 
@@ -155,7 +154,6 @@ public class OptionTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testBuilderInsufficientParams2() {
         Option.builder(null).desc("desc").build();
     }

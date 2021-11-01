@@ -44,7 +44,6 @@ import org.junit.Ignore;
 public class BugsTest {
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void test11457() throws Exception {
         Options options = new Options();
         options.addOption(OptionBuilder.withLongOpt("verbose").create());
@@ -102,6 +101,7 @@ public class BugsTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void test11456() throws Exception {
         // Posix
         Options options = new Options();
@@ -122,6 +122,7 @@ public class BugsTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void test12210() throws Exception {
         // create the main options object which will handle the first parameter
         Options mainOptions = new Options();
@@ -203,7 +204,6 @@ public class BugsTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void test13935() throws Exception {
         OptionGroup directions = new OptionGroup();
         Option left = new Option("l", "left", false, "go left");
@@ -252,7 +252,6 @@ public class BugsTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void test15046() throws Exception {
         CommandLineParser parser = new PosixParser();
         String[] CLI_ARGS = new String[] { "-z", "c" };
@@ -267,7 +266,6 @@ public class BugsTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void test15648() throws Exception {
         CommandLineParser parser = new PosixParser();
         final String[] args = new String[] { "-m", "\"Two Words\"" };
@@ -279,6 +277,7 @@ public class BugsTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void test31148() throws ParseException {
         Option multiArgOption = new Option("o", "option with multiple args");
         multiArgOption.setArgs(1);

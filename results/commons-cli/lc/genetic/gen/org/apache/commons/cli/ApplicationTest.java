@@ -41,7 +41,6 @@ import org.junit.Ignore;
 public class ApplicationTest {
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLs() throws Exception {
         // create the command line parser
         CommandLineParser parser = new PosixParser();
