@@ -1,0 +1,273 @@
+HEAD ist jetzt bei 1a10e2e [commons-cli] update benchmark/mutation procedure
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< commons-cli:commons-cli >-----------------------
+[INFO] Building Apache Commons CLI 1.4
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ commons-cli ---
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/commons-cli/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-cli ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-version) @ commons-cli ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-cli ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/lukas/workspace/master-benchmark/projects/commons-cli/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-cli ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-cli ---
+[INFO] Executing: /bin/sh -c cd '/home/lukas/workspace/master-benchmark/projects/commons-cli' && 'svn' '--non-interactive' 'info'
+[INFO] Working directory: /home/lukas/workspace/master-benchmark/projects/commons-cli
+[WARNING] Cannot get the revision information from the scm repository, proceeding with revision of ?????? : 
+Exception while executing SCM command.
+[INFO] Storing buildNumber: ?????? at timestamp: 1636025081194
+[INFO] Executing: /bin/sh -c cd '/home/lukas/workspace/master-benchmark/projects/commons-cli' && 'svn' '--non-interactive' 'info'
+[INFO] Working directory: /home/lukas/workspace/master-benchmark/projects/commons-cli
+[WARNING] Cannot get the branch information from the scm repository, proceeding with UNKNOWN_BRANCH : 
+Exception while executing SCM command.
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-cli ---
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/commons-cli/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ commons-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to /home/lukas/workspace/master-benchmark/projects/commons-cli/target/classes
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-cli/src/main/java/org/apache/commons/cli/TypeHandler.java: /home/lukas/workspace/master-benchmark/projects/commons-cli/src/main/java/org/apache/commons/cli/TypeHandler.java uses or overrides a deprecated API.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-cli/src/main/java/org/apache/commons/cli/TypeHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-cli/src/main/java/org/apache/commons/cli/DefaultParser.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-cli/src/main/java/org/apache/commons/cli/DefaultParser.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ commons-cli ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (checkAPIcompatibility) @ commons-cli ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-cli ---
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/commons-cli/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ commons-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /home/lukas/workspace/master-benchmark/projects/commons-cli/target/test-classes
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-cli/src/test/java/org/apache/commons/cli/bug/BugsTest.java: Some input files use or override a deprecated API.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-cli/src/test/java/org/apache/commons/cli/bug/BugsTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ commons-cli ---
+[INFO] argLine set to -javaagent:/home/lukas/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/home/lukas/workspace/master-benchmark/projects/commons-cli/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ commons-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+Caused by: java.lang.RuntimeException: Class java/util/UUID could not be instrumented.
+	at org.jacoco.agent.rt.internal_6da5971.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:140)
+	at org.jacoco.agent.rt.internal_6da5971.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:101)
+	at org.jacoco.agent.rt.internal_6da5971.PreMain.createRuntime(PreMain.java:55)
+	at org.jacoco.agent.rt.internal_6da5971.PreMain.premain(PreMain.java:47)
+	... 6 more
+Caused by: java.lang.NoSuchFieldException: $jacocoAccess
+	at java.base/java.lang.Class.getField(Class.java:1999)
+	at org.jacoco.agent.rt.internal_6da5971.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:138)
+	... 9 more
+*** java.lang.instrument ASSERTION FAILED ***: "result" with message agent load/premain call failed at src/java.instrument/share/native/libinstrument/JPLISAgent.c line: 422
+FATAL ERROR in native method: processing of -javaagent failed, processJavaStart failed
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.137 s
+[INFO] Finished at: 2021-11-04T12:24:46+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project commons-cli: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test failed: The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+[ERROR] Command was /bin/sh -c cd /home/lukas/workspace/master-benchmark/projects/commons-cli && /usr/lib/jvm/java-11-openjdk/bin/java -javaagent:/home/lukas/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/home/lukas/workspace/master-benchmark/projects/commons-cli/target/jacoco.exec -jar /home/lukas/workspace/master-benchmark/projects/commons-cli/target/surefire/surefirebooter5012646785813849450.jar /home/lukas/workspace/master-benchmark/projects/commons-cli/target/surefire/surefire3483261883058339686tmp /home/lukas/workspace/master-benchmark/projects/commons-cli/target/surefire/surefire_09427921235978723343tmp
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< commons-cli:commons-cli >-----------------------
+[INFO] Building Apache Commons CLI 1.4
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:3.3.0:single (default-cli) @ commons-cli ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[INFO] Reading assembly descriptor: src/assembly/bin.xml
+[INFO] Reading assembly descriptor: src/assembly/src.xml
+[WARNING] Cannot include project artifact: commons-cli:commons-cli:jar:1.4; it doesn't have an associated file or directory.
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/commons-cli/target/commons-cli-1.4-fat-tests.jar
+[INFO] Building tar: /home/lukas/workspace/master-benchmark/projects/commons-cli/target/commons-cli-1.4-bin.tar.gz
+[INFO] Building zip: /home/lukas/workspace/master-benchmark/projects/commons-cli/target/commons-cli-1.4-bin.zip
+[INFO] Building tar: /home/lukas/workspace/master-benchmark/projects/commons-cli/target/commons-cli-1.4-src.tar.gz
+[INFO] Building zip: /home/lukas/workspace/master-benchmark/projects/commons-cli/target/commons-cli-1.4-src.zip
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.940 s
+[INFO] Finished at: 2021-11-04T12:24:47+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< commons-cli:commons-cli >-----------------------
+[INFO] Building Apache Commons CLI 1.4
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.7.2:mutationCoverage (default-cli) @ commons-cli ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum constructor filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : TestNG plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /home/lukas/workspace/master-benchmark/projects/commons-cli/target/classes
+[INFO] Defaulting target classes to match packages in build directory
+[INFO] Defaulting target tests to match packages in test build directory
+12:24:49 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+12:24:49 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+12:24:49 PIT >> INFO : Created  23 mutation test units in pre scan
+12:24:50 PIT >> INFO : Sending 54 test classes to minion
+12:24:50 PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|12:24:50 PIT >> INFO : Calculated coverage in 0 seconds.
+12:24:51 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+12:24:51 PIT >> INFO : Created  23 mutation test units
+/12:24:57 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+12:25:01 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+12:25:04 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+12:25:08 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/-\|/-\|/-\|/-\|/-\12:25:21 PIT >> INFO : Completed in 32 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 34 Killed 7 (21%)
+> KILLED 7 SURVIVED 19 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 8 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 8 Killed 6 (75%)
+> KILLED 6 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 13 Killed 9 (69%)
+> KILLED 7 SURVIVED 0 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 4 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 117 Killed 54 (46%)
+> KILLED 54 SURVIVED 20 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 43 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 32 Killed 21 (66%)
+> KILLED 21 SURVIVED 6 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 5 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 108 Killed 76 (70%)
+> KILLED 76 SURVIVED 22 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 10 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 27 Killed 9 (33%)
+> KILLED 9 SURVIVED 6 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 12 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 47 Killed 39 (83%)
+> KILLED 39 SURVIVED 6 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 17 Killed 12 (71%)
+> KILLED 12 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 4 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 332 Killed 230 (69%)
+> KILLED 228 SURVIVED 43 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 59 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : < 1 second
+> build mutation tests : < 1 second
+> run mutation analysis : 30 seconds
+--------------------------------------------------------------------------------
+> Total  : 32 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 951/1178 (81%)
+>> Generated 735 mutations Killed 463 (63%)
+>> Mutations with no coverage 149. Test strength 79%
+>> Ran 1049 tests (1.43 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  33.074 s
+[INFO] Finished at: 2021-11-04T12:25:21+01:00
+[INFO] ------------------------------------------------------------------------
+HEAD ist jetzt bei 1a10e2e [commons-cli] update benchmark/mutation procedure
