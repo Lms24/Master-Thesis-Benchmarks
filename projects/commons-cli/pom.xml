@@ -163,8 +163,8 @@
   </dependencies>
 
   <properties>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <commons.componentid>cli</commons.componentid>
     <commons.release.version>1.4</commons.release.version>
     <commons.release.name>commons-cli-${commons.release.version}</commons.release.name>
@@ -223,8 +223,10 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
+          <!--
           <source>11</source>
           <target>11</target>
+          -->
         </configuration>
       </plugin>
     </plugins>
@@ -281,6 +283,7 @@
           </reportSet>
         </reportSets>
       </plugin>
+      <!--
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
@@ -291,6 +294,7 @@
           <excludeFilterFile>${basedir}/src/conf/findbugs-exclude-filter.xml</excludeFilterFile>
        </configuration>
       </plugin>
+      -->
       <plugin>
         <artifactId>maven-pmd-plugin</artifactId>
         <version>3.5</version>
