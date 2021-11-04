@@ -260,6 +260,7 @@ CSV files of various types.
             <exclude>src/assembly/assembly.xml</exclude>
             <exclude>runBenchmark.sh</exclude>
             <exclude>runCoverage.sh</exclude>
+            <exclude>runMutation.sh</exclude>
           </excludes>
         </configuration>
       </plugin>
