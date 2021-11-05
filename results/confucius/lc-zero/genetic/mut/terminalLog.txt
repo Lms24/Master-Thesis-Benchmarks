@@ -1,0 +1,247 @@
+HEAD ist jetzt bei 5b58a79 [confucius] add shell scripts
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.trendafilov.confucius:confucius:jar:1.3-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-gpg-plugin is missing. @ line 83, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------< org.trendafilov.confucius:confucius >-----------------
+[INFO] Building confucius 1.3-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ confucius ---
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/confucius/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ confucius ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ confucius ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/confucius/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ confucius ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /home/lukas/workspace/master-benchmark/projects/confucius/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ confucius ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/confucius/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ confucius ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/lukas/workspace/master-benchmark/projects/confucius/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ confucius ---
+[INFO] Surefire report directory: /home/lukas/workspace/master-benchmark/projects/confucius/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.trendafilov.confucius.core.ParserTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 0.063 sec
+Running org.trendafilov.confucius.core.UtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 sec
+Running org.trendafilov.confucius.core.FileConfigurationDataProviderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.trendafilov.confucius.core.StreamConfigurationDataProviderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.001 sec
+Running org.trendafilov.confucius.InjectableConfigurationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.trendafilov.confucius.ConfigurationTest
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.028 sec
+
+Results :
+
+Tests run: 90, Failures: 0, Errors: 0, Skipped: 17
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ confucius ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/confucius/target/confucius-1.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (make-assembly) @ confucius ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/confucius/target/confucius-1.3-SNAPSHOT-fat-tests.jar
+[INFO] 
+[INFO] --- maven-gpg-plugin:3.0.1:sign (sign-artifacts) @ confucius ---
+gpg: no default secret key: Kein geheimer Schlüssel
+gpg: signing failed: Kein geheimer Schlüssel
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.815 s
+[INFO] Finished at: 2021-11-05T12:13:57+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-gpg-plugin:3.0.1:sign (sign-artifacts) on project confucius: Exit code: 2 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.trendafilov.confucius:confucius:jar:1.3-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-gpg-plugin is missing. @ line 83, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------< org.trendafilov.confucius:confucius >-----------------
+[INFO] Building confucius 1.3-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (default-cli) @ confucius ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] Cannot include project artifact: org.trendafilov.confucius:confucius:jar:1.3-SNAPSHOT; it doesn't have an associated file or directory.
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/confucius/target/confucius-1.3-SNAPSHOT-fat-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.954 s
+[INFO] Finished at: 2021-11-05T12:13:58+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.trendafilov.confucius:confucius:jar:1.3-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-gpg-plugin is missing. @ line 83, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------< org.trendafilov.confucius:confucius >-----------------
+[INFO] Building confucius 1.3-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.7.2:mutationCoverage (default-cli) @ confucius ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum constructor filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : TestNG plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /home/lukas/workspace/master-benchmark/projects/confucius/target/classes
+[INFO] Defaulting target classes to match packages in build directory
+[INFO] Defaulting target tests to match packages in test build directory
+12:14:00 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+12:14:01 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+12:14:01 PIT >> INFO : Created  6 mutation test units in pre scan
+12:14:01 PIT >> INFO : Sending 13 test classes to minion
+12:14:01 PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|12:14:01 PIT >> INFO : MINION : SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+12:14:01 PIT >> INFO : MINION : SLF4J: Defaulting to no-operation (NOP) logger implementation
+12:14:01 PIT >> INFO : MINION : SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-12:14:01 PIT >> INFO : Calculated coverage in 0 seconds.
+12:14:01 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+12:14:01 PIT >> INFO : Created  6 mutation test units
+/12:14:07 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/-12:14:10 PIT >> INFO : Completed in 9 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 14 Killed 14 (100%)
+> KILLED 14 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 19 Killed 16 (84%)
+> KILLED 16 SURVIVED 3 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 6 Killed 5 (83%)
+> KILLED 5 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 8 Killed 8 (100%)
+> KILLED 8 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 2 Killed 2 (100%)
+> KILLED 2 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 27 Killed 26 (96%)
+> KILLED 26 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 3 Killed 3 (100%)
+> KILLED 3 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 37 Killed 36 (97%)
+> KILLED 35 SURVIVED 1 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : < 1 second
+> build mutation tests : < 1 second
+> run mutation analysis : 8 seconds
+--------------------------------------------------------------------------------
+> Total  : 9 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 248/261 (95%)
+>> Generated 116 mutations Killed 110 (95%)
+>> Mutations with no coverage 0. Test strength 95%
+>> Ran 429 tests (3.7 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.227 s
+[INFO] Finished at: 2021-11-05T12:14:10+01:00
+[INFO] ------------------------------------------------------------------------
+HEAD ist jetzt bei 5b58a79 [confucius] add shell scripts
