@@ -465,6 +465,14 @@ cat $OUT_DIR/terminalLog.txt | grep 'mutations Killed '
 cat $OUT_DIR/terminalLog.txt | grep '>> Mutations with'
 cat $OUT_DIR/terminalLog.txt | grep '>> Ran '
 
+#############################
+
+echo ""
+echo ""
+echo "% Resetting project files"
+git reset --hard >> $OUT_DIR/terminalLog.txt
+mvn clean install >> $OUT_DIR/terminalLog.txt
+mvn assembly:single >> $OUT_DIR/terminalLog.txt
 
 echo ""
 echo "% Mutation Benchmark Finished"
