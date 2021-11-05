@@ -1,0 +1,437 @@
+HEAD ist jetzt bei 726827f [jsoup] delete old jsoup project
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< org.jsoup:jsoup >---------------------------
+[INFO] Building jsoup Java HTML Parser 1.12.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ jsoup ---
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/jsoup/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ jsoup ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources to META-INF/
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ jsoup ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 68 source files to /home/lukas/workspace/master-benchmark/projects/jsoup/target/classes
+[INFO] /home/lukas/workspace/master-benchmark/projects/jsoup/src/main/java/org/jsoup/nodes/Attributes.java: /home/lukas/workspace/master-benchmark/projects/jsoup/src/main/java/org/jsoup/nodes/Attributes.java uses or overrides a deprecated API.
+[INFO] /home/lukas/workspace/master-benchmark/projects/jsoup/src/main/java/org/jsoup/nodes/Attributes.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (animal-sniffer) @ jsoup ---
+[INFO] Checking unresolved references to net.sf.androidscents.signature:android-api-level-8:2.2_r3
+[INFO] 
+[INFO] >>> maven-bundle-plugin:2.5.4:manifest (bundle-manifest) > process-classes @ jsoup >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ jsoup ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources to META-INF/
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ jsoup ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 68 source files to /home/lukas/workspace/master-benchmark/projects/jsoup/target/classes
+[INFO] /home/lukas/workspace/master-benchmark/projects/jsoup/src/main/java/org/jsoup/nodes/Attributes.java: /home/lukas/workspace/master-benchmark/projects/jsoup/src/main/java/org/jsoup/nodes/Attributes.java uses or overrides a deprecated API.
+[INFO] /home/lukas/workspace/master-benchmark/projects/jsoup/src/main/java/org/jsoup/nodes/Attributes.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.16:check (animal-sniffer) @ jsoup ---
+[INFO] Checking unresolved references to net.sf.androidscents.signature:android-api-level-8:2.2_r3
+[INFO] 
+[INFO] <<< maven-bundle-plugin:2.5.4:manifest (bundle-manifest) < process-classes @ jsoup <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.4:manifest (bundle-manifest) @ jsoup ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ jsoup ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 27 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ jsoup ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 50 source files to /home/lukas/workspace/master-benchmark/projects/jsoup/target/test-classes
+[INFO] /home/lukas/workspace/master-benchmark/projects/jsoup/src/test/java/org/jsoup/parser/AttributeParseTest.java: Some input files use or override a deprecated API.
+[INFO] /home/lukas/workspace/master-benchmark/projects/jsoup/src/test/java/org/jsoup/parser/AttributeParseTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ jsoup ---
+[INFO] Surefire report directory: /home/lukas/workspace/master-benchmark/projects/jsoup/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jsoup.helper.DataUtilTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 14, Time elapsed: 0.083 sec
+Running org.jsoup.helper.HttpConnectionTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 23, Time elapsed: 0.003 sec
+Running org.jsoup.helper.W3CDomTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.162 sec
+Running org.jsoup.parser.HtmlParserTest
+Tests run: 138, Failures: 0, Errors: 0, Skipped: 119, Time elapsed: 0.049 sec
+Running org.jsoup.parser.ParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.jsoup.parser.HtmlTreeBuilderStateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Running org.jsoup.parser.TokenQueueTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.001 sec
+Running org.jsoup.parser.CharacterReaderTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 22, Time elapsed: 0.003 sec
+Running org.jsoup.parser.TagTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 10, Time elapsed: 0 sec
+Running org.jsoup.parser.ParserSettingsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0 sec
+Running org.jsoup.parser.TokeniserTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 11, Time elapsed: 0.006 sec
+Running org.jsoup.parser.HtmlTreeBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Running org.jsoup.parser.XmlTreeBuilderTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 20, Time elapsed: 0.011 sec
+Running org.jsoup.parser.TokeniserStateTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 0.01 sec
+Running org.jsoup.parser.AttributeParseTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.001 sec
+Running org.jsoup.nodes.ElementTest
+Tests run: 107, Failures: 0, Errors: 0, Skipped: 80, Time elapsed: 0.03 sec
+Running org.jsoup.nodes.NodeTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 22, Time elapsed: 0.003 sec
+Running org.jsoup.nodes.FormElementTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.006 sec
+Running org.jsoup.nodes.DocumentTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 21, Time elapsed: 0.008 sec
+Running org.jsoup.nodes.EntitiesTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 13, Time elapsed: 0.002 sec
+Running org.jsoup.nodes.DocumentTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0 sec
+Running org.jsoup.nodes.AttributesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 0.001 sec
+Running org.jsoup.nodes.AttributeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.001 sec
+Running org.jsoup.nodes.TextNodeTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 0.001 sec
+Running org.jsoup.safety.CleanerTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 35, Time elapsed: 0.002 sec
+Running org.jsoup.internal.ConstrainableInputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Running org.jsoup.internal.StringUtilTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 0 sec
+Running org.jsoup.select.QueryParserTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.001 sec
+Running org.jsoup.select.ElementsTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 14, Time elapsed: 0.012 sec
+Running org.jsoup.select.TraversorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.001 sec
+Running org.jsoup.select.CssTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 10, Time elapsed: 0.016 sec
+Running org.jsoup.select.SelectorTest
+Tests run: 76, Failures: 0, Errors: 0, Skipped: 76, Time elapsed: 0.005 sec
+Running org.jsoup.integration.ParseTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 11, Time elapsed: 0.001 sec
+Running org.jsoup.integration.ConnectTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 20, Time elapsed: 0.286 sec
+Running org.jsoup.integration.UrlConnectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 736, Failures: 0, Errors: 0, Skipped: 608
+
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ jsoup ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/jsoup/target/jsoup-1.12.2.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (make-assembly) @ jsoup ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.927 s
+[INFO] Finished at: 2021-11-05T01:18:08+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-assembly-plugin:2.6:single (make-assembly) on project jsoup: Error reading assemblies: Error locating assembly descriptor: src/assembly/assembly.xml
+[ERROR] 
+[ERROR] [1] [INFO] Searching for file location: /home/lukas/workspace/master-benchmark/projects/jsoup/src/assembly/assembly.xml
+[ERROR] 
+[ERROR] [2] [INFO] File: /home/lukas/workspace/master-benchmark/projects/jsoup/src/assembly/assembly.xml does not exist.
+[ERROR] 
+[ERROR] [3] [INFO] File: /home/lukas/workspace/master-benchmark/projects/jsoup/src/assembly/assembly.xml does not exist.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< org.jsoup:jsoup >---------------------------
+[INFO] Building jsoup Java HTML Parser 1.12.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (default-cli) @ jsoup ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.646 s
+[INFO] Finished at: 2021-11-05T01:18:09+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-assembly-plugin:2.6:single (default-cli) on project jsoup: Error reading assemblies: Error locating assembly descriptor: src/assembly/assembly.xml
+[ERROR] 
+[ERROR] [1] [INFO] Searching for file location: /home/lukas/workspace/master-benchmark/projects/jsoup/src/assembly/assembly.xml
+[ERROR] 
+[ERROR] [2] [INFO] File: /home/lukas/workspace/master-benchmark/projects/jsoup/src/assembly/assembly.xml does not exist.
+[ERROR] 
+[ERROR] [3] [INFO] File: /home/lukas/workspace/master-benchmark/projects/jsoup/src/assembly/assembly.xml does not exist.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< org.jsoup:jsoup >---------------------------
+[INFO] Building jsoup Java HTML Parser 1.12.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.7.2:mutationCoverage (default-cli) @ jsoup ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum constructor filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : TestNG plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /home/lukas/workspace/master-benchmark/projects/jsoup/target/classes
+[INFO] Defaulting target classes to match packages in build directory
+[INFO] Defaulting target tests to match packages in test build directory
+01:18:11 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+01:18:13 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+01:18:13 PIT >> INFO : Created  223 mutation test units in pre scan
+01:18:14 PIT >> INFO : Sending 295 test classes to minion
+01:18:14 PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/01:18:15 PIT >> INFO : MINION : 2021-11-05 01:18:15.425:INFO::main: Logging initialized @1387ms to org.eclipse.jetty.util.log.StdErrLog
+01:18:15 PIT >> INFO : MINION : 2021-11-05 01:18:15.482:INFO:oejs.Server:main: jetty-9.4.26.v20200117; built: 2020-01-17T12:35:33.676Z; git: 7b38981d25d14afb4a12ff1f2596756144edf695; jvm 11.0.12+7
+01:18:15 PIT >> INFO : MINION : 2021-11-05 01:18:15.523:INFO:oejs.AbstractConnector:main: Started ServerConnector@5a10c302{HTTP/1.1,[http/1.1]}{0.0.0.0:40079}
+01:18:15 PIT >> INFO : MINION : 2021-11-05 01:18:15.524:INFO:oejs.Server:main: Started @1485ms
+01:18:15 PIT >> INFO : MINION : 2021-11-05 01:18:15.684:INFO:oejs.AbstractConnector:main: Stopped ServerConnector@5a10c302{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|01:18:16 PIT >> INFO : Calculated coverage in 2 seconds.
+01:18:19 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+01:18:19 PIT >> INFO : Created  223 mutation test units
+/01:18:32 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:18:36 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:18:41 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:18:48 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-01:18:57 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:03 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:11 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:16 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:20 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:24 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:29 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:33 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:39 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:43 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:47 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:55 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:19:59 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:20:04 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:20:08 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:20:13 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:20:18 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\01:20:26 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|01:20:37 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:20:43 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:20:47 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:20:50 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:20:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:20:58 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:21:02 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:21:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-01:21:16 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:21:20 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:21:23 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:21:28 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:21:32 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\01:21:39 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|01:21:45 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:21:49 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:21:53 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:21:57 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:00 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:04 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:09 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:12 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:17 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:20 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:24 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:28 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:31 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/01:22:36 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:40 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:22:44 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/-\|/-\|/-\01:23:13 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:23:17 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:23:21 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\|/-\01:23:38 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:23:41 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:23:45 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\|/-\|/-\|01:24:04 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\|/01:24:18 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-01:24:21 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\|01:24:28 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|01:24:34 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\|/-01:24:45 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\|/-\01:24:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/01:24:59 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/01:25:05 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:25:08 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:25:12 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-01:25:16 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\|/-\01:25:25 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|01:25:29 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:25:32 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\01:25:39 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:25:42 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-01:25:47 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:25:50 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:25:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:25:57 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\|/-01:26:04 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\01:26:11 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-01:26:15 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:26:19 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:26:22 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\01:26:26 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\01:26:31 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-01:26:36 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/01:26:42 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|01:26:47 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-01:26:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\01:26:55 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/01:26:59 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+01:27:03 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-01:27:07 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\|/-\|/-\|01:27:16 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/01:27:19 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|01:27:24 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\01:27:43 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|01:27:47 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/01:27:50 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-01:27:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\01:27:57 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/01:28:01 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/01:28:05 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|01:28:09 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/01:28:13 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/-\|/-\01:28:16 PIT >> INFO : Completed in 605 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 248 Killed 148 (60%)
+> KILLED 145 SURVIVED 74 TIMED_OUT 3 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 26 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 84 Killed 67 (80%)
+> KILLED 64 SURVIVED 3 TIMED_OUT 3 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 14 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 46 Killed 33 (72%)
+> KILLED 26 SURVIVED 3 TIMED_OUT 7 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 10 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 1404 Killed 533 (38%)
+> KILLED 471 SURVIVED 258 TIMED_OUT 62 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 613 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 385 Killed 155 (40%)
+> KILLED 153 SURVIVED 67 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 163 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 424 Killed 242 (57%)
+> KILLED 242 SURVIVED 89 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 93 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 200 Killed 128 (64%)
+> KILLED 123 SURVIVED 14 TIMED_OUT 5 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 58 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 259 Killed 118 (46%)
+> KILLED 118 SURVIVED 62 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 79 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 261 Killed 164 (63%)
+> KILLED 164 SURVIVED 14 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 83 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 1642 Killed 1225 (75%)
+> KILLED 1199 SURVIVED 161 TIMED_OUT 26 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 256 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : 2 seconds
+> scan classpath : < 1 second
+> coverage and dependency analysis : 2 seconds
+> build mutation tests : 1 seconds
+> run mutation analysis : 9 minutes and 57 seconds
+--------------------------------------------------------------------------------
+> Total  : 10 minutes and 4 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 5577/7564 (74%)
+>> Generated 4953 mutations Killed 2813 (57%)
+>> Mutations with no coverage 1395. Test strength 79%
+>> Ran 19896 tests (4.02 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10:06 min
+[INFO] Finished at: 2021-11-05T01:28:16+01:00
+[INFO] ------------------------------------------------------------------------
+HEAD ist jetzt bei 7e4fe51 [confucius] add project, modifications for JSR benchmark and gitstats report
