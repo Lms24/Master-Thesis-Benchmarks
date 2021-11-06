@@ -1,0 +1,315 @@
+HEAD ist jetzt bei f81c600 [json-simple] add project + mods + bench scripts
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.googlecode.json-simple:json-simple >---------------
+[INFO] Building JSON.simple 1.1.1
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ json-simple ---
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/json-simple/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ json-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/json-simple/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ json-simple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /home/lukas/workspace/master-benchmark/projects/json-simple/target/classes
+[INFO] /home/lukas/workspace/master-benchmark/projects/json-simple/src/main/java/org/json/simple/parser/Yylex.java: Some input files use or override a deprecated API.
+[INFO] /home/lukas/workspace/master-benchmark/projects/json-simple/src/main/java/org/json/simple/parser/Yylex.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/lukas/workspace/master-benchmark/projects/json-simple/src/main/java/org/json/simple/parser/JSONParser.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/lukas/workspace/master-benchmark/projects/json-simple/src/main/java/org/json/simple/parser/JSONParser.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ json-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/json-simple/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ json-simple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/lukas/workspace/master-benchmark/projects/json-simple/target/test-classes
+[INFO] /home/lukas/workspace/master-benchmark/projects/json-simple/src/test/java/org/json/simple/JSONArrayTest.java: Some input files use or override a deprecated API.
+[INFO] /home/lukas/workspace/master-benchmark/projects/json-simple/src/test/java/org/json/simple/JSONArrayTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/lukas/workspace/master-benchmark/projects/json-simple/src/test/java/org/json/simple/JSONArrayTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/lukas/workspace/master-benchmark/projects/json-simple/src/test/java/org/json/simple/JSONArrayTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ json-simple ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.json.simple.Test1
+=======decode=======
+======the 2nd element of array======
+{"1":{"2":{"3":{"4":[5,{"6":7}]}}}}
+
+======field "1"==========
+{"2":{"3":{"4":[5,{"6":7}]}}}
+Error at character position: 24
+Unexpected token: RIGHT BRACE(})
+==iterate result==
+first=>123
+second=>[4, 5, 6]
+third=>789
+==toJSONString()==
+{"first":123,"second":[4,5,6],"third":789}
+startJSON()
+startObject()
+startObjectEntry(), key:first
+primitive(): 123
+endObjectEntry()
+startObjectEntry(), key:second
+startArray()
+startObject()
+startObjectEntry(), key:s1
+startObject()
+startObjectEntry(), key:s11
+primitive(): v11
+endObjectEntry()
+endObject()
+endObjectEntry()
+endObject()
+primitive(): 4
+primitive(): 5
+primitive(): 6
+endArray()
+endObjectEntry()
+startObjectEntry(), key:third
+primitive(): 789
+endObjectEntry()
+endObject()
+endJSON()
+found id:
+id1
+found id:
+123
+found id:
+null
+=======encode=======
+======array1==========
+["abc\u0010a\/",123,222.123,true]
+
+======obj1 with array1===========
+{"array1":["abc\u0010a\/",123,222.123,true]}
+
+======array1 with obj1========
+["abc\u0010a\/",123,222.123,true,{}]
+
+======list==========
+["abc\u0010a\/",123,222.123,true,null]
+
+======map with list===========
+{array1=[abca/, 123, 222.123, true, null]}
+
+[{"k11":"v11","k12":"v12","k13":"v13"},{"k21":"v21","k22":"v22","k23":"v23"}]
+[{"k11":"v11","k12":"v12","k13":"v13"},{"k21":"v21","k22":"v22","k23":"v23"}]
+[{"k11":"v11","k12":"v12","k13":"v13","k14":{"k31":"v3","k32":123.45,"k33":false,"k34":null,"k35":["vvv","1.23456789123456789",true,null]}},{"k21":"v21","k22":"v22","k23":"v23"}]
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.json.simple.Test1
+[INFO] Running org.json.simple.parser.YylexTest
+"\/"
+"abc\/\r\b\n\t\f\\"
+[	 
+
+{ 	 	
+}
+{
+error:org.json.simple.parser.ParseException: Unexpected character () at position 0.
+{a : b}
+error:org.json.simple.parser.ParseException: Unexpected character (a) at position 1.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.json.simple.parser.YylexTest
+[INFO] Running org.json.simple.JSONValueTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.json.simple.JSONValueTest
+[INFO] Running org.json.simple.JSONArrayTest
+[WARNING] Tests run: 13, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 s - in org.json.simple.JSONArrayTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 26, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO] 
+[INFO] --- maven-bundle-plugin:5.1.1:bundle (default-bundle) @ json-simple ---
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (make-assembly) @ json-simple ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/json-simple/target/json-simple-1.1.1-fat-tests.jar
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar-no-fork (attach-sources) @ json-simple ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/json-simple/target/json-simple-1.1.1-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ json-simple ---
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/json-simple/target/json-simple-1.1.1.jar to /home/lukas/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/json-simple/pom.xml to /home/lukas/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/json-simple/target/json-simple-1.1.1-fat-tests.jar to /home/lukas/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-fat-tests.jar
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/json-simple/target/json-simple-1.1.1-sources.jar to /home/lukas/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:5.1.1:install (default-install) @ json-simple ---
+[INFO] Installing com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar
+[INFO] Installing com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-fat-tests.jar
+[INFO] Writing OBR metadata
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.742 s
+[INFO] Finished at: 2021-11-06T23:18:55+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.googlecode.json-simple:json-simple >---------------
+[INFO] Building JSON.simple 1.1.1
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (default-cli) @ json-simple ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] Cannot include project artifact: com.googlecode.json-simple:json-simple:bundle:1.1.1; it doesn't have an associated file or directory.
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/json-simple/target/json-simple-1.1.1-fat-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.398 s
+[INFO] Finished at: 2021-11-06T23:18:58+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.googlecode.json-simple:json-simple >---------------
+[INFO] Building JSON.simple 1.1.1
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.7.2:mutationCoverage (default-cli) @ json-simple ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum constructor filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : TestNG plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /home/lukas/workspace/master-benchmark/projects/json-simple/target/classes
+[INFO] Defaulting target classes to match packages in build directory
+[INFO] Defaulting target tests to match packages in test build directory
+23:19:00 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+23:19:00 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+23:19:00 PIT >> INFO : Created  8 mutation test units in pre scan
+23:19:01 PIT >> INFO : Sending 15 test classes to minion
+23:19:01 PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-23:19:01 PIT >> INFO : Calculated coverage in 0 seconds.
+23:19:01 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+23:19:01 PIT >> INFO : Created  8 mutation test units
+/-23:19:09 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+23:19:13 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+23:19:17 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\23:19:21 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\|23:19:23 PIT >> INFO : Completed in 23 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 33 Killed 14 (42%)
+> KILLED 14 SURVIVED 15 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 4 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 13 Killed 6 (46%)
+> KILLED 6 SURVIVED 3 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 4 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 15 Killed 4 (27%)
+> KILLED 3 SURVIVED 11 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 177 Killed 131 (74%)
+> KILLED 128 SURVIVED 18 TIMED_OUT 3 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 28 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 2 Killed 1 (50%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 24 Killed 19 (79%)
+> KILLED 19 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 5 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 21 Killed 11 (52%)
+> KILLED 11 SURVIVED 5 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 5 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 30 Killed 21 (70%)
+> KILLED 21 SURVIVED 2 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 2 Killed 1 (50%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 134 Killed 86 (64%)
+> KILLED 86 SURVIVED 25 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 23 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : < 1 second
+> build mutation tests : < 1 second
+> run mutation analysis : 21 seconds
+--------------------------------------------------------------------------------
+> Total  : 23 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 646/932 (69%)
+>> Generated 451 mutations Killed 294 (65%)
+>> Mutations with no coverage 78. Test strength 79%
+>> Ran 443 tests (0.98 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  24.604 s
+[INFO] Finished at: 2021-11-06T23:19:23+01:00
+[INFO] ------------------------------------------------------------------------
+HEAD ist jetzt bei f81c600 [json-simple] add project + mods + bench scripts
