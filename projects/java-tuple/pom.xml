@@ -134,6 +134,7 @@
                             <addOutputToClasspath>false</addOutputToClasspath>
                         </configuration>
                     </execution>
+                    <!--
                     <execution>
                         <id>generate-tuple-test</id>
                         <phase>generate-test-sources</phase>
@@ -147,6 +148,7 @@
                             <addOutputToClasspath>false</addOutputToClasspath>
                         </configuration>
                     </execution>
+                    -->
                 </executions>
             </plugin>
 
@@ -183,12 +185,14 @@
                                 <include>**/*</include>
                             </includes>
                         </fileset>
+                        <!--
                         <fileset>
                             <directory>src/test/java</directory>
                             <includes>
                                 <include>**/*</include>
                             </includes>
                         </fileset>
+                        -->
                     </filesets>
                 </configuration>
             </plugin>
