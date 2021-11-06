@@ -5,6 +5,7 @@ cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 PROJECT_NAME="java-tuple"
 RESULTS_BASE_DIR="../../results/$PROJECT_NAME"
 TEST_SRC_DIR="src/test/java"
+TOP_PACKAGE="com"
 
 ##########################################################################################################
 # Mutation
@@ -26,7 +27,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -50,7 +51,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -75,7 +76,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -100,7 +101,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -124,7 +125,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -149,7 +150,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -174,7 +175,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -198,7 +199,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -223,7 +224,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -257,7 +258,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -281,7 +282,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -306,7 +307,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -331,7 +332,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -355,7 +356,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -380,7 +381,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -405,7 +406,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -429,7 +430,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
@@ -454,7 +455,7 @@ mkdir -p $OUT_DIR
 touch $OUT_DIR/terminalLog.txt
 
 git reset --hard > $OUT_DIR/terminalLog.txt
-cp $PROJ_DIR/gen/org $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
+cp $PROJ_DIR/gen/$TOP_PACKAGE $TEST_SRC_DIR -r >> $OUT_DIR/terminalLog.txt
 mvn clean install >> $OUT_DIR/terminalLog.txt
 mvn assembly:single >> $OUT_DIR/terminalLog.txt
 mvn pitest:mutationCoverage >> $OUT_DIR/terminalLog.txt 2>&1
