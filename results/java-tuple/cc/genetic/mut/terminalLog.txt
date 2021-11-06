@@ -1,0 +1,293 @@
+HEAD ist jetzt bei 5c8c7c3 [java-tuple] Modify pom to stop automatic test source generation
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ---------------------< com.andrebreves:java-tuple >---------------------
+[INFO] Building com.andrebreves:java-tuple 1.2.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ java-tuple ---
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/java-tuple/target
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/java-tuple/src/main/java (includes = [**/*], excludes = [])
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.6:prepare-agent (default) @ java-tuple ---
+[INFO] argLine set to -javaagent:/home/lukas/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/home/lukas/workspace/master-benchmark/projects/java-tuple/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (compile-tuple-generator) @ java-tuple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/lukas/workspace/master-benchmark/projects/java-tuple/target/tuple-generator
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (generate-tuple-code) @ java-tuple ---
+Tuple.java      - generating src/main/java/com/andrebreves/tuple/Tuple.java
+Tuple0.java     - generating src/main/java/com/andrebreves/tuple/Tuple0.java
+Tuple1.java     - generating src/main/java/com/andrebreves/tuple/Tuple1.java
+Tuple2.java     - generating src/main/java/com/andrebreves/tuple/Tuple2.java
+Tuple3.java     - generating src/main/java/com/andrebreves/tuple/Tuple3.java
+Tuple4.java     - generating src/main/java/com/andrebreves/tuple/Tuple4.java
+Tuple5.java     - generating src/main/java/com/andrebreves/tuple/Tuple5.java
+Tuple6.java     - generating src/main/java/com/andrebreves/tuple/Tuple6.java
+Tuple7.java     - generating src/main/java/com/andrebreves/tuple/Tuple7.java
+Tuple8.java     - generating src/main/java/com/andrebreves/tuple/Tuple8.java
+Tuple9.java     - generating src/main/java/com/andrebreves/tuple/Tuple9.java
+Tuple10.java    - generating src/main/java/com/andrebreves/tuple/Tuple10.java
+Tuple11.java    - generating src/main/java/com/andrebreves/tuple/Tuple11.java
+Tuple12.java    - generating src/main/java/com/andrebreves/tuple/Tuple12.java
+Tuple13.java    - generating src/main/java/com/andrebreves/tuple/Tuple13.java
+Tuple14.java    - generating src/main/java/com/andrebreves/tuple/Tuple14.java
+Tuple15.java    - generating src/main/java/com/andrebreves/tuple/Tuple15.java
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ java-tuple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/java-tuple/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ java-tuple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /home/lukas/workspace/master-benchmark/projects/java-tuple/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ java-tuple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/java-tuple/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ java-tuple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /home/lukas/workspace/master-benchmark/projects/java-tuple/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ java-tuple ---
+[INFO] Surefire report directory: /home/lukas/workspace/master-benchmark/projects/java-tuple/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.andrebreves.tuple.Tuple10Test
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.116 sec
+Running com.andrebreves.tuple.Tuple4Test
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.018 sec
+Running com.andrebreves.tuple.Tuple11Test
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 0.013 sec
+Running com.andrebreves.tuple.Tuple6Test
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.013 sec
+Running com.andrebreves.tuple.Tuple15Test
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.01 sec
+Running com.andrebreves.tuple.Tuple1Test
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.013 sec
+Running com.andrebreves.tuple.Tuple3Test
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.013 sec
+Running com.andrebreves.tuple.Tuple8Test
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.009 sec
+Running com.andrebreves.tuple.Tuple5Test
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.009 sec
+Running com.andrebreves.tuple.Tuple14Test
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.008 sec
+Running com.andrebreves.tuple.Tuple13Test
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.008 sec
+Running com.andrebreves.tuple.Tuple9Test
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.007 sec
+Running com.andrebreves.tuple.Tuple2Test
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.009 sec
+Running com.andrebreves.tuple.Tuple7Test
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.007 sec
+Running com.andrebreves.tuple.Tuple0Test
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.01 sec
+Running com.andrebreves.tuple.Tuple12Test
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.006 sec
+Running com.andrebreves.tuple.TupleTest
+Tests run: 136, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.016 sec
+
+Results :
+
+Tests run: 793, Failures: 0, Errors: 0, Skipped: 59
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.6:report (report) @ java-tuple ---
+[INFO] Loading execution data file /home/lukas/workspace/master-benchmark/projects/java-tuple/target/jacoco.exec
+[INFO] Analyzed bundle 'com.andrebreves:java-tuple' with 17 classes
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ java-tuple ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/java-tuple/target/java-tuple-1.2.1.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (make-assembly) @ java-tuple ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/java-tuple/target/java-tuple-1.2.1-fat-tests.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources) > generate-sources @ java-tuple >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.6:prepare-agent (default) @ java-tuple ---
+[INFO] argLine set to -javaagent:/home/lukas/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/home/lukas/workspace/master-benchmark/projects/java-tuple/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (compile-tuple-generator) @ java-tuple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/lukas/workspace/master-benchmark/projects/java-tuple/target/tuple-generator
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (generate-tuple-code) @ java-tuple ---
+Tuple.java      - generating src/main/java/com/andrebreves/tuple/Tuple.java
+Tuple0.java     - generating src/main/java/com/andrebreves/tuple/Tuple0.java
+Tuple1.java     - generating src/main/java/com/andrebreves/tuple/Tuple1.java
+Tuple2.java     - generating src/main/java/com/andrebreves/tuple/Tuple2.java
+Tuple3.java     - generating src/main/java/com/andrebreves/tuple/Tuple3.java
+Tuple4.java     - generating src/main/java/com/andrebreves/tuple/Tuple4.java
+Tuple5.java     - generating src/main/java/com/andrebreves/tuple/Tuple5.java
+Tuple6.java     - generating src/main/java/com/andrebreves/tuple/Tuple6.java
+Tuple7.java     - generating src/main/java/com/andrebreves/tuple/Tuple7.java
+Tuple8.java     - generating src/main/java/com/andrebreves/tuple/Tuple8.java
+Tuple9.java     - generating src/main/java/com/andrebreves/tuple/Tuple9.java
+Tuple10.java    - generating src/main/java/com/andrebreves/tuple/Tuple10.java
+Tuple11.java    - generating src/main/java/com/andrebreves/tuple/Tuple11.java
+Tuple12.java    - generating src/main/java/com/andrebreves/tuple/Tuple12.java
+Tuple13.java    - generating src/main/java/com/andrebreves/tuple/Tuple13.java
+Tuple14.java    - generating src/main/java/com/andrebreves/tuple/Tuple14.java
+Tuple15.java    - generating src/main/java/com/andrebreves/tuple/Tuple15.java
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources) < generate-sources @ java-tuple <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources) @ java-tuple ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/java-tuple/target/java-tuple-1.2.1-sources.jar
+[INFO] 
+[INFO] --- maven-javadoc-plugin:3.2.0:jar (attach-javadocs) @ java-tuple ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.267 s
+[INFO] Finished at: 2021-11-06T16:52:51+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-javadoc-plugin:3.2.0:jar (attach-javadocs) on project java-tuple: MavenReportException: Error while generating Javadoc: Unable to find javadoc command: The environment variable JAVA_HOME is not correctly set. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ---------------------< com.andrebreves:java-tuple >---------------------
+[INFO] Building com.andrebreves:java-tuple 1.2.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (default-cli) @ java-tuple ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] Cannot include project artifact: com.andrebreves:java-tuple:jar:1.2.1; it doesn't have an associated file or directory.
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/java-tuple/target/java-tuple-1.2.1-fat-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.085 s
+[INFO] Finished at: 2021-11-06T16:52:52+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ---------------------< com.andrebreves:java-tuple >---------------------
+[INFO] Building com.andrebreves:java-tuple 1.2.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.7.2:mutationCoverage (default-cli) @ java-tuple ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum constructor filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : TestNG plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /home/lukas/workspace/master-benchmark/projects/java-tuple/target/classes
+[INFO] Defaulting target classes to match packages in build directory
+[INFO] Defaulting target tests to match packages in test build directory
+16:52:54 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+16:52:55 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+16:52:55 PIT >> INFO : Created  17 mutation test units in pre scan
+16:52:55 PIT >> INFO : Sending 33 test classes to minion
+16:52:55 PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/16:52:56 PIT >> INFO : Calculated coverage in 1 seconds.
+16:52:57 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+16:52:57 PIT >> INFO : Created  17 mutation test units
+/-\|/-\|/-\|/-\|/16:53:21 PIT >> INFO : Completed in 27 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 195 Killed 179 (92%)
+> KILLED 179 SURVIVED 15 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 31 Killed 31 (100%)
+> KILLED 31 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 528 Killed 514 (97%)
+> KILLED 514 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 14 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 18 Killed 17 (94%)
+> KILLED 17 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 348 Killed 347 (100%)
+> KILLED 347 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : 1 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 24 seconds
+--------------------------------------------------------------------------------
+> Total  : 26 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 1077/1093 (99%)
+>> Generated 1120 mutations Killed 1088 (97%)
+>> Mutations with no coverage 17. Test strength 99%
+>> Ran 1498 tests (1.34 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  28.266 s
+[INFO] Finished at: 2021-11-06T16:53:21+01:00
+[INFO] ------------------------------------------------------------------------
+HEAD ist jetzt bei 5c8c7c3 [java-tuple] Modify pom to stop automatic test source generation
