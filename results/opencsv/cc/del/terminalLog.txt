@@ -1,0 +1,1748 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+[32m08.11.2021 - 18:03:32.036 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Current absolute path is: /home/lukas/workspace/master-benchmark/projects/opencsv
+[m[32m08.11.2021 - 18:03:32.039 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to jar: /home/lukas/workspace/master-benchmark/projects/opencsv/target/opencsv-3.9-cygri-fat-tests.jar
+[m[32m08.11.2021 - 18:03:32.039 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to slicer: /home/lukas/workspace/master-jsr/slicer/Slicer4J
+[m[32m08.11.2021 - 18:03:32.039 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out dir: /home/lukas/workspace/master-benchmark/results/opencsv/cc/del
+[m[32m08.11.2021 - 18:03:32.039 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out logging jar: /home/lukas/workspace/master-jsr/slicer/DynamicSlicingCore/DynamicSlicingLoggingClasses/DynamicSlicingLogger.jar
+[m[m08.11.2021 - 18:03:32.170 [INFO ] ParsingStrategy.parseTestSuiteFromFilePath() - Parsing test suite from File Path
+[m[m08.11.2021 - 18:03:32.170 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path ./src/test/java
+[m[m08.11.2021 - 18:03:32.689 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.711 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m08.11.2021 - 18:03:32.713 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanFilterTest::testColumnNameTranslationWithLineFiltering has 5 assertions: 
+ assertEquals("Parsing resulted in the wrong number of items.", 2, list.size()); ref {list} [83-83],
+ assertEquals("The first item has the wrong name.", "calc age", list.get(0).getName()); ref {list} [84-84],
+ assertEquals("The first item has the wrong state.", "beta", list.get(0).getState()); ref {list} [85-85],
+ assertEquals("The second item has the wrong name.", "wash dishes", list.get(1).getName()); ref {list} [86-86],
+ assertEquals("The second item has the wrong state.", "alpha", list.get(1).getState()); ref {list} [87-87]
+[m[m08.11.2021 - 18:03:32.713 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.714 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.714 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.714 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.714 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.722 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m08.11.2021 - 18:03:32.722 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.IterableCSVToBeanBuilderTest::defaultBuilderMissingInformation has 1 assertions: 
+ assertEquals(IterableCSVToBeanBuilder.NO_MAPPING_STRATEGY_DEFINED, message); ref {IterableCSVToBeanBuilder.NO_MAPPING_STRATEGY_DEFINED, IterableCSVToBeanBuilder, message} [52-52]
+[m[m08.11.2021 - 18:03:32.722 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.IterableCSVToBeanBuilderTest::willThrowExceptionIfMissingReader has 1 assertions: 
+ assertEquals(IterableCSVToBeanBuilder.NO_READER_DEFINED, message); ref {IterableCSVToBeanBuilder.NO_READER_DEFINED, IterableCSVToBeanBuilder, message} [63-63]
+[m[m08.11.2021 - 18:03:32.723 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.IterableCSVToBeanBuilderTest::builderWithoutFilter has 7 assertions: 
+ assertEquals(mockMappingStrategy, builder.getStrategy()); ref {mockMappingStrategy, builder} [71-71],
+ assertEquals(mockReader, builder.getCsvReader()); ref {mockReader, builder} [72-72],
+ assertNull(builder.getFilter()); ref {builder} [73-73],
+ assertNotNull(bean); ref {bean} [75-75],
+ assertEquals(mockMappingStrategy, bean.getStrategy()); ref {mockMappingStrategy, bean} [76-76],
+ assertEquals(mockReader, bean.getCSVReader()); ref {mockReader, bean} [77-77],
+ assertNull(bean.getFilter()); ref {bean} [78-78]
+[m[m08.11.2021 - 18:03:32.723 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.IterableCSVToBeanBuilderTest::builderWithFilter has 7 assertions: 
+ assertEquals(mockMappingStrategy, builder.getStrategy()); ref {mockMappingStrategy, builder} [87-87],
+ assertEquals(mockReader, builder.getCsvReader()); ref {mockReader, builder} [88-88],
+ assertEquals(mockFilter, builder.getFilter()); ref {builder, mockFilter} [89-89],
+ assertNotNull(bean); ref {bean} [91-91],
+ assertEquals(mockMappingStrategy, bean.getStrategy()); ref {mockMappingStrategy, bean} [92-92],
+ assertEquals(mockReader, bean.getCSVReader()); ref {mockReader, bean} [93-93],
+ assertEquals(mockFilter, bean.getFilter()); ref {mockFilter, bean} [94-94]
+[m[m08.11.2021 - 18:03:32.725 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m08.11.2021 - 18:03:32.725 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanDoubleTest::parseBeanWithNoAnnotations has 3 assertions: 
+ assertEquals(2, beanList.size()); ref {beanList} [50-50],
+ assertTrue(beanList.contains(createMockBean("kyle", "abc123456", DOUBLE_NUMBER))); ref {DOUBLE_NUMBER, beanList} [51-51],
+ assertTrue(beanList.contains(createMockBean("jimmy", "def098765", DOUBLE_NUMBER))); ref {DOUBLE_NUMBER, beanList} [52-52]
+[m[m08.11.2021 - 18:03:32.726 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.726 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.771 [INFO ] ParsingStrategy.parseTestSuite() - Found 54 test cases
+[m[m08.11.2021 - 18:03:32.771 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testParseLine has 5 assertions: 
+ assertEquals(4, nextItem.length); ref {nextItem.length, nextItem} [25-25],
+ assertEquals("This", nextItem[0]); ref {nextItem} [26-26],
+ assertEquals(" is", nextItem[1]); ref {nextItem} [27-27],
+ assertEquals(" a", nextItem[2]); ref {nextItem} [28-28],
+ assertEquals(" test.", nextItem[3]); ref {nextItem} [29-29]
+[m[m08.11.2021 - 18:03:32.772 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseSimpleString has 5 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [36-36],
+ assertEquals("a", nextLine[0]); ref {nextLine} [37-37],
+ assertEquals("b", nextLine[1]); ref {nextLine} [38-38],
+ assertEquals("c", nextLine[2]); ref {nextLine} [39-39],
+ assertFalse(csvParser.isPending()); ref {csvParser} [40-40]
+[m[m08.11.2021 - 18:03:32.772 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseSimpleQuotedString has 5 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [47-47],
+ assertEquals("a", nextLine[0]); ref {nextLine} [48-48],
+ assertEquals("b", nextLine[1]); ref {nextLine} [49-49],
+ assertEquals("c", nextLine[2]); ref {nextLine} [50-50],
+ assertFalse(csvParser.isPending()); ref {csvParser} [51-51]
+[m[m08.11.2021 - 18:03:32.772 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseSimpleQuotedStringWithSpaces has 5 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [60-60],
+ assertEquals("a", nextLine[0]); ref {nextLine} [61-61],
+ assertEquals("b", nextLine[1]); ref {nextLine} [62-62],
+ assertEquals("c", nextLine[2]); ref {nextLine} [63-63],
+ assertFalse(parser.isPending()); ref {parser} [64-64]
+[m[m08.11.2021 - 18:03:32.773 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testParsedLineWithInternalQuota has 2 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [76-76],
+ assertEquals("123\"4\"567", nextLine[1]); ref {nextLine} [78-78]
+[m[m08.11.2021 - 18:03:32.773 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseQuotedStringWithCommas has 4 assertions: 
+ assertEquals("a", nextLine[0]); ref {nextLine} [85-85],
+ assertEquals("b,b,b", nextLine[1]); ref {nextLine} [86-86],
+ assertEquals("c", nextLine[2]); ref {nextLine} [87-87],
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [88-88]
+[m[m08.11.2021 - 18:03:32.773 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseQuotedStringWithDefinedSeperator has 4 assertions: 
+ assertEquals("a", nextLine[0]); ref {nextLine} [96-96],
+ assertEquals("b:b:b", nextLine[1]); ref {nextLine} [97-97],
+ assertEquals("c", nextLine[2]); ref {nextLine} [98-98],
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [99-99]
+[m[m08.11.2021 - 18:03:32.774 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseQuotedStringWithDefinedSeperatorAndQuote has 4 assertions: 
+ assertEquals("a", nextLine[0]); ref {nextLine} [107-107],
+ assertEquals("b:b:b", nextLine[1]); ref {nextLine} [108-108],
+ assertEquals("c", nextLine[2]); ref {nextLine} [109-109],
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [110-110]
+[m[m08.11.2021 - 18:03:32.774 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseEmptyElements has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [116-116],
+ assertEquals("", nextLine[0]); ref {nextLine} [117-117],
+ assertEquals("", nextLine[1]); ref {nextLine} [118-118],
+ assertEquals("", nextLine[2]); ref {nextLine} [119-119]
+[m[m08.11.2021 - 18:03:32.774 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseMultiLinedQuoted has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [125-125],
+ assertEquals("a", nextLine[0]); ref {nextLine} [126-126],
+ assertEquals("PO Box 123,\nKippax,ACT. 2615.\nAustralia", nextLine[1]); ref {nextLine} [127-127],
+ assertEquals("d.\n", nextLine[2]); ref {nextLine} [128-128]
+[m[m08.11.2021 - 18:03:32.774 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseMultiLinedQuotedwithCarriageReturns has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [134-134],
+ assertEquals("a", nextLine[0]); ref {nextLine} [135-135],
+ assertEquals("PO Box 123,\r\nKippax,ACT. 2615.\r\nAustralia", nextLine[1]); ref {nextLine} [136-136],
+ assertEquals("d.\n", nextLine[2]); ref {nextLine} [137-137]
+[m[m08.11.2021 - 18:03:32.775 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testADoubleQuoteAsDataElement has 5 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [145-145],
+ assertEquals("a", nextLine[0]); ref {nextLine} [147-147],
+ assertEquals(1, nextLine[1].length()); ref {nextLine} [148-148],
+ assertEquals("\"", nextLine[1]); ref {nextLine} [149-149],
+ assertEquals("c", nextLine[2]); ref {nextLine} [150-150]
+[m[m08.11.2021 - 18:03:32.775 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testEscapedDoubleQuoteAsDataElement has 5 assertions: 
+ assertEquals(4, nextLine.length); ref {nextLine, nextLine.length} [159-159],
+ assertEquals("test", nextLine[0]); ref {nextLine} [161-161],
+ assertEquals("this,test,is,good", nextLine[1]); ref {nextLine} [162-162],
+ assertEquals("\"test\"", nextLine[2]); ref {nextLine} [163-163],
+ assertEquals("\"quote\"", nextLine[3]); ref {nextLine} [164-164]
+[m[m08.11.2021 - 18:03:32.775 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseQuotedQuoteCharacters has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [171-171],
+ assertEquals("Glen \"The Man\" Smith", nextLine[0]); ref {nextLine} [172-172],
+ assertEquals("Athlete", nextLine[1]); ref {nextLine} [173-173],
+ assertEquals("Developer\n", nextLine[2]); ref {nextLine} [174-174]
+[m[m08.11.2021 - 18:03:32.776 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseMultipleQuotes has 3 assertions: 
+ // check the tricky situation
+assertEquals("\"\"", nextLine[0]); ref {nextLine} [180-180],
+ // make sure we didn't ruin the next field..
+assertEquals("test\"\n", nextLine[1]); ref {nextLine} [181-181],
+ assertEquals(2, nextLine.length); ref {nextLine, nextLine.length} [182-182]
+[m[m08.11.2021 - 18:03:32.776 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseTrickyString has 5 assertions: 
+ assertEquals(4, nextLine.length); ref {nextLine, nextLine.length} [188-188],
+ assertEquals("a\nb", nextLine[0]); ref {nextLine} [189-189],
+ assertEquals("b", nextLine[1]); ref {nextLine} [190-190],
+ assertEquals("\nd", nextLine[2]); ref {nextLine} [191-191],
+ assertEquals("e\n", nextLine[3]); ref {nextLine} [192-192]
+[m[m08.11.2021 - 18:03:32.776 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testAMultiLineInsideQuotes has 4 assertions: 
+ assertEquals(2, nextLine.length); ref {nextLine, nextLine.length} [209-209],
+ assertEquals("Small test", nextLine[0]); ref {nextLine} [210-210],
+ assertEquals("This is a test across \ntwo lines.", nextLine[1]); ref {nextLine} [211-211],
+ assertFalse(csvParser.isPending()); ref {csvParser} [212-212]
+[m[m08.11.2021 - 18:03:32.777 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testStrictQuoteSimple has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [221-221],
+ assertEquals("a", nextLine[0]); ref {nextLine} [222-222],
+ assertEquals("b", nextLine[1]); ref {nextLine} [223-223],
+ assertEquals("c", nextLine[2]); ref {nextLine} [224-224]
+[m[m08.11.2021 - 18:03:32.777 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testNotStrictQuoteSimple has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [233-233],
+ assertEquals("a", nextLine[0]); ref {nextLine} [234-234],
+ assertEquals("b", nextLine[1]); ref {nextLine} [235-235],
+ assertEquals("c", nextLine[2]); ref {nextLine} [236-236]
+[m[m08.11.2021 - 18:03:32.777 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testStrictQuoteWithSpacesAndTabs has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [245-245],
+ assertEquals("a", nextLine[0]); ref {nextLine} [246-246],
+ assertEquals("b", nextLine[1]); ref {nextLine} [247-247],
+ assertEquals("c", nextLine[2]); ref {nextLine} [248-248]
+[m[m08.11.2021 - 18:03:32.777 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testNotStrictQuoteWithSpacesAndTabs has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [262-262],
+ assertEquals("a", nextLine[0]); ref {nextLine} [263-263],
+ assertEquals("b\"      \t       ", nextLine[1]); ref {nextLine} [264-264],
+ assertEquals("c\"   ", nextLine[2]); ref {nextLine} [265-265]
+[m[m08.11.2021 - 18:03:32.778 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testStrictQuoteWithGarbage has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [274-274],
+ assertEquals("", nextLine[0]); ref {nextLine} [275-275],
+ assertEquals(",\"", nextLine[1]); ref {nextLine} [276-276],
+ assertEquals("", nextLine[2]); ref {nextLine} [277-277]
+[m[m08.11.2021 - 18:03:32.778 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testCanIgnoreQuotations has 5 assertions: 
+ assertEquals(4, nextLine.length); ref {nextLine, nextLine.length} [291-291],
+ assertEquals("Bob", nextLine[0]); ref {nextLine} [292-292],
+ assertEquals("test", nextLine[1]); ref {nextLine} [293-293],
+ assertEquals("Beaumont", nextLine[2]); ref {nextLine} [294-294],
+ assertEquals("TX", nextLine[3]); ref {nextLine} [295-295]
+[m[m08.11.2021 - 18:03:32.778 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testFalseIgnoreQuotations has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.778 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testIssue3314579 has 9 assertions: 
+ assertEquals(8, nextLine.length); ref {nextLine, nextLine.length} [335-335],
+ assertEquals("RPO", nextLine[0]); ref {nextLine} [336-336],
+ assertEquals("2012", nextLine[1]); ref {nextLine} [337-337],
+ assertEquals("P", nextLine[2]); ref {nextLine} [338-338],
+ assertEquals(" ", nextLine[3]); ref {nextLine} [339-339],
+ assertEquals(" ", nextLine[4]); ref {nextLine} [340-340],
+ assertEquals(" ", nextLine[5]); ref {nextLine} [341-341],
+ assertEquals("SDX", nextLine[6]); ref {nextLine} [342-342],
+ assertEquals("ACCESSORY WHEEL, 16\", ALUMINUM, DESIGN 1", nextLine[7]); ref {nextLine} [343-343]
+[m[m08.11.2021 - 18:03:32.779 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testIssue2263439 has 6 assertions: 
+ assertEquals(11, nextLine.length); ref {nextLine, nextLine.length} [358-358],
+ assertEquals("865", nextLine[0]); ref {nextLine} [360-360],
+ assertEquals("0", nextLine[1]); ref {nextLine} [361-361],
+ assertEquals("AmeriKKKa's_Most_Wanted", nextLine[2]); ref {nextLine} [362-362],
+ assertEquals("", nextLine[3]); ref {nextLine} [363-363],
+ assertEquals("18448", nextLine[10]); ref {nextLine} [364-364]
+[m[m08.11.2021 - 18:03:32.779 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testIssue2859181 has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [379-379],
+ assertEquals("field1", nextLine[0]); ref {nextLine} [381-381],
+ assertEquals("=field2", nextLine[1]); ref {nextLine} [382-382],
+ assertEquals("\"field3\"", nextLine[2]); ref {nextLine} [383-383]
+[m[m08.11.2021 - 18:03:32.779 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testIssue2726363 has 7 assertions: 
+ assertEquals(6, nextLine.length); ref {nextLine, nextLine.length} [401-401],
+ assertEquals("804503689", nextLine[0]); ref {nextLine} [404-404],
+ assertEquals("London", nextLine[1]); ref {nextLine} [405-405],
+ assertEquals("\"London\"shop", nextLine[2]); ref {nextLine} [406-406],
+ assertEquals("address", nextLine[3]); ref {nextLine} [407-407],
+ assertEquals("116.453182", nextLine[4]); ref {nextLine} [408-408],
+ assertEquals("39.918884", nextLine[5]); ref {nextLine} [409-409]
+[m[m08.11.2021 - 18:03:32.780 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::anIOExceptionThrownifStringEndsInsideAQuotedString has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.780 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parseLineMultiAllowsQuotesAcrossMultipleLines has 6 assertions: 
+ assertEquals(1, nextLine.length); ref {nextLine, nextLine.length} [422-422],
+ assertEquals("This", nextLine[0]); ref {nextLine} [423-423],
+ assertTrue(csvParser.isPending()); ref {csvParser} [424-424],
+ assertEquals(1, nextLine.length); ref {nextLine, nextLine.length} [428-428],
+ assertEquals("is a \"good\" line\\ to parse\nbecause we are using parseLineMulti.", nextLine[0]); ref {nextLine} [429-429],
+ assertFalse(csvParser.isPending()); ref {csvParser} [430-430]
+[m[m08.11.2021 - 18:03:32.780 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::pendingIsClearedAfterCallToParseLine has 6 assertions: 
+ assertEquals(1, nextLine.length); ref {nextLine, nextLine.length} [437-437],
+ assertEquals("This", nextLine[0]); ref {nextLine} [438-438],
+ assertTrue(csvParser.isPending()); ref {csvParser} [439-439],
+ assertEquals(1, nextLine.length); ref {nextLine, nextLine.length} [443-443],
+ assertEquals("because we are using parseLineMulti.", nextLine[0]); ref {nextLine} [444-444],
+ assertFalse(csvParser.isPending()); ref {csvParser} [445-445]
+[m[m08.11.2021 - 18:03:32.781 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::returnPendingIfNullIsPassedIntoParseLineMulti has 6 assertions: 
+ assertEquals(1, nextLine.length); ref {nextLine, nextLine.length} [452-452],
+ assertEquals("This", nextLine[0]); ref {nextLine} [453-453],
+ assertTrue(csvParser.isPending()); ref {csvParser} [454-454],
+ assertEquals(1, nextLine.length); ref {nextLine, nextLine.length} [458-458],
+ assertEquals("is a \"good\" line\\ to parse\n", nextLine[0]); ref {nextLine} [459-459],
+ assertFalse(csvParser.isPending()); ref {csvParser} [460-460]
+[m[m08.11.2021 - 18:03:32.781 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::spacesAtEndOfQuotedStringDoNotCountIfStrictQuotesIsTrue has 3 assertions: 
+ assertEquals(2, nextLine.length); ref {nextLine, nextLine.length} [468-468],
+ assertEquals("Line with", nextLine[0]); ref {nextLine} [469-469],
+ assertEquals("spaces at end", nextLine[1]); ref {nextLine} [470-470]
+[m[m08.11.2021 - 18:03:32.781 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::returnNullWhenNullPassedIn has 1 assertions: 
+ assertNull(nextLine); ref {nextLine} [476-476]
+[m[m08.11.2021 - 18:03:32.781 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::validateEscapeStringBeforeRealTest has 2 assertions: 
+ assertNotNull(ESCAPE_TEST_STRING); ref {ESCAPE_TEST_STRING} [481-481],
+ assertEquals(9, ESCAPE_TEST_STRING.length()); ref {ESCAPE_TEST_STRING} [482-482]
+[m[m08.11.2021 - 18:03:32.781 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::whichCharactersAreEscapable has 10 assertions: 
+ assertTrue(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, true, 0)); ref {ESCAPE_TEST_STRING, csvParser} [487-487],
+ assertFalse(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, false, 0)); ref {ESCAPE_TEST_STRING, csvParser} [488-488],
+ // Second character is not escapable because there is a non quote or non slash after it.
+assertFalse(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, true, 1)); ref {ESCAPE_TEST_STRING, csvParser} [490-490],
+ assertFalse(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, false, 1)); ref {ESCAPE_TEST_STRING, csvParser} [491-491],
+ // Fourth character is not escapable because there is a non quote or non slash after it.
+assertFalse(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, true, 3)); ref {ESCAPE_TEST_STRING, csvParser} [493-493],
+ assertFalse(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, false, 3)); ref {ESCAPE_TEST_STRING, csvParser} [494-494],
+ assertTrue(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, true, 5)); ref {ESCAPE_TEST_STRING, csvParser} [496-496],
+ assertFalse(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, false, 5)); ref {ESCAPE_TEST_STRING, csvParser} [497-497],
+ assertFalse(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, true, lastChar)); ref {ESCAPE_TEST_STRING, lastChar, csvParser} [500-500],
+ assertFalse(csvParser.isNextCharacterEscapable(ESCAPE_TEST_STRING, false, lastChar)); ref {ESCAPE_TEST_STRING, lastChar, csvParser} [501-501]
+[m[m08.11.2021 - 18:03:32.782 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::whitespaceBeforeEscape has 3 assertions: 
+ assertEquals("this", nextItem[0]); ref {nextItem} [508-508],
+ assertEquals("is", nextItem[1]); ref {nextItem} [509-509],
+ assertEquals("a test", nextItem[2]); ref {nextItem} [510-510]
+[m[m08.11.2021 - 18:03:32.782 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testIssue2958242WithoutQuotes has 5 assertions: 
+ assertEquals(4, nextItem.length); ref {nextItem.length, nextItem} [517-517],
+ assertEquals("zo\"har\"at", nextItem[0]); ref {nextItem} [518-518],
+ assertEquals("10-04-1980", nextItem[1]); ref {nextItem} [519-519],
+ assertEquals("29", nextItem[2]); ref {nextItem} [520-520],
+ assertEquals("C:\\foo.txt", nextItem[3]); ref {nextItem} [521-521]
+[m[m08.11.2021 - 18:03:32.782 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::quoteAndEscapeCannotBeTheSame has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.782 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::quoteAndEscapeCanBeTheSameIfNull has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.783 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::separatorCharacterCannotBeNull has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.783 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::separatorAndEscapeCannotBeTheSame has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.783 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::separatorAndQuoteCannotBeTheSame has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.783 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::parserHandlesNullInString has 2 assertions: 
+ assertEquals(1, nextLine.length); ref {nextLine, nextLine.length} [553-553],
+ assertEquals("because we are using\0 parseLineMulti.", nextLine[0]); ref {nextLine} [554-554]
+[m[m08.11.2021 - 18:03:32.783 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::featureRequest60ByDefaultEmptyFieldsAreBlank has 6 assertions: 
+ assertEquals(5, item.length); ref {item.length, item} [568-568],
+ assertEquals("", item[0]); ref {item} [569-569],
+ assertEquals("", item[1]); ref {item} [570-570],
+ assertEquals("", item[2]); ref {item} [571-571],
+ assertEquals("", item[3]); ref {item} [572-572],
+ assertEquals("", item[4]); ref {item} [573-573]
+[m[m08.11.2021 - 18:03:32.784 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::featureRequest60TreatEmptyFieldsAsNull has 6 assertions: 
+ assertEquals(5, item.length); ref {item.length, item} [588-588],
+ assertNull(item[0]); ref {item} [589-589],
+ assertEquals(" ", item[1]); ref {item} [590-590],
+ assertNull(item[2]); ref {item} [591-591],
+ assertEquals("", item[3]); ref {item} [592-592],
+ assertNull(item[4]); ref {item} [593-593]
+[m[m08.11.2021 - 18:03:32.784 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::featureRequest60TreatEmptyDelimitedFieldsAsNull has 6 assertions: 
+ assertEquals(5, item.length); ref {item.length, item} [608-608],
+ assertEquals("", item[0]); ref {item} [609-609],
+ assertEquals(" ", item[1]); ref {item} [610-610],
+ assertEquals("", item[2]); ref {item} [611-611],
+ assertNull(item[3]); ref {item} [612-612],
+ assertEquals("", item[4]); ref {item} [613-613]
+[m[m08.11.2021 - 18:03:32.784 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::featureRequest60TreatEmptyFieldsDelimitedOrNotAsNull has 6 assertions: 
+ assertEquals(5, item.length); ref {item.length, item} [628-628],
+ assertNull(item[0]); ref {item} [629-629],
+ assertNull(item[1]); ref {item} [630-630],
+ assertNull(item[2]); ref {item} [631-631],
+ assertNull(item[3]); ref {item} [632-632],
+ assertNull(item[4]); ref {item} [633-633]
+[m[m08.11.2021 - 18:03:32.784 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testStrictQuotesEndsFieldAtQuote has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [644-644],
+ assertEquals("one", nextLine[0]); ref {nextLine} [646-646],
+ assertEquals("t", nextLine[1]); ref {nextLine} [647-647],
+ assertEquals("three", nextLine[2]); ref {nextLine} [648-648]
+[m[m08.11.2021 - 18:03:32.784 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testStrictQuotesEndsFieldAtQuoteWithEscapedQuoteInMiddle has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [658-658],
+ assertEquals("one", nextLine[0]); ref {nextLine} [660-660],
+ assertEquals("t\"w", nextLine[1]); ref {nextLine} [661-661],
+ assertEquals("three", nextLine[2]); ref {nextLine} [662-662]
+[m[m08.11.2021 - 18:03:32.785 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testNotStrictQuotesAllowsEmbeddedEscapedQuote has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [672-672],
+ assertEquals("one", nextLine[0]); ref {nextLine} [674-674],
+ assertEquals("t\"wo", nextLine[1]); ref {nextLine} [675-675],
+ assertEquals("three", nextLine[2]); ref {nextLine} [676-676]
+[m[m08.11.2021 - 18:03:32.785 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::testNotStrictQuotesAllowsEmbeddedQuote has 4 assertions: 
+ assertEquals(3, nextLine.length); ref {nextLine, nextLine.length} [686-686],
+ assertEquals("one", nextLine[0]); ref {nextLine} [688-688],
+ assertEquals("t\"wo", nextLine[1]); ref {nextLine} [689-689],
+ assertEquals("three", nextLine[2]); ref {nextLine} [690-690]
+[m[m08.11.2021 - 18:03:32.785 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::issue93ParsingEmptyDoubleQuoteField has 3 assertions: 
+ assertEquals(2, nextLine.length); ref {nextLine, nextLine.length} [700-700],
+ assertTrue(nextLine[0].isEmpty()); ref {nextLine} [702-702],
+ assertEquals("2", nextLine[1]); ref {nextLine} [703-703]
+[m[m08.11.2021 - 18:03:32.785 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserTest::tryAndParseExcelGeneratedString has 1 assertions: 
+ assertEquals("\\\"", nextLine[0]); ref {nextLine} [715-715]
+[m[m08.11.2021 - 18:03:32.786 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.786 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.791 [INFO ] ParsingStrategy.parseTestSuite() - Found 10 test cases
+[m[m08.11.2021 - 18:03:32.791 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::throwRuntimeExceptionWhenExceptionIsThrown has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.791 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::beanReturnsFalseOnEmptyList has 1 assertions: 
+ assertFalse(bean.write(strat, sw, new ArrayList<MockBean>())); ref {sw, bean, strat} [212-212]
+[m[m08.11.2021 - 18:03:32.791 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::beanReturnsFalseOnNull has 1 assertions: 
+ assertFalse(bean.write(strat, sw, null)); ref {sw, bean, strat} [224-224]
+[m[m08.11.2021 - 18:03:32.791 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::testWriteQuotes has 3 assertions: 
+ assertTrue(value); ref {value} [238-238],
+ assertNotNull(content); ref {content} [241-241],
+ assertEquals(TEST_STRING, content); ref {content, TEST_STRING} [242-242]
+[m[m08.11.2021 - 18:03:32.792 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::writeBeansOneAtATime has 3 assertions: 
+ assertTrue(value); ref {value} [259-259],
+ assertNotNull(content); ref {content} [263-263],
+ assertEquals(TEST_STRING, content); ref {content, TEST_STRING} [264-264]
+[m[m08.11.2021 - 18:03:32.792 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::writeSingleBeanMethodReturnsFalseIfNullPassedIn has 1 assertions: 
+ assertFalse(bean.write(strat, writer, null, false)); ref {writer, bean, strat} [277-277]
+[m[m08.11.2021 - 18:03:32.792 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::handleException has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.792 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::testWriteQuotesWithAnnotatedBean has 3 assertions: 
+ assertTrue(value); ref {value} [298-298],
+ assertNotNull(content); ref {content} [301-301],
+ assertEquals(TEST_STRING, content); ref {content, TEST_STRING} [302-302]
+[m[m08.11.2021 - 18:03:32.792 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::testWriteNulls has 3 assertions: 
+ assertTrue(value); ref {value} [316-316],
+ assertNotNull(content); ref {content} [319-319],
+ assertEquals(NULL_TEST_STRING, content); ref {NULL_TEST_STRING, content} [320-320]
+[m[m08.11.2021 - 18:03:32.792 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.BeanToCsvTest::testWriteNullsWithAnnotatedBean has 3 assertions: 
+ assertTrue(value); ref {value} [334-334],
+ assertNotNull(content); ref {content} [337-337],
+ assertEquals(NULL_TEST_STRING, content); ref {NULL_TEST_STRING, content} [338-338]
+[m[m08.11.2021 - 18:03:32.795 [INFO ] ParsingStrategy.parseTestSuite() - Found 7 test cases
+[m[m08.11.2021 - 18:03:32.795 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameMappingStrategyTest::getColumnIndexWithoutHeaderThrowsException has 1 assertions: 
+ assertNull(strat.getColumnIndex("some index name")); ref {strat} [56-56]
+[m[m08.11.2021 - 18:03:32.795 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameMappingStrategyTest::getColumnIndexAfterParse has 4 assertions: 
+ assertEquals(0, strat.getColumnIndex("name").intValue()); ref {strat} [62-62],
+ assertEquals(1, strat.getColumnIndex("orderNumber").intValue()); ref {strat} [63-63],
+ assertEquals(2, strat.getColumnIndex("num").intValue()); ref {strat} [64-64],
+ assertNull(strat.getColumnIndex("unknown column")); ref {strat} [65-65]
+[m[m08.11.2021 - 18:03:32.795 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameMappingStrategyTest::testParse has 5 assertions: 
+ assertNotNull(list); ref {list} [71-71],
+ assertTrue(list.size() == 2); ref {list} [72-72],
+ assertEquals("kyle", bean.getName()); ref {bean} [74-74],
+ assertEquals("abc123456", bean.getOrderNumber()); ref {bean} [75-75],
+ assertEquals(123, bean.getNum()); ref {bean} [76-76]
+[m[m08.11.2021 - 18:03:32.796 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameMappingStrategyTest::testQuotedString has 5 assertions: 
+ assertNotNull(list); ref {list} [82-82],
+ assertTrue(list.size() == 2); ref {list} [83-83],
+ assertEquals("kyle", bean.getName()); ref {bean} [85-85],
+ assertEquals("abc123456", bean.getOrderNumber()); ref {bean} [86-86],
+ assertEquals(123, bean.getNum()); ref {bean} [87-87]
+[m[m08.11.2021 - 18:03:32.796 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameMappingStrategyTest::testParseWithSpacesInHeader has 5 assertions: 
+ assertNotNull(list); ref {list} [93-93],
+ assertTrue(list.size() == 2); ref {list} [94-94],
+ assertEquals("kyle", bean.getName()); ref {bean} [96-96],
+ assertEquals("abc123456", bean.getOrderNumber()); ref {bean} [97-97],
+ assertEquals(123, bean.getNum()); ref {bean} [98-98]
+[m[m08.11.2021 - 18:03:32.796 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameMappingStrategyTest::verifyColumnNames has 5 assertions: 
+ assertNull(strat.getColumnName(0)); ref {strat} [105-105],
+ assertNull(strat.findDescriptor(0)); ref {strat} [106-106],
+ assertEquals("name", strat.getColumnName(0)); ref {strat} [113-113],
+ assertEquals(strat.findDescriptor(0), strat.findDescriptor("name")); ref {strat} [114-114],
+ assertEquals("name", strat.findDescriptor("name").getName()); ref {strat} [115-115]
+[m[m08.11.2021 - 18:03:32.796 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameMappingStrategyTest::throwsIllegalStateExceptionIfTypeNotSet has 1 assertions: 
+ assertEquals(IllegalStateException.class, e.getCause().getClass()); ref {e} [128-128]
+[m[m08.11.2021 - 18:03:32.797 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m08.11.2021 - 18:03:32.797 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.TestUtilitiesTest::displayStringArray has 1 assertions: 
+ assertEquals("Header\nNumber of elements:\t3\nelement 0:\ta\nelement 1:\tb\nelement 2:\tc\n", TestUtilities.displayStringArray("Header", stringArray)); ref {TestUtilities, stringArray} [17-18]
+[m[m08.11.2021 - 18:03:32.805 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m08.11.2021 - 18:03:32.805 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.StatefulBeanToCsvTest::writeGoodData has 10 assertions: 
+ assertEquals(GOOD_DATA_1 + "\n", writer.toString()); ref {GOOD_DATA_1, writer} [143-143],
+ assertEquals(GOOD_DATA_1 + "\n" + GOOD_DATA_2 + "\n", writer.toString()); ref {GOOD_DATA_1, GOOD_DATA_2, writer} [152-152],
+ assertEquals(GOOD_DATA_1 + "\n" + GOOD_DATA_2 + "\n" + GOOD_DATA_1 + "\n", writer.toString()); ref {GOOD_DATA_1, GOOD_DATA_2, writer} [160-160],
+ assertEquals(GOOD_DATA_OPTIONALS_NULL + EXTRA_STRING_FOR_WRITING + "\n", writer.toString()); ref {GOOD_DATA_OPTIONALS_NULL, writer, EXTRA_STRING_FOR_WRITING} [170-170],
+ assertEquals(HEADER_NAME_FULL + "\n" + GOOD_DATA_NAME_1 + "\n", writer.toString()); ref {writer, HEADER_NAME_FULL, GOOD_DATA_NAME_1} [181-181],
+ assertEquals(BindByNameUnknownType.TOSTRING + "\n", writer.toString()); ref {BindByNameUnknownType, BindByNameUnknownType.TOSTRING, writer} [187-187],
+ assertEquals("TEST\n" + BindByNameUnknownType.TOSTRING + "\n", writer.toString()); ref {BindByNameUnknownType, BindByNameUnknownType.TOSTRING, writer} [196-196],
+ assertEquals("c;i;s\nA;1;String\n", writer.toString()); ref {writer} [205-205],
+ assertEquals(HEADER_NAME_FULL_DERIVED + "\n" + GOOD_DATA_NAME_DERIVED_1 + "\n", writer.toString()); ref {HEADER_NAME_FULL_DERIVED, GOOD_DATA_NAME_DERIVED_1, writer} [216-216],
+ assertEquals(HEADER_NAME_FULL + "\n" + GOOD_DATA_NAME_DERIVED_SUB_1 + "\n", writer.toString()); ref {GOOD_DATA_NAME_DERIVED_SUB_1, writer, HEADER_NAME_FULL} [227-227]
+[m[m08.11.2021 - 18:03:32.805 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.StatefulBeanToCsvTest::writeBadData has 27 assertions: 
+ assertTrue("An exception should have been thrown!", false); ref {} [253-253],
+ assertEquals(getterMissing, e.getBean()); ref {e, getterMissing} [256-256],
+ assertEquals("test", e.getField().getName()); ref {e} [257-257],
+ assertTrue("An exception should have been thrown!", false); ref {} [266-266],
+ assertEquals(getterPrivate, e.getBean()); ref {e, getterPrivate} [269-269],
+ assertEquals("test", e.getField().getName()); ref {e} [270-270],
+ assertNotNull(csves); ref {csves} [281-281],
+ assertEquals(1, csves.size()); ref {csves} [282-282],
+ assertTrue(csve instanceof CsvRequiredFieldEmptyException); ref {csve} [284-284],
+ assertEquals(1L, rfe.getLineNumber()); ref {rfe} [286-286],
+ assertEquals(AnnotatedMockBeanFull.class, rfe.getBeanClass()); ref {rfe} [287-287],
+ assertEquals(beans.left.getClass().getDeclaredField("byteWrappedSetLocale"), rfe.getDestinationField()); ref {rfe, beans.left, beans} [288-289],
+ assertNotNull(csves); ref {csves} [294-294],
+ assertEquals(1, csves.size()); ref {csves} [295-295],
+ assertTrue(csve instanceof CsvRequiredFieldEmptyException); ref {csve} [297-297],
+ assertEquals(2L, rfe.getLineNumber()); ref {rfe} [299-299],
+ assertEquals(AnnotatedMockBeanFull.class, rfe.getBeanClass()); ref {rfe} [300-300],
+ assertEquals(beans.right.getClass().getDeclaredField("dateDefaultLocale"), rfe.getDestinationField()); ref {rfe, beans, beans.right} [301-302],
+ assertTrue(csves.isEmpty()); ref {csves} [306-306],
+ assertEquals(2, csves.size()); ref {csves} [312-312],
+ assertNotNull(csves); ref {csves} [321-321],
+ assertEquals(1, csves.size()); ref {csves} [322-322],
+ assertTrue(csve instanceof CsvDataTypeMismatchException); ref {csve} [324-324],
+ assertEquals(1L, dtm.getLineNumber()); ref {dtm} [326-326],
+ assertTrue(dtm.getSourceObject() instanceof BindCustomToWrongDataType); ref {dtm} [327-327],
+ assertEquals(String.class, dtm.getDestinationClass()); ref {dtm} [328-328],
+ assertEquals("TEST\n" + BindByNameUnknownTypeLegacy.TOSTRING + "\n", writer.toString()); ref {BindByNameUnknownTypeLegacy, writer, BindByNameUnknownTypeLegacy.TOSTRING} [334-334]
+[m[m08.11.2021 - 18:03:32.806 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.StatefulBeanToCsvTest::writeGoodDataCustom has 2 assertions: 
+ assertEquals(GOOD_DATA_CUSTOM_1 + "\n", writer.toString()); ref {GOOD_DATA_CUSTOM_1, writer} [358-358],
+ assertEquals(HEADER_NAME_FULL_CUSTOM + "\n" + GOOD_DATA_NAME_CUSTOM_2 + "\n" + GOOD_DATA_NAME_CUSTOM_1 + "\n" + GOOD_DATA_NAME_CUSTOM_2 + "\n", writer.toString()); ref {HEADER_NAME_FULL_CUSTOM, writer, GOOD_DATA_NAME_CUSTOM_2, GOOD_DATA_NAME_CUSTOM_1} [369-371]
+[m[m08.11.2021 - 18:03:32.806 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.StatefulBeanToCsvTest::writeBadDataCustom has 4 assertions: 
+ assertTrue("Exception should have been thrown!", false); ref {} [393-393],
+ assertEquals(1, e.getLineNumber()); ref {e} [396-396],
+ assertEquals(AnnotatedMockBeanCustom.class, e.getBeanClass()); ref {e} [397-397],
+ assertEquals("boolWrapped", e.getDestinationField().getName()); ref {e} [398-398]
+[m[m08.11.2021 - 18:03:32.806 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m08.11.2021 - 18:03:32.807 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVIteratorTest::readerExceptionCausesRunTimeException has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.807 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVIteratorTest::removethrowsUnsupportedOperationException has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.807 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVIteratorTest::initialReadReturnsStrings has 1 assertions: 
+ assertArrayEquals(STRINGS, iterator.next()); ref {STRINGS, iterator} [38-38]
+[m[m08.11.2021 - 18:03:32.807 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVIteratorTest::hasNextWorks has 2 assertions: 
+ // initial read from constructor
+assertTrue(iterator.hasNext()); ref {iterator} [44-44],
+ assertFalse(iterator.hasNext()); ref {iterator} [46-46]
+[m[m08.11.2021 - 18:03:32.807 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.807 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.807 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.810 [INFO ] ParsingStrategy.parseTestSuite() - Found 10 test cases
+[m[m08.11.2021 - 18:03:32.810 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::testDefaultBuilder has 6 assertions: 
+ assertSame(reader, builder.getReader()); ref {reader, builder} [25-25],
+ assertNull(builder.getCsvParser()); ref {builder} [26-26],
+ assertEquals(CSVReader.DEFAULT_SKIP_LINES, builder.getSkipLines()); ref {CSVReader, builder, CSVReader.DEFAULT_SKIP_LINES} [27-29],
+ assertEquals(CSVReader.DEFAULT_SKIP_LINES, csvReader.getSkipLines()); ref {CSVReader, CSVReader.DEFAULT_SKIP_LINES, csvReader} [32-34],
+ assertEquals(CSVReader.DEFAULT_KEEP_CR, csvReader.keepCarriageReturns()); ref {CSVReader, CSVReader.DEFAULT_KEEP_CR, csvReader} [35-35],
+ assertEquals(CSVReader.DEFAULT_VERIFY_READER, csvReader.verifyReader()); ref {CSVReader.DEFAULT_VERIFY_READER, CSVReader, csvReader} [36-36]
+[m[m08.11.2021 - 18:03:32.810 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::testNullReader has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.810 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::testWithCSVParserNull has 1 assertions: 
+ assertNull(builder.getCsvParser()); ref {builder} [48-48]
+[m[m08.11.2021 - 18:03:32.810 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::testWithCSVParser has 2 assertions: 
+ assertSame(csvParser, builder.getCsvParser()); ref {csvParser, builder} [57-57],
+ assertSame(csvParser, actual.getParser()); ref {actual, csvParser} [60-60]
+[m[m08.11.2021 - 18:03:32.810 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::testWithSkipLines has 2 assertions: 
+ assertEquals(99, builder.getSkipLines()); ref {builder} [67-67],
+ assertSame(99, actual.getSkipLines()); ref {actual} [70-70]
+[m[m08.11.2021 - 18:03:32.810 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::testWithKeepCR has 2 assertions: 
+ assertTrue(builder.keepCarriageReturn()); ref {builder} [76-76],
+ assertTrue(actual.keepCarriageReturns()); ref {actual} [79-79]
+[m[m08.11.2021 - 18:03:32.811 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::testWithSkipLinesZero has 2 assertions: 
+ assertEquals(0, builder.getSkipLines()); ref {builder} [86-86],
+ assertSame(0, actual.getSkipLines()); ref {actual} [89-89]
+[m[m08.11.2021 - 18:03:32.811 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::testWithSkipLinesNegative has 2 assertions: 
+ assertEquals(0, builder.getSkipLines()); ref {builder} [96-96],
+ assertSame(0, actual.getSkipLines()); ref {actual} [99-99]
+[m[m08.11.2021 - 18:03:32.811 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::testWithVerifyReader has 1 assertions: 
+ assertFalse(reader.verifyReader()); ref {reader} [105-105]
+[m[m08.11.2021 - 18:03:32.811 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVReaderBuilderTest::builderWithNullFieldIndicator has 1 assertions: 
+ assertEquals(CSVReaderNullFieldIndicator.EMPTY_SEPARATORS, reader.getParser().nullFieldIndicator()); ref {CSVReaderNullFieldIndicator, reader, CSVReaderNullFieldIndicator.EMPTY_SEPARATORS} [112-112]
+[m[m08.11.2021 - 18:03:32.811 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.812 [INFO ] ParsingStrategy.parseTestSuite() - Found 6 test cases
+[m[m08.11.2021 - 18:03:32.812 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.stream.reader.LineReaderTest::lineReaderWillKeepCR has 1 assertions: 
+ assertEquals(WITH_CR, keepCRReader.readLine()); ref {WITH_CR, keepCRReader} [26-26]
+[m[m08.11.2021 - 18:03:32.812 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.stream.reader.LineReaderTest::lineReaderWillRemoveCR has 1 assertions: 
+ assertEquals(NO_CR, noCRReader.readLine()); ref {noCRReader, NO_CR} [32-32]
+[m[m08.11.2021 - 18:03:32.812 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.stream.reader.LineReaderTest::lineReaderKeepingCRWillHandleStringWithNoLinefeed has 1 assertions: 
+ assertEquals(NO_CR, reader.readLine()); ref {reader, NO_CR} [38-38]
+[m[m08.11.2021 - 18:03:32.813 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.stream.reader.LineReaderTest::lineReaderNoCRWillHandleStringWithNoLinefeed has 1 assertions: 
+ assertEquals(NO_CR, reader.readLine()); ref {reader, NO_CR} [44-44]
+[m[m08.11.2021 - 18:03:32.813 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.stream.reader.LineReaderTest::lineReaderKeepingCRWillHandleEmptyString has 1 assertions: 
+ assertEquals(NULL_STRING, reader.readLine()); ref {reader, NULL_STRING} [50-50]
+[m[m08.11.2021 - 18:03:32.813 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.stream.reader.LineReaderTest::lineReaderNoCRWillHandleEmptyString has 1 assertions: 
+ assertEquals(NULL_STRING, reader.readLine()); ref {reader, NULL_STRING} [56-56]
+[m[m08.11.2021 - 18:03:32.820 [INFO ] ParsingStrategy.parseTestSuite() - Found 16 test cases
+[m[m08.11.2021 - 18:03:32.820 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testGoodDataByName has 2 assertions: 
+ assertEquals(7, bean.getIntInSubclass()); ref {bean} [85-85],
+ assertEquals(8, bean.getIntInSubclass()); ref {bean} [87-87]
+[m[m08.11.2021 - 18:03:32.821 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testGoodDataByPosition has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.821 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testGoodDataCustomByName has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.821 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testGoodDataCustomByPosition has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.821 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testCase7 has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.821 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testCase51 has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.821 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testCase11 has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.821 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testCase55 has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.821 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testCase21 has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.821 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testCase63 has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.822 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testBadDataByName has 45 assertions: 
+ assertTrue(e.getCause() instanceof CsvRequiredFieldEmptyException); ref {e} [391-391],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [393-393],
+ assertEquals(AnnotatedMockBeanFull.class, csve.getBeanClass()); ref {csve} [394-394],
+ assertEquals("dateDefaultLocale", csve.getDestinationField().getName()); ref {csve} [395-395],
+ assertTrue(e.getCause() instanceof CsvDataTypeMismatchException); ref {e} [404-404],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [406-406],
+ assertEquals(GregorianCalendar.class, csve.getDestinationClass()); ref {csve} [407-407],
+ assertEquals(UNPARSABLE, (String) csve.getSourceObject()); ref {csve, UNPARSABLE} [408-408],
+ assertTrue(csve.getCause() instanceof ParseException); ref {csve} [409-409],
+ assertTrue(e.getCause() instanceof CsvDataTypeMismatchException); ref {e} [419-419],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [421-421],
+ assertEquals(Date.class, csve.getDestinationClass()); ref {csve} [422-422],
+ assertEquals(UNPARSABLE, (String) csve.getSourceObject()); ref {csve, UNPARSABLE} [423-423],
+ assertTrue(csve.getCause() instanceof ParseException); ref {csve} [424-424],
+ assertTrue(e.getCause() instanceof CsvDataTypeMismatchException); ref {e} [433-433],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [435-435],
+ assertEquals(Date.class, csve.getDestinationClass()); ref {csve} [436-436],
+ assertEquals(UNPARSABLE, (String) csve.getSourceObject()); ref {csve, UNPARSABLE} [437-437],
+ assertTrue(csve.getCause() instanceof ParseException); ref {csve} [438-438],
+ assertTrue(e.getCause() instanceof CsvDataTypeMismatchException); ref {e} [447-447],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [449-449],
+ assertEquals(GregorianCalendar.class, csve.getDestinationClass()); ref {csve} [450-450],
+ assertEquals(UNPARSABLE, (String) csve.getSourceObject()); ref {csve, UNPARSABLE} [451-451],
+ assertTrue(csve.getCause() instanceof ParseException); ref {csve} [452-452],
+ assertTrue(e.getCause() instanceof CsvDataTypeMismatchException); ref {e} [462-462],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [464-464],
+ assertEquals(Date.class, csve.getDestinationClass()); ref {csve} [465-465],
+ assertEquals(UNPARSABLE, (String) csve.getSourceObject()); ref {csve, UNPARSABLE} [466-466],
+ assertTrue(csve.getCause() instanceof ParseException); ref {csve} [467-467],
+ assertTrue(e.getCause() instanceof CsvDataTypeMismatchException); ref {e} [476-476],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [478-478],
+ assertEquals(Date.class, csve.getDestinationClass()); ref {csve} [479-479],
+ assertEquals(UNPARSABLE, (String) csve.getSourceObject()); ref {csve, UNPARSABLE} [480-480],
+ assertTrue(csve.getCause() instanceof ParseException); ref {csve} [481-481],
+ assertTrue(e.getCause() instanceof CsvDataTypeMismatchException); ref {e} [492-492],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [494-494],
+ assertTrue(csve.getSourceObject() instanceof String); ref {csve} [495-495],
+ assertEquals("19780115T063209", (String) csve.getSourceObject()); ref {csve} [496-496],
+ assertEquals(String.class, csve.getDestinationClass()); ref {csve} [497-497],
+ assertEquals(1, exlist.size()); ref {exlist} [504-504],
+ assertTrue(exlist.get(0) instanceof CsvDataTypeMismatchException); ref {exlist} [505-505],
+ assertEquals(1, innere.getLineNumber()); ref {innere} [507-507],
+ assertTrue(innere.getSourceObject() instanceof String); ref {innere} [508-508],
+ assertEquals("19780115T063209", (String) innere.getSourceObject()); ref {innere} [509-509],
+ assertEquals(String.class, innere.getDestinationClass()); ref {innere} [510-510]
+[m[m08.11.2021 - 18:03:32.822 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testCase16 has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.822 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testCase60 has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.822 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testBadDataCustomByName has 14 assertions: 
+ assertTrue(e.getCause() instanceof CsvDataTypeMismatchException); ref {e} [563-563],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [565-565],
+ assertTrue(csve.getSourceObject() instanceof String); ref {csve} [566-566],
+ assertEquals("invalidstring", (String) csve.getSourceObject()); ref {csve} [567-567],
+ assertEquals(Boolean.class, csve.getDestinationClass()); ref {csve} [568-568],
+ assertTrue(csve.getCause() instanceof ConversionException); ref {csve} [569-569],
+ assertTrue(e.getCause() instanceof CsvRequiredFieldEmptyException); ref {e} [578-578],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [580-580],
+ assertEquals(AnnotatedMockBeanCustom.class, csve.getBeanClass()); ref {csve} [581-581],
+ assertEquals("boolWrapped", csve.getDestinationField().getName()); ref {csve} [582-582],
+ assertTrue(e.getCause() instanceof CsvDataTypeMismatchException); ref {e} [591-591],
+ assertEquals(1, csve.getLineNumber()); ref {csve} [593-593],
+ assertEquals("invaliddatum", csve.getSourceObject()); ref {csve} [594-594],
+ assertEquals(Boolean.class, csve.getDestinationClass()); ref {csve} [595-595]
+[m[m08.11.2021 - 18:03:32.823 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::testBadConverter has 2 assertions: 
+ assertEquals(BadIntConverter.class, e.getConverterClass()); ref {e} [608-608],
+ assertEquals(BadIntConverter.class, e.getConverterClass()); ref {e} [617-617]
+[m[m08.11.2021 - 18:03:32.823 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.AnnotationTest::codeCoverageExceptions has 13 assertions: 
+ assertEquals(TestCase80.class, e1.getBeanClass()); ref {e1} [626-626],
+ assertEquals(f, e1.getDestinationField()); ref {f, e1} [627-627],
+ assertNull(e2.getDestinationClass()); ref {e2} [631-631],
+ assertNull(e2.getSourceObject()); ref {e2} [632-632],
+ assertEquals(err, e2.getMessage()); ref {err, e2} [634-634],
+ assertNull(e3.getConverterClass()); ref {e3} [637-637],
+ assertEquals(c, e3.getConverterClass()); ref {c, e3} [639-639],
+ assertEquals(err, e3.getMessage()); ref {err, e3} [641-641],
+ assertNull(e4.getSourceObject()); ref {e4} [644-644],
+ assertEquals(f, e4.getSourceObject()); ref {f, e4} [646-646],
+ assertEquals(err, e4.getMessage()); ref {err, e4} [648-648],
+ assertEquals(f, e4.getSourceObject()); ref {f, e4} [650-650],
+ assertEquals(err, e4.getMessage()); ref {err, e4} [651-651]
+[m[m08.11.2021 - 18:03:32.823 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.823 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.823 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.824 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.825 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m08.11.2021 - 18:03:32.826 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.IterableCSVToBeanTest::nextLine has 7 assertions: 
+ assertEquals("kyle", mockBean.getName()); ref {mockBean} [55-55],
+ assertEquals("abc123456", mockBean.getOrderNumber()); ref {mockBean} [56-56],
+ assertEquals(123, mockBean.getNum()); ref {mockBean} [57-57],
+ assertEquals("jimmy", mockBean.getName()); ref {mockBean} [60-60],
+ assertEquals("def098765", mockBean.getOrderNumber()); ref {mockBean} [61-61],
+ assertEquals(456, mockBean.getNum()); ref {mockBean} [62-62],
+ assertNull(mockBean); ref {mockBean} [65-65]
+[m[m08.11.2021 - 18:03:32.826 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.IterableCSVToBeanTest::nextLineWithFilter has 4 assertions: 
+ assertEquals("jimmy", mockBean.getName()); ref {mockBean} [76-76],
+ assertEquals("def098765", mockBean.getOrderNumber()); ref {mockBean} [77-77],
+ assertEquals(456, mockBean.getNum()); ref {mockBean} [78-78],
+ assertNull(mockBean); ref {mockBean} [81-81]
+[m[m08.11.2021 - 18:03:32.826 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.IterableCSVToBeanTest::readWithIterator has 13 assertions: 
+ // not reached
+assertTrue(false); ref {} [90-90],
+ // not reached
+assertTrue(false); ref {} [97-97],
+ assertTrue(iterator.hasNext()); ref {iterator} [102-102],
+ assertEquals("kyle", mockBean.getName()); ref {mockBean} [104-104],
+ assertEquals("abc123456", mockBean.getOrderNumber()); ref {mockBean} [105-105],
+ assertEquals(123, mockBean.getNum()); ref {mockBean} [106-106],
+ assertTrue(iterator.hasNext()); ref {iterator} [108-108],
+ assertEquals("jimmy", mockBean.getName()); ref {mockBean} [110-110],
+ assertEquals("def098765", mockBean.getOrderNumber()); ref {mockBean} [111-111],
+ assertEquals(456, mockBean.getNum()); ref {mockBean} [112-112],
+ assertFalse(iterator.hasNext()); ref {iterator} [114-114],
+ assertFalse(true); ref {} [117-117],
+ assertFalse(iterator.hasNext()); ref {iterator} [120-120]
+[m[m08.11.2021 - 18:03:32.826 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.IterableCSVToBeanTest::readWithIteratorAndFilter has 7 assertions: 
+ assertTrue(iterator.hasNext()); ref {iterator} [132-132],
+ assertEquals("jimmy", mockBean.getName()); ref {mockBean} [134-134],
+ assertEquals("def098765", mockBean.getOrderNumber()); ref {mockBean} [135-135],
+ assertEquals(456, mockBean.getNum()); ref {mockBean} [136-136],
+ assertFalse(iterator.hasNext()); ref {iterator} [138-138],
+ assertFalse(true); ref {} [141-141],
+ assertFalse(iterator.hasNext()); ref {iterator} [144-144]
+[m[m08.11.2021 - 18:03:32.827 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m08.11.2021 - 18:03:32.827 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.OpencsvTest::testWriteRead has 3 assertions: 
+ assertTrue(line.length == data[row].length); ref {data[row].length, data, line.length, line, row} [56-56],
+ assertTrue(line[col].equals("")); ref {col, line} [60-60],
+ assertTrue(line[col].equals(data[row][col])); ref {col, data, line, row} [62-62]
+[m[m08.11.2021 - 18:03:32.828 [INFO ] ParsingStrategy.parseTestSuite() - Found 3 test cases
+[m[m08.11.2021 - 18:03:32.829 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameTranslateMappingStrategyTest::testParse has 5 assertions: 
+ assertNotNull(list); ref {list} [46-46],
+ assertTrue(list.size() == 2); ref {list} [47-47],
+ assertEquals("kyle", bean.getName()); ref {bean} [49-49],
+ assertEquals("123456", bean.getOrderNumber()); ref {bean} [50-50],
+ assertEquals("emp123", bean.getId()); ref {bean} [51-51]
+[m[m08.11.2021 - 18:03:32.829 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameTranslateMappingStrategyTest::getColumnNameReturnsNullIfColumnNumberIsTooLarge has 4 assertions: 
+ assertEquals("name", strat.getColumnName(0)); ref {strat} [70-70],
+ assertEquals("orderNumber", strat.getColumnName(1)); ref {strat} [71-71],
+ assertEquals("id", strat.getColumnName(2)); ref {strat} [72-72],
+ assertNull(strat.getColumnName(3)); ref {strat} [73-73]
+[m[m08.11.2021 - 18:03:32.829 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.HeaderColumnNameTranslateMappingStrategyTest::columnNameMappingShouldBeCaseInsensitive has 5 assertions: 
+ assertNotNull(strat.getColumnMapping()); ref {strat} [88-88],
+ assertEquals("name", strat.getColumnName(0)); ref {strat} [93-93],
+ assertEquals("orderNumber", strat.getColumnName(1)); ref {strat} [94-94],
+ assertEquals("id", strat.getColumnName(2)); ref {strat} [95-95],
+ assertNull(strat.getColumnName(3)); ref {strat} [96-96]
+[m[m08.11.2021 - 18:03:32.829 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.839 [INFO ] ParsingStrategy.parseTestSuite() - Found 32 test cases
+[m[m08.11.2021 - 18:03:32.840 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::correctlyParseNullString has 1 assertions: 
+ assertEquals(0, sw.toString().length()); ref {sw} [66-66]
+[m[m08.11.2021 - 18:03:32.840 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::correctlyParserNullObject has 1 assertions: 
+ assertEquals(0, sw.toString().length()); ref {sw} [74-74]
+[m[m08.11.2021 - 18:03:32.840 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testParseLine has 5 assertions: 
+ assertEquals("'a','b','c'\n", output); ref {output} [88-88],
+ assertEquals("'a','b,b,b','c'\n", output); ref {output} [93-93],
+ assertEquals("\n", output); ref {output} [98-98],
+ assertEquals("'This is a \n multiline entry','so is \n this'\n", output); ref {output} [103-103],
+ assertEquals("'This is a \"\" multiline entry','so is \n this'\n", output); ref {output} [109-109]
+[m[m08.11.2021 - 18:03:32.840 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testSpecialCharacters has 1 assertions: 
+ assertEquals("'This is a \r multiline entry','so is \n this'\n", output); ref {output} [117-117]
+[m[m08.11.2021 - 18:03:32.840 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::parseLineWithBothEscapeAndQuoteChar has 1 assertions: 
+ assertEquals("'This is a \"'multiline\"' entry','so is \n this'\n", output); ref {output} [124-124]
+[m[m08.11.2021 - 18:03:32.840 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testParseLineWithNoEscapeChar has 4 assertions: 
+ assertEquals("'a','b','c'\n", output); ref {output} [138-138],
+ assertEquals("'a','b,b,b','c'\n", output); ref {output} [143-143],
+ assertEquals("\n", output); ref {output} [148-148],
+ assertEquals("'This is a \n multiline entry','so is \n this'\n", output); ref {output} [153-153]
+[m[m08.11.2021 - 18:03:32.840 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::parseLineWithNoEscapeCharAndQuotes has 1 assertions: 
+ assertEquals("'This is a \" 'multiline' entry','so is \n this'\n", output); ref {output} [159-159]
+[m[m08.11.2021 - 18:03:32.841 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testWriteAllAsList has 5 assertions: 
+ assertFalse(csvw.checkError()); ref {csvw} [184-184],
+ assertEquals(3, lines.length); ref {lines.length, lines} [188-188],
+ assertEquals("\"Name\",\"Phone\",\"Email\"", lines[0]); ref {lines} [189-189],
+ assertEquals("\"Glen\",\"1234\",\"glen@abcd.com\"", lines[1]); ref {lines} [190-190],
+ assertEquals("\"John\",\"5678\",\"john@efgh.com\"", lines[2]); ref {lines} [191-191]
+[m[m08.11.2021 - 18:03:32.841 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testWriteAllAsIterable has 5 assertions: 
+ assertFalse(csvw.checkError()); ref {csvw} [225-225],
+ assertEquals(3, lines.length); ref {lines.length, lines} [230-230],
+ assertEquals("\"Name\",\"Phone\",\"Email\"", lines[0]); ref {lines} [231-231],
+ assertEquals("\"Glen\",\"1234\",\"glen@abcd.com\"", lines[1]); ref {lines} [232-232],
+ assertEquals("\"John\",\"5678\",\"john@efgh.com\"", lines[2]); ref {lines} [233-233]
+[m[m08.11.2021 - 18:03:32.841 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testWriteAllObjects has 2 assertions: 
+ assertEquals(3, lines.length); ref {lines.length, lines} [259-259],
+ assertEquals("1234", values[1]); ref {values} [262-262]
+[m[m08.11.2021 - 18:03:32.841 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testNoQuoteChars has 1 assertions: 
+ assertEquals("Foo,Bar,Baz\n", result); ref {result} [279-279]
+[m[m08.11.2021 - 18:03:32.841 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testNoQuoteCharsAndNoEscapeChars has 1 assertions: 
+ assertEquals("Foo,Bar,Baz\n", result); ref {result} [296-296]
+[m[m08.11.2021 - 18:03:32.841 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testIntelligentQuotes has 1 assertions: 
+ assertEquals("1,Foo,\"With,Separator\",\"Line\nBreak\",\"Hello \"\"Foo Bar\"\" World\",Bar\n", result); ref {result} [310-310]
+[m[m08.11.2021 - 18:03:32.841 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testNullValues has 1 assertions: 
+ assertEquals("\"Foo\",,\"Bar\",\"baz\"\n", result); ref {result} [328-328]
+[m[m08.11.2021 - 18:03:32.841 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testStreamFlushing has 2 assertions: 
+ assertFalse(tester.exists()); ref {tester} [337-337],
+ assertTrue(tester.exists()); ref {tester} [350-350]
+[m[m08.11.2021 - 18:03:32.842 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::flushWillThrowIOException has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.842 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::flushQuietlyWillNotThrowException has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.842 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testAlternateEscapeChar has 1 assertions: 
+ assertEquals("\"Foo\",\"bar''s\"\n", sw.toString()); ref {sw} [380-380]
+[m[m08.11.2021 - 18:03:32.842 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::embeddedQuoteInString has 1 assertions: 
+ assertEquals("\"Foo\",\"I choose a \\\"hero\\\" for this adventure\"\n", sw.toString()); ref {sw} [389-389]
+[m[m08.11.2021 - 18:03:32.842 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testNoQuotingNoEscaping has 1 assertions: 
+ assertEquals("\"Foo\",\"Bar\"\n", sw.toString()); ref {sw} [398-398]
+[m[m08.11.2021 - 18:03:32.842 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testNestedQuotes has 2 assertions: 
+ // assert that the writer was also closed.
+fwriter.flush(); ref {fwriter} [430-430],
+ assertTrue(oracle.equals(fileContents.toString())); ref {oracle, fileContents} [455-455]
+[m[m08.11.2021 - 18:03:32.842 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testAlternateLineFeeds has 1 assertions: 
+ assertTrue(result.endsWith("\r")); ref {result} [466-466]
+[m[m08.11.2021 - 18:03:32.842 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testResultSetWithHeaders has 4 assertions: 
+ assertFalse(csvw.checkError()); ref {csvw} [480-480],
+ assertNotNull(result); ref {result} [483-483],
+ assertEquals("\"Foo\",\"Bar\",\"baz\"\n\"v1\",\"v2\",\"v3\"\n", result); ref {result} [484-484],
+ assertEquals(2, linesWritten); ref {linesWritten} [485-485]
+[m[m08.11.2021 - 18:03:32.842 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testMultiLineResultSetWithHeaders has 4 assertions: 
+ assertFalse(csvw.checkError()); ref {csvw} [500-500],
+ assertNotNull(result); ref {result} [503-503],
+ assertEquals("\"Foo\",\"Bar\",\"baz\"\n\"v1\",\"v2\",\"v3\"\n\"v1\",\"v2\",\"v3\"\n\"v1\",\"v2\",\"v3\"\n", result); ref {result} [504-504],
+ assertEquals(4, linesWritten); ref {linesWritten} [505-505]
+[m[m08.11.2021 - 18:03:32.843 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testResultSetWithoutHeaders has 4 assertions: 
+ assertFalse(csvw.checkError()); ref {csvw} [520-520],
+ assertNotNull(result); ref {result} [523-523],
+ assertEquals("\"v1\",\"v2\",\"v3\"\n", result); ref {result} [524-524],
+ assertEquals(1, linesWritten); ref {linesWritten} [525-525]
+[m[m08.11.2021 - 18:03:32.843 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testMultiLineResultSetWithoutHeaders has 4 assertions: 
+ assertFalse(csvw.checkError()); ref {csvw} [541-541],
+ assertNotNull(result); ref {result} [544-544],
+ assertEquals("\"v1\",\"v2\",\"v3\"\n\"v1\",\"v2\",\"v3\"\n\"v1\",\"v2\",\"v3\"\n", result); ref {result} [545-545],
+ assertEquals(3, linesWritten); ref {linesWritten} [546-546]
+[m[m08.11.2021 - 18:03:32.843 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testResultSetTrim has 4 assertions: 
+ assertFalse(csvw.checkError()); ref {csvw} [561-561],
+ assertNotNull(result); ref {result} [564-564],
+ assertEquals("\"Foo\",\"Bar\",\"baz\"\n\"v1\",\"v2\",\"v3\"\n", result); ref {result} [565-565],
+ assertEquals(2, linesWritten); ref {linesWritten} [566-566]
+[m[m08.11.2021 - 18:03:32.843 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::needToSetBothQuoteAndEscapeCharIfYouWantThemToBeTheSame has 4 assertions: 
+ assertFalse(csvw.checkError()); ref {csvw} [581-581],
+ assertNotNull(result); ref {result} [584-584],
+ assertEquals("'Foo','Bar','baz'\n'v1','v2''v2a','v3'\n", result); ref {result} [585-585],
+ assertEquals(2, linesWritten); ref {linesWritten} [586-586]
+[m[m08.11.2021 - 18:03:32.843 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::issue123SeparatorEscapedWhenQuoteIsNoQuoteChar has 2 assertions: 
+ assertNotNull(result); ref {result} [602-602],
+ assertEquals("Foo,Bar,baz\nv1,v2" + CSVWriter.DEFAULT_ESCAPE_CHARACTER + CSVWriter.DEFAULT_ESCAPE_CHARACTER + "v2a,v3\n", result); ref {CSVWriter.DEFAULT_ESCAPE_CHARACTER, result, CSVWriter} [603-603]
+[m[m08.11.2021 - 18:03:32.843 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::issue123SeparatorEscapedWhenQuoteIsNoQuoteCharSpecifingNoneDefaultEscapeChar has 2 assertions: 
+ assertNotNull(result); ref {result} [619-619],
+ assertEquals("Foo,Bar,baz\nv1,v2" + escapeCharacter + escapeCharacter + "v2a" + escapeCharacter + CSVWriter.DEFAULT_SEPARATOR + "v2b,v3\n", result); ref {result, CSVWriter.DEFAULT_SEPARATOR, CSVWriter, escapeCharacter} [620-620]
+[m[m08.11.2021 - 18:03:32.843 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::testIOException has 1 assertions: 
+ assertTrue(csvWriter.checkError()); ref {csvWriter} [633-633]
+[m[m08.11.2021 - 18:03:32.843 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVWriterTest::checkErrorReturnsTrueWhenPassedInPrintWriter has 1 assertions: 
+ assertTrue(csvWriter.checkError()); ref {csvWriter} [649-649]
+[m[m08.11.2021 - 18:03:32.847 [INFO ] ParsingStrategy.parseTestSuite() - Found 20 test cases
+[m[m08.11.2021 - 18:03:32.848 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::throwRuntimeExceptionWhenExceptionIsThrown has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.848 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::throwRuntimeExceptionLineWhenExceptionIsThrown has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.848 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::parseBeanWithNoAnnotations has 3 assertions: 
+ assertEquals(2, beanList.size()); ref {beanList} [163-163],
+ assertTrue(beanList.contains(createMockBean("kyle", "abc123456", 123))); ref {beanList} [164-164],
+ assertTrue(beanList.contains(createMockBean("jimmy", "def098765", 456))); ref {beanList} [165-165]
+[m[m08.11.2021 - 18:03:32.848 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::parseBeanWithAnnotations has 4 assertions: 
+ assertEquals(2, beanList.size()); ref {beanList} [183-183],
+ assertTrue(expectedNames.contains(bean.getName())); ref {expectedNames, bean} [189-189],
+ assertTrue(expectedOrderNumbers.contains(bean.getOrderNumber())); ref {expectedOrderNumbers, bean} [190-190],
+ assertTrue(expectedNums.contains(bean.getNum())); ref {expectedNums, bean} [191-191]
+[m[m08.11.2021 - 18:03:32.848 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::parseBeanWithSomeAnnotations has 4 assertions: 
+ assertEquals(2, beanList.size()); ref {beanList} [202-202],
+ assertTrue(expectedNames.contains(bean.getName())); ref {expectedNames, bean} [207-207],
+ assertTrue(expectedNums.contains(bean.getNum())); ref {expectedNums, bean} [208-208],
+ assertNull(bean.getOrderNumber()); ref {bean} [209-209]
+[m[m08.11.2021 - 18:03:32.848 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::parseAnnotatedBeanWithAllValidDataTypes has 10 assertions: 
+ assertEquals(4, beanList.size()); ref {beanList} [221-221],
+ assertTrue(bean.getFamilyId() == 922337203685477580L); ref {bean} [223-223],
+ assertTrue(bean.getFamilyName().equals("Jones")); ref {bean} [224-224],
+ assertTrue(bean.getFamilySize() == 5); ref {bean} [225-225],
+ assertTrue(bean.getAverageAge() == 18.77293748162537D); ref {bean} [226-226],
+ assertTrue(bean.getAverageIncome() == 32000.729F); ref {bean} [227-227],
+ assertTrue(bean.getNumberOfPets() == 1); ref {bean} [228-228],
+ assertTrue(bean.getNumberOfBedrooms() == 4); ref {bean} [229-229],
+ assertTrue(bean.getZipcodePrefix() == 'Z'); ref {bean} [230-230],
+ assertTrue(bean.isHasBeenContacted()); ref {bean} [231-231]
+[m[m08.11.2021 - 18:03:32.848 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::parseAnnotatedBeanWithPrivateField has 3 assertions: 
+ assertEquals(1, beanList.size()); ref {beanList} [241-241],
+ assertTrue("firstValue".equals(bean.getPrivateField1())); ref {bean} [244-244],
+ assertTrue("secondValue".equals(bean.getPrivateField2())); ref {bean} [245-245]
+[m[m08.11.2021 - 18:03:32.848 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::parseAnnotatedBeanWithFieldsOfAllAccessModifierTypes has 5 assertions: 
+ assertEquals(1, beanList.size()); ref {beanList} [255-255],
+ assertTrue("firstValue".equals(bean.getPublicField())); ref {bean} [258-258],
+ assertTrue("secondValue".equals(bean.getPrivateField())); ref {bean} [259-259],
+ assertTrue("thirdValue".equals(bean.getProtectedField())); ref {bean} [260-260],
+ assertTrue("fourthValue".equals(bean.getPackagePrivateField())); ref {bean} [261-261]
+[m[m08.11.2021 - 18:03:32.849 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::bug133ShouldNotThrowNullPointerExceptionWhenProcessingEmptyWithNoAnnotations has 1 assertions: 
+ assertEquals(2, beanList.size()); ref {beanList} [282-282]
+[m[m08.11.2021 - 18:03:32.849 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::throwRuntimeExceptionWhenUnsupportedDataTypeUsedInAnnotatedBean has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.849 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::throwRuntimeExceptionWhenRequiredFieldNotProvidedInAnnotatedBean has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.849 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::throwIllegalStateWhenParseWithoutArgumentsIsCalled has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.849 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::throwIllegalStateWhenOnlyReaderIsSpecifiedToParseWithoutArguments has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.849 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::throwIllegalStateWhenOnlyMapperIsSpecifiedToParseWithoutArguments has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.849 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::throwIllegalStateWhenReaderNotProvidedInBuilder has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.849 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::throwIllegalStateWhenTypeAndMapperNotProvidedInBuilder has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.849 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::testMinimumBuilder has 1 assertions: 
+ assertEquals(2, result.size()); ref {result} [343-343]
+[m[m08.11.2021 - 18:03:32.850 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::testMaximumBuilder has 6 assertions: 
+ // Three lines, one filtered, one throws an exception
+assertEquals(1, result.size()); ref {result} [386-386],
+ assertEquals(1, csvtb.getCapturedExceptions().size()); ref {csvtb} [387-387],
+ assertEquals("\ttest string of everything!", bean.getStringClass()); ref {bean} [389-389],
+ assertTrue(bean.getBoolWrapped()); ref {bean} [390-390],
+ assertFalse(bean.isBoolPrimitive()); ref {bean} [391-391],
+ assertTrue(bean.getByteWrappedDefaultLocale() == 1); ref {bean} [392-392]
+[m[m08.11.2021 - 18:03:32.850 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::testColumnMappingStrategyWithBuilder has 1 assertions: 
+ assertEquals(2, result.size()); ref {result} [404-404]
+[m[m08.11.2021 - 18:03:32.850 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.CsvToBeanTest::testMappingWithoutAnnotationsWithBuilder has 1 assertions: 
+ assertEquals(2, result.size()); ref {result} [414-414]
+[m[m08.11.2021 - 18:03:32.850 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.850 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.851 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.851 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.851 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.859 [INFO ] ParsingStrategy.parseTestSuite() - Found 23 test cases
+[m[m08.11.2021 - 18:03:32.859 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::canPrintColumnNames has 1 assertions: 
+ assertArrayEquals(expectedNames, columnNames); ref {expectedNames, columnNames} [49-49]
+[m[m08.11.2021 - 18:03:32.859 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getObjectFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [65-65]
+[m[m08.11.2021 - 18:03:32.859 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getBitFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [82-82]
+[m[m08.11.2021 - 18:03:32.859 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getBooleanFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [98-98]
+[m[m08.11.2021 - 18:03:32.859 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getBigIntFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [114-114]
+[m[m08.11.2021 - 18:03:32.859 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getBigDecimalFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [131-131]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::issue121ConvertingNaNForDoubleOrFloat has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [147-147]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::issue121ConvertingPositiveInfinityForDoubleOrFloat has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [163-163]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::issue121ConvertingNegativeInfinityForDoubleOrFloat has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [180-180]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getIntegerFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [196-196]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getCharFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [213-213]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getCharHandlesNulls has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [230-230]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getUnsupportedFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [247-247]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getDateFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [268-268]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getDateFromResultSetUsingCustomFormat has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [290-290]
+[m[m08.11.2021 - 18:03:32.860 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::setDateFormat has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [313-313]
+[m[m08.11.2021 - 18:03:32.861 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getTimeFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [334-334]
+[m[m08.11.2021 - 18:03:32.861 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getTimestampFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [354-354]
+[m[m08.11.2021 - 18:03:32.861 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getTimestampFromResultSetWithCustomFormat has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [375-375]
+[m[m08.11.2021 - 18:03:32.861 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::setDateTimeFormat has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [397-397]
+[m[m08.11.2021 - 18:03:32.861 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getClobFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [415-415]
+[m[m08.11.2021 - 18:03:32.861 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getEmptyClobFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [433-433]
+[m[m08.11.2021 - 18:03:32.861 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetHelperServiceTest::getLargeClobFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [451-451]
+[m[m08.11.2021 - 18:03:32.863 [INFO ] ParsingStrategy.parseTestSuite() - Found 10 test cases
+[m[m08.11.2021 - 18:03:32.863 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::canParseUnicode has 4 assertions: 
+ assertEquals(2, items.length); ref {items.length, items} [30-30],
+ assertEquals(FIRST_STRING, items[0]); ref {FIRST_STRING, items} [31-31],
+ assertEquals(SECOND_STRING, items[1]); ref {items, SECOND_STRING} [32-32],
+ assertArrayEquals(UNICODE_ARRAY, items); ref {UNICODE_ARRAY, items} [33-33]
+[m[m08.11.2021 - 18:03:32.863 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::readerTest has 1 assertions: 
+ assertEquals(FIRST_STRING, testString); ref {testString, FIRST_STRING} [40-40]
+[m[m08.11.2021 - 18:03:32.864 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::writerTest has 1 assertions: 
+ assertEquals(FIRST_STRING, sw.toString()); ref {sw, FIRST_STRING} [47-47]
+[m[m08.11.2021 - 18:03:32.864 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::runUniCodeThroughCSVReader has 4 assertions: 
+ assertEquals(2, items.length); ref {items.length, items} [54-54],
+ assertEquals(FIRST_STRING, items[0]); ref {FIRST_STRING, items} [55-55],
+ assertEquals(SECOND_STRING, items[1]); ref {items, SECOND_STRING} [56-56],
+ assertArrayEquals(UNICODE_ARRAY, items); ref {UNICODE_ARRAY, items} [57-57]
+[m[m08.11.2021 - 18:03:32.864 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::runUniCodeThroughCSVWriter has 1 assertions: 
+ assertEquals(COMPOUND_STRING_WITH_QUOTES.trim(), sw.toString().trim()); ref {sw, COMPOUND_STRING_WITH_QUOTES} [65-65]
+[m[m08.11.2021 - 18:03:32.864 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::runASCIIThroughCSVWriter has 1 assertions: 
+ assertEquals(ASCII_STRING_WITH_QUOTES.trim(), sw.toString().trim()); ref {ASCII_STRING_WITH_QUOTES, sw} [73-73]
+[m[m08.11.2021 - 18:03:32.864 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::writeThenReadAscii has 2 assertions: 
+ assertEquals(2, items.length); ref {items.length, items} [84-84],
+ assertArrayEquals(ASCII_ARRAY, items); ref {ASCII_ARRAY, items} [85-85]
+[m[m08.11.2021 - 18:03:32.864 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::writeThenReadTwiceAscii has 5 assertions: 
+ assertEquals(2, lines.size()); ref {lines} [97-97],
+ assertEquals(2, items.length); ref {items.length, items} [100-100],
+ assertArrayEquals(ASCII_ARRAY, items); ref {ASCII_ARRAY, items} [101-101],
+ assertEquals(2, items.length); ref {items.length, items} [105-105],
+ assertArrayEquals(ASCII_ARRAY, items); ref {ASCII_ARRAY, items} [106-106]
+[m[m08.11.2021 - 18:03:32.864 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::writeThenReadTwiceUnicode has 5 assertions: 
+ assertEquals(2, lines.size()); ref {lines} [118-118],
+ assertEquals(2, items.length); ref {items.length, items} [121-121],
+ assertArrayEquals(UNICODE_ARRAY, items); ref {UNICODE_ARRAY, items} [122-122],
+ assertEquals(2, items.length); ref {items.length, items} [126-126],
+ assertArrayEquals(UNICODE_ARRAY, items); ref {UNICODE_ARRAY, items} [127-127]
+[m[m08.11.2021 - 18:03:32.864 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.UniCodeTest::writeThenReadTwiceMixedUnicode has 5 assertions: 
+ assertEquals(2, lines.size()); ref {lines} [139-139],
+ assertEquals(4, items.length); ref {items.length, items} [142-142],
+ assertArrayEquals(MIXED_ARRAY, items); ref {MIXED_ARRAY, items} [143-143],
+ assertEquals(4, items.length); ref {items.length, items} [147-147],
+ assertArrayEquals(MIXED_ARRAY, items); ref {MIXED_ARRAY, items} [148-148]
+[m[m08.11.2021 - 18:03:32.865 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.865 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.866 [INFO ] ParsingStrategy.parseTestSuite() - Found 7 test cases
+[m[m08.11.2021 - 18:03:32.866 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserBuilderTest::testDefaultBuilder has 14 assertions: 
+ assertEquals(ICSVParser.DEFAULT_SEPARATOR, builder.getSeparator()); ref {ICSVParser.DEFAULT_SEPARATOR, builder, ICSVParser} [20-22],
+ assertEquals(ICSVParser.DEFAULT_QUOTE_CHARACTER, builder.getQuoteChar()); ref {ICSVParser.DEFAULT_QUOTE_CHARACTER, builder, ICSVParser} [23-25],
+ assertEquals(ICSVParser.DEFAULT_ESCAPE_CHARACTER, builder.getEscapeChar()); ref {builder, ICSVParser.DEFAULT_ESCAPE_CHARACTER, ICSVParser} [26-28],
+ assertEquals(ICSVParser.DEFAULT_STRICT_QUOTES, builder.isStrictQuotes()); ref {builder, ICSVParser.DEFAULT_STRICT_QUOTES, ICSVParser} [29-31],
+ assertEquals(ICSVParser.DEFAULT_IGNORE_LEADING_WHITESPACE, builder.isIgnoreLeadingWhiteSpace()); ref {builder, ICSVParser.DEFAULT_IGNORE_LEADING_WHITESPACE, ICSVParser} [32-34],
+ assertEquals(ICSVParser.DEFAULT_IGNORE_QUOTATIONS, builder.isIgnoreQuotations()); ref {builder, ICSVParser.DEFAULT_IGNORE_QUOTATIONS, ICSVParser} [35-37],
+ assertEquals(CSVReaderNullFieldIndicator.NEITHER, builder.nullFieldIndicator()); ref {CSVReaderNullFieldIndicator, CSVReaderNullFieldIndicator.NEITHER, builder} [38-38],
+ assertEquals(ICSVParser.DEFAULT_SEPARATOR, parser.getSeparator()); ref {ICSVParser.DEFAULT_SEPARATOR, parser, ICSVParser} [41-43],
+ assertEquals(ICSVParser.DEFAULT_QUOTE_CHARACTER, parser.getQuotechar()); ref {ICSVParser.DEFAULT_QUOTE_CHARACTER, parser, ICSVParser} [44-46],
+ assertEquals(ICSVParser.DEFAULT_ESCAPE_CHARACTER, parser.getEscape()); ref {parser, ICSVParser.DEFAULT_ESCAPE_CHARACTER, ICSVParser} [47-49],
+ assertEquals(ICSVParser.DEFAULT_STRICT_QUOTES, parser.isStrictQuotes()); ref {parser, ICSVParser.DEFAULT_STRICT_QUOTES, ICSVParser} [50-52],
+ assertEquals(ICSVParser.DEFAULT_IGNORE_LEADING_WHITESPACE, parser.isIgnoreLeadingWhiteSpace()); ref {parser, ICSVParser.DEFAULT_IGNORE_LEADING_WHITESPACE, ICSVParser} [53-55],
+ assertEquals(ICSVParser.DEFAULT_IGNORE_QUOTATIONS, parser.isIgnoreQuotations()); ref {parser, ICSVParser.DEFAULT_IGNORE_QUOTATIONS, ICSVParser} [56-58],
+ assertEquals(CSVReaderNullFieldIndicator.NEITHER, parser.nullFieldIndicator()); ref {parser, CSVReaderNullFieldIndicator, CSVReaderNullFieldIndicator.NEITHER} [59-59]
+[m[m08.11.2021 - 18:03:32.866 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserBuilderTest::testWithSeparator has 2 assertions: 
+ assertEquals(expected, builder.getSeparator()); ref {expected, builder} [66-66],
+ assertEquals(expected, builder.build().getSeparator()); ref {expected, builder} [67-67]
+[m[m08.11.2021 - 18:03:32.867 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserBuilderTest::testWithQuoteChar has 2 assertions: 
+ assertEquals(expected, builder.getQuoteChar()); ref {expected, builder} [74-74],
+ assertEquals(expected, builder.build().getQuotechar()); ref {expected, builder} [75-75]
+[m[m08.11.2021 - 18:03:32.867 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserBuilderTest::testWithEscapeChar has 2 assertions: 
+ assertEquals(expected, builder.getEscapeChar()); ref {expected, builder} [82-82],
+ assertEquals(expected, builder.build().getEscape()); ref {expected, builder} [83-83]
+[m[m08.11.2021 - 18:03:32.867 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserBuilderTest::testWithStrictQuotes has 2 assertions: 
+ assertEquals(expected, builder.isStrictQuotes()); ref {expected, builder} [90-90],
+ assertEquals(expected, builder.build().isStrictQuotes()); ref {expected, builder} [91-91]
+[m[m08.11.2021 - 18:03:32.867 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserBuilderTest::testWithIgnoreLeadingWhiteSpace has 2 assertions: 
+ assertEquals(expected, builder.isIgnoreLeadingWhiteSpace()); ref {expected, builder} [98-98],
+ assertEquals(expected, builder.build().isIgnoreLeadingWhiteSpace()); ref {expected, builder} [99-99]
+[m[m08.11.2021 - 18:03:32.867 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.CSVParserBuilderTest::testWithIgnoreQuotations has 2 assertions: 
+ assertEquals(expected, builder.isIgnoreQuotations()); ref {expected, builder} [106-106],
+ assertEquals(expected, builder.build().isIgnoreQuotations()); ref {expected, builder} [107-107]
+[m[m08.11.2021 - 18:03:32.867 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.869 [INFO ] ParsingStrategy.parseTestSuite() - Found 12 test cases
+[m[m08.11.2021 - 18:03:32.869 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::getColumnIndexBeforeMappingSetReturnsNull has 1 assertions: 
+ assertNull(strat.getColumnIndex("name")); ref {strat} [41-41]
+[m[m08.11.2021 - 18:03:32.869 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::getColumnIndexEmptyMappingReturnsNull has 1 assertions: 
+ assertNull(strat.getColumnIndex("name")); ref {strat} [47-47]
+[m[m08.11.2021 - 18:03:32.869 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::getColumnIndex has 5 assertions: 
+ assertNull(strat.getColumnIndex("name")); ref {strat} [52-52],
+ assertEquals(0, strat.getColumnIndex("name").intValue()); ref {strat} [56-56],
+ assertEquals(1, strat.getColumnIndex("orderNumber").intValue()); ref {strat} [57-57],
+ assertEquals(2, strat.getColumnIndex("id").intValue()); ref {strat} [58-58],
+ assertNull(strat.getColumnIndex("name not mapped")); ref {strat} [60-60]
+[m[m08.11.2021 - 18:03:32.869 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::testParse has 6 assertions: 
+ assertNotNull(list); ref {list} [73-73],
+ assertTrue(list.size() == 2); ref {list} [74-74],
+ assertEquals("kyle", bean.getName()); ref {bean} [76-76],
+ assertEquals("123456", bean.getOrderNumber()); ref {bean} [77-77],
+ assertEquals("emp123", bean.getId()); ref {bean} [78-78],
+ assertEquals(1, bean.getNum()); ref {bean} [79-79]
+[m[m08.11.2021 - 18:03:32.870 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::testParseWithTrailingSpaces has 6 assertions: 
+ assertNotNull(list); ref {list} [93-93],
+ assertTrue(list.size() == 2); ref {list} [94-94],
+ assertEquals("kyle  ", bean.getName()); ref {bean} [96-96],
+ assertEquals("123456  ", bean.getOrderNumber()); ref {bean} [97-97],
+ assertEquals("emp123  ", bean.getId()); ref {bean} [98-98],
+ assertEquals(1, bean.getNum()); ref {bean} [99-99]
+[m[m08.11.2021 - 18:03:32.870 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::testGetColumnMapping has 5 assertions: 
+ assertNotNull(columnMapping); ref {columnMapping} [105-105],
+ assertEquals(0, columnMapping.length); ref {columnMapping.length, columnMapping} [106-106],
+ assertNotNull(columnMapping); ref {columnMapping} [112-112],
+ assertEquals(3, columnMapping.length); ref {columnMapping.length, columnMapping} [113-113],
+ assertArrayEquals(columns, columnMapping); ref {columns, columnMapping} [114-114]
+[m[m08.11.2021 - 18:03:32.870 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::testGetColumnNames has 4 assertions: 
+ assertEquals("name", strat.getColumnName(0)); ref {strat} [123-123],
+ assertEquals(null, strat.getColumnName(1)); ref {strat} [124-124],
+ assertEquals("id", strat.getColumnName(2)); ref {strat} [125-125],
+ assertEquals(null, strat.getColumnName(3)); ref {strat} [126-126]
+[m[m08.11.2021 - 18:03:32.870 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::testGetColumnNamesArray has 4 assertions: 
+ assertEquals(3, mapping.length); ref {mapping.length, mapping} [135-135],
+ assertEquals("name", mapping[0]); ref {mapping} [136-136],
+ assertEquals(null, mapping[1]); ref {mapping} [137-137],
+ assertEquals("id", mapping[2]); ref {mapping} [138-138]
+[m[m08.11.2021 - 18:03:32.870 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::getColumnNamesWhenNullArray has 3 assertions: 
+ assertEquals(null, strat.getColumnName(0)); ref {strat} [145-145],
+ assertEquals(null, strat.getColumnName(1)); ref {strat} [146-146],
+ assertArrayEquals(new String[0], strat.getColumnMapping()); ref {strat} [147-147]
+[m[m08.11.2021 - 18:03:32.870 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::getColumnNamesWhenNullColumnName has 3 assertions: 
+ assertEquals(null, strat.getColumnName(0)); ref {strat} [155-155],
+ assertEquals(null, strat.getColumnName(1)); ref {strat} [156-156],
+ assertArrayEquals(columns, strat.getColumnMapping()); ref {columns, strat} [157-157]
+[m[m08.11.2021 - 18:03:32.870 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::getColumnNamesWhenEmptyMapping has 2 assertions: 
+ assertEquals(null, strat.getColumnName(0)); ref {strat} [164-164],
+ assertArrayEquals(new String[0], strat.getColumnMapping()); ref {strat} [165-165]
+[m[m08.11.2021 - 18:03:32.870 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.bean.ColumnPositionMappingStrategyTest::throwsIllegalStateExceptionIfTypeNotSet has 1 assertions: 
+ assertEquals(IllegalStateException.class, e.getCause().getClass()); ref {e} [178-178]
+[m[m08.11.2021 - 18:03:32.870 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.874 [INFO ] ParsingStrategy.parseTestSuite() - Found 17 test cases
+[m[m08.11.2021 - 18:03:32.874 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::canPrintColumnNames has 1 assertions: 
+ assertArrayEquals(expectedNames, columnNames); ref {expectedNames, columnNames} [35-35]
+[m[m08.11.2021 - 18:03:32.874 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::setColumnNames has 1 assertions: 
+ assertArrayEquals(columnHeaders, rsColumnNames); ref {columnHeaders, rsColumnNames} [54-54]
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::getColumnNamesWithSubsetOutOfOrder has 1 assertions: 
+ assertArrayEquals(columnHeaders, rsColumnNames); ref {columnHeaders, rsColumnNames} [73-73]
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::numberOfColumnsNamesMustMatchNumberOfHeaders has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::cannotHaveNullColumnName has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::cannotHaveEmptyColumnName has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::cannotHaveSpaceColumnName has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::cannotHaveNullHeaderName has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::cannotHaveEmptyHeaderName has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::cannotHaveSpaceHeaderName has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::getColumnNamesThrowsExceptionIfColumnDoesNotExist has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.875 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::getBooleanFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [172-172]
+[m[m08.11.2021 - 18:03:32.876 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::getBooleanSubsetFromResultSet has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [193-193]
+[m[m08.11.2021 - 18:03:32.876 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::getSubsetWithTrim has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [214-214]
+[m[m08.11.2021 - 18:03:32.876 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::getCharSetWithNullAndTrim has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [231-231]
+[m[m08.11.2021 - 18:03:32.876 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::getTimestampFromResultSetWithCustomFormat has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [252-252]
+[m[m08.11.2021 - 18:03:32.876 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.opencsv.ResultSetColumnNameHelperServiceTest::getSubsetFromResultSetWithCustomFormat has 1 assertions: 
+ assertArrayEquals(expectedValues, columnValues); ref {expectedValues, columnValues} [278-278]
+[m[m08.11.2021 - 18:03:32.876 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.877 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m08.11.2021 - 18:03:32.877 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase integrationTest.SR34.SR34Test::defaultReaderInterpetsNullCorrectly has 7 assertions: 
+ assertEquals(6, line.length); ref {line.length, line} [35-35],
+ assertEquals("10", line[0]); ref {line} [36-36],
+ assertEquals("IBM", line[1]); ref {line} [37-37],
+ assertEquals("2015063", line[2]); ref {line} [38-38],
+ assertEquals("064230733910", line[3]); ref {line} [39-39],
+ assertEquals("\0", line[4]); ref {line} [40-40],
+ assertEquals("01 ", line[5]); ref {line} [41-41]
+[m[m08.11.2021 - 18:03:32.877 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase integrationTest.SR34.SR34Test::doubleBufferedReaderInterpetsNullCorrectly has 7 assertions: 
+ assertEquals(6, line.length); ref {line.length, line} [51-51],
+ assertEquals("10", line[0]); ref {line} [52-52],
+ assertEquals("IBM", line[1]); ref {line} [53-53],
+ assertEquals("2015063", line[2]); ref {line} [54-54],
+ assertEquals("064230733910", line[3]); ref {line} [55-55],
+ assertEquals("\0", line[4]); ref {line} [56-56],
+ assertEquals("01 ", line[5]); ref {line} [57-57]
+[m[m08.11.2021 - 18:03:32.877 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase integrationTest.SR34.SR34Test::usingNullAsDelimeterWillFailBecauseYouAreEscapingTheQuote has 0 assertions: 
+ 
+[m[m08.11.2021 - 18:03:32.878 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase integrationTest.SR34.SR34Test::youNeedToEscapeTheNullCharactersIfUsingNullAsEscape has 8 assertions: 
+ assertEquals(1, rawTokens1.size()); ref {rawTokens1} [86-86],
+ assertEquals(6, line.length); ref {line.length, line} [89-89],
+ assertEquals("10", line[0]); ref {line} [90-90],
+ assertEquals("IBM", line[1]); ref {line} [91-91],
+ assertEquals("2015063", line[2]); ref {line} [92-92],
+ assertEquals("064230733910", line[3]); ref {line} [93-93],
+ assertEquals("\0", line[4]); ref {line} [94-94],
+ assertEquals("01 ", line[5]); ref {line} [95-95]
+[m[m08.11.2021 - 18:03:32.878 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.878 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.878 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.878 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.878 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.878 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m08.11.2021 - 18:03:32.879 [INFO ] ParsingStrategy.mergePartialSuites() - ====================================================================
+[m[m08.11.2021 - 18:03:32.879 [INFO ] ParsingStrategy.mergePartialSuites() - Finished parsing the test suite.
+[m[m08.11.2021 - 18:03:32.881 [INFO ] ParsingStrategy.mergePartialSuites() - It contains 249 test cases and 721 assertions.
+[m[m08.11.2021 - 18:03:32.914 [INFO ] JUnitTestSuiteReducer.reduce() - Starting test suite reduction
+[m[32m08.11.2021 - 18:03:32.921 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because hasNextWorks => readerExceptionCausesRunTimeException
+[m[32m08.11.2021 - 18:03:32.991 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVIterator:19 => com.opencsv.CSVIterator:20
+[m[32m08.11.2021 - 18:03:33.037 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: returnPendingIfNullIsPassedIntoParseLineMulti owns com.opencsv.CSVParser:302
+[m[32m08.11.2021 - 18:03:33.038 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting returnPendingIfNullIsPassedIntoParseLineMulti
+[m[32m08.11.2021 - 18:03:33.038 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC returnPendingIfNullIsPassedIntoParseLineMulti to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.074 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because featureRequest60TreatEmptyDelimitedFieldsAsNull => featureRequest60ByDefaultEmptyFieldsAreBlank
+[m[32m08.11.2021 - 18:03:33.103 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVIterator:45 => com.opencsv.CSVIterator:32
+[m[32m08.11.2021 - 18:03:33.132 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: returnNullWhenNullPassedIn owns com.opencsv.CSVParser:306
+[m[32m08.11.2021 - 18:03:33.132 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting returnNullWhenNullPassedIn
+[m[32m08.11.2021 - 18:03:33.132 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC returnNullWhenNullPassedIn to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.168 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because featureRequest60TreatEmptyDelimitedFieldsAsNull => parseEmptyElements
+[m[32m08.11.2021 - 18:03:33.196 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVIterator:49 => com.opencsv.CSVIterator:43
+[m[32m08.11.2021 - 18:03:33.224 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: parseSimpleQuotedStringWithSpaces owns com.opencsv.CSVParser:354
+[m[32m08.11.2021 - 18:03:33.224 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting parseSimpleQuotedStringWithSpaces
+[m[32m08.11.2021 - 18:03:33.224 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC parseSimpleQuotedStringWithSpaces to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.250 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWithStrictQuotes => issue93ParsingEmptyDoubleQuoteField
+[m[32m08.11.2021 - 18:03:33.279 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVParser:318 => com.opencsv.CSVParser:316
+[m[32m08.11.2021 - 18:03:33.303 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: whichCharactersAreEscapable owns com.opencsv.CSVParser:493
+[m[32m08.11.2021 - 18:03:33.303 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting whichCharactersAreEscapable
+[m[32m08.11.2021 - 18:03:33.303 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC whichCharactersAreEscapable to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.328 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because parseQuotedStringWithDefinedSeperatorAndQuote => testIssue2263439
+[m[32m08.11.2021 - 18:03:33.351 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVParser:357 => com.opencsv.CSVParser:406
+[m[32m08.11.2021 - 18:03:33.374 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: parseQuotedStringWithDefinedSeperatorAndQuote owns com.opencsv.CSVParser:96
+[m[32m08.11.2021 - 18:03:33.374 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting parseQuotedStringWithDefinedSeperatorAndQuote
+[m[32m08.11.2021 - 18:03:33.374 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC parseQuotedStringWithDefinedSeperatorAndQuote to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.401 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because parseQuotedStringWithDefinedSeperator => testIssue2859181
+[m[32m08.11.2021 - 18:03:33.423 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVParser:357 => com.opencsv.CSVParser:412
+[m[32m08.11.2021 - 18:03:33.446 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWithIgnoreLeadingWhiteSpace owns com.opencsv.CSVParserBuilder:112
+[m[32m08.11.2021 - 18:03:33.446 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWithIgnoreLeadingWhiteSpace
+[m[32m08.11.2021 - 18:03:33.446 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWithIgnoreLeadingWhiteSpace to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.469 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because parseQuotedStringWithDefinedSeperator => testIssue2958242WithoutQuotes
+[m[32m08.11.2021 - 18:03:33.491 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVParser:416 => com.opencsv.CSVParser:357
+[m[32m08.11.2021 - 18:03:33.513 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: parseQuotedStringWithDefinedSeperator owns com.opencsv.CSVParser:85
+[m[32m08.11.2021 - 18:03:33.513 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting parseQuotedStringWithDefinedSeperator
+[m[32m08.11.2021 - 18:03:33.513 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC parseQuotedStringWithDefinedSeperator to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.535 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWithStrictQuotes => testNotStrictQuotesAllowsEmbeddedEscapedQuote
+[m[32m08.11.2021 - 18:03:33.556 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVParser:418 => com.opencsv.CSVParser:386
+[m[32m08.11.2021 - 18:03:33.576 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWithIgnoreQuotations owns com.opencsv.CSVParserBuilder:124
+[m[32m08.11.2021 - 18:03:33.576 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWithIgnoreQuotations
+[m[32m08.11.2021 - 18:03:33.577 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWithIgnoreQuotations to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.598 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWithStrictQuotes => testNotStrictQuotesAllowsEmbeddedQuote
+[m[32m08.11.2021 - 18:03:33.620 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVParserBuilder:149 => com.opencsv.CSVParser:189
+[m[32m08.11.2021 - 18:03:33.641 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testDefaultBuilder owns com.opencsv.CSVParserBuilder:202
+[m[32m08.11.2021 - 18:03:33.641 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testDefaultBuilder
+[m[32m08.11.2021 - 18:03:33.641 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testDefaultBuilder to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.661 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWithStrictQuotes => testStrictQuotesEndsFieldAtQuote
+[m[32m08.11.2021 - 18:03:33.680 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVParser:414 => com.opencsv.CSVParserBuilder:194
+[m[32m08.11.2021 - 18:03:33.700 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: bug133ShouldNotThrowNullPointerExceptionWhenProcessingEmptyWithNoAnnotations owns com.opencsv.CSVParserBuilder:60
+[m[32m08.11.2021 - 18:03:33.700 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting bug133ShouldNotThrowNullPointerExceptionWhenProcessingEmptyWithNoAnnotations
+[m[32m08.11.2021 - 18:03:33.700 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC bug133ShouldNotThrowNullPointerExceptionWhenProcessingEmptyWithNoAnnotations to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.718 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWithStrictQuotes => testStrictQuotesEndsFieldAtQuoteWithEscapedQuoteInMiddle
+[m[32m08.11.2021 - 18:03:33.733 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:109 => com.opencsv.CSVReader:148
+[m[32m08.11.2021 - 18:03:33.748 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWithQuoteChar owns com.opencsv.CSVParserBuilder:72
+[m[32m08.11.2021 - 18:03:33.749 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWithQuoteChar
+[m[32m08.11.2021 - 18:03:33.749 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWithQuoteChar to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.764 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testDefaultBuilder => testWithCSVParserNull
+[m[32m08.11.2021 - 18:03:33.779 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:109 => com.opencsv.CSVReader:163
+[m[32m08.11.2021 - 18:03:33.794 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWithEscapeChar owns com.opencsv.CSVParserBuilder:85
+[m[32m08.11.2021 - 18:03:33.794 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWithEscapeChar
+[m[32m08.11.2021 - 18:03:33.794 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWithEscapeChar to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.810 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWithSkipLines => testWithSkipLinesNegative
+[m[32m08.11.2021 - 18:03:33.827 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:182 => com.opencsv.CSVParser:318
+[m[32m08.11.2021 - 18:03:33.843 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWithStrictQuotes owns com.opencsv.CSVParserBuilder:99
+[m[32m08.11.2021 - 18:03:33.843 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWithStrictQuotes
+[m[32m08.11.2021 - 18:03:33.843 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWithStrictQuotes to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.858 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWithSkipLines => testWithSkipLinesZero
+[m[32m08.11.2021 - 18:03:33.873 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:109 => com.opencsv.CSVReader:194
+[m[32m08.11.2021 - 18:03:33.887 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testSkippingLines owns com.opencsv.CSVReader:121
+[m[32m08.11.2021 - 18:03:33.887 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testSkippingLines
+[m[32m08.11.2021 - 18:03:33.887 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testSkippingLines to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.902 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because featureRequest60TreatEmptyDelimitedFieldsAsNull => featureRequest60TreatEmptyDelimitedFieldsAsNull
+[m[32m08.11.2021 - 18:03:33.916 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:214 => com.opencsv.CSVReader:212
+[m[32m08.11.2021 - 18:03:33.931 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: featureRequest60TreatEmptyDelimitedFieldsAsNull owns com.opencsv.CSVParser:418
+[m[32m08.11.2021 - 18:03:33.931 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting featureRequest60TreatEmptyDelimitedFieldsAsNull
+[m[32m08.11.2021 - 18:03:33.931 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC featureRequest60TreatEmptyDelimitedFieldsAsNull to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.945 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because featureRequest60TreatEmptyFieldsAsNull => featureRequest60TreatEmptyFieldsAsNull
+[m[32m08.11.2021 - 18:03:33.959 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:215 => com.opencsv.CSVReader:214
+[m[32m08.11.2021 - 18:03:33.973 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: featureRequest60TreatEmptyFieldsAsNull owns com.opencsv.CSVParser:416
+[m[32m08.11.2021 - 18:03:33.973 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting featureRequest60TreatEmptyFieldsAsNull
+[m[32m08.11.2021 - 18:03:33.973 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC featureRequest60TreatEmptyFieldsAsNull to set of retained TCs
+[m[32m08.11.2021 - 18:03:33.987 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testASingleQuoteAsDataElement => testASingleQuoteAsDataElementWithEmptyField
+[m[32m08.11.2021 - 18:03:34.000 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:221 => com.opencsv.CSVReader:215
+[m[32m08.11.2021 - 18:03:34.013 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testSkippingLinesWithDifferentEscape owns com.opencsv.CSVReader:134
+[m[32m08.11.2021 - 18:03:34.013 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testSkippingLinesWithDifferentEscape
+[m[32m08.11.2021 - 18:03:34.013 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testSkippingLinesWithDifferentEscape to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.026 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because attemptToReadCloseStreamReturnsNull => testEscapedEscape
+[m[32m08.11.2021 - 18:03:34.040 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:254 => com.opencsv.CSVReader:253
+[m[32m08.11.2021 - 18:03:34.053 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: bug106ParseLineWithCarriageReturnNewLineStrictQuotes owns com.opencsv.CSVReader:182
+[m[32m08.11.2021 - 18:03:34.053 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting bug106ParseLineWithCarriageReturnNewLineStrictQuotes
+[m[32m08.11.2021 - 18:03:34.053 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC bug106ParseLineWithCarriageReturnNewLineStrictQuotes to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.066 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because attemptToReadCloseStreamReturnsNull => testEscapedQuote
+[m[32m08.11.2021 - 18:03:34.077 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:255 => com.opencsv.CSVReader:254
+[m[32m08.11.2021 - 18:03:34.089 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: linesAndRecordsRead owns com.opencsv.CSVReader:277
+[m[32m08.11.2021 - 18:03:34.144 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting linesAndRecordsRead
+[m[32m08.11.2021 - 18:03:34.144 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC linesAndRecordsRead to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.161 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testDefaultBuilder => testWithSkipLines
+[m[32m08.11.2021 - 18:03:34.177 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:231 => com.opencsv.CSVReader:240
+[m[32m08.11.2021 - 18:03:34.189 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testDefaultBuilder owns com.opencsv.CSVReader:231
+[m[32m08.11.2021 - 18:03:34.189 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testDefaultBuilder
+[m[32m08.11.2021 - 18:03:34.189 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testDefaultBuilder to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.201 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because builderWithNullFieldIndicator => testWithCSVParser
+[m[32m08.11.2021 - 18:03:34.212 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:256 => com.opencsv.CSVReader:255
+[m[32m08.11.2021 - 18:03:34.223 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: builderWithNullFieldIndicator owns com.opencsv.CSVReader:221
+[m[32m08.11.2021 - 18:03:34.223 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting builderWithNullFieldIndicator
+[m[32m08.11.2021 - 18:03:34.223 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC builderWithNullFieldIndicator to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.234 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because canCreateIteratorFromReader => attemptToReadCloseStreamReturnsNull
+[m[32m08.11.2021 - 18:03:34.244 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:257 => com.opencsv.CSVReader:256
+[m[32m08.11.2021 - 18:03:34.255 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: issue108ReaderPlaysWellWithChannels owns com.opencsv.CSVReader:354
+[m[32m08.11.2021 - 18:03:34.255 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting issue108ReaderPlaysWellWithChannels
+[m[32m08.11.2021 - 18:03:34.255 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC issue108ReaderPlaysWellWithChannels to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.265 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because canCreateIteratorFromReader => testIssue102
+[m[32m08.11.2021 - 18:03:34.276 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:384 => com.opencsv.CSVReader:109
+[m[32m08.11.2021 - 18:03:34.285 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: parseQuotedStringWithDefinedSeperator owns com.opencsv.CSVReader:71
+[m[32m08.11.2021 - 18:03:34.286 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting parseQuotedStringWithDefinedSeperator
+[m[32m08.11.2021 - 18:03:34.286 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC parseQuotedStringWithDefinedSeperator to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.296 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because canCreateIteratorFromReader => testIssue2992134OutOfPlaceQuotes
+[m[32m08.11.2021 - 18:03:34.306 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVReader:384 => com.opencsv.CSVReader:61
+[m[32m08.11.2021 - 18:03:34.315 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWithKeepCR owns com.opencsv.CSVReaderBuilder:147
+[m[32m08.11.2021 - 18:03:34.315 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWithKeepCR
+[m[32m08.11.2021 - 18:03:34.315 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWithKeepCR to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.324 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testASingleQuoteAsDataElement => testOptionalConstructors
+[m[32m08.11.2021 - 18:03:34.333 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVWriter:136 => com.opencsv.CSVWriter:109
+[m[32m08.11.2021 - 18:03:34.341 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testASingleQuoteAsDataElement owns com.opencsv.CSVReader:82
+[m[32m08.11.2021 - 18:03:34.341 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testASingleQuoteAsDataElement
+[m[32m08.11.2021 - 18:03:34.342 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testASingleQuoteAsDataElement to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.350 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testParseLineStrictQuote => testQuotedParsedLine
+[m[32m08.11.2021 - 18:03:34.358 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVWriter:137 => com.opencsv.CSVWriter:136
+[m[32m08.11.2021 - 18:03:34.366 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: writeSingleBeanMethodReturnsFalseIfNullPassedIn owns com.opencsv.CSVWriter:140
+[m[32m08.11.2021 - 18:03:34.366 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting writeSingleBeanMethodReturnsFalseIfNullPassedIn
+[m[32m08.11.2021 - 18:03:34.367 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC writeSingleBeanMethodReturnsFalseIfNullPassedIn to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.375 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testParseLineStrictQuote => testSpacesAtEndOfString
+[m[32m08.11.2021 - 18:03:34.383 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVWriter:188 => com.opencsv.CSVWriter:187
+[m[32m08.11.2021 - 18:03:34.391 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testParseLineStrictQuote owns com.opencsv.CSVReader:95
+[m[32m08.11.2021 - 18:03:34.391 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testParseLineStrictQuote
+[m[32m08.11.2021 - 18:03:34.391 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testParseLineStrictQuote to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.400 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because needToSetBothQuoteAndEscapeCharIfYouWantThemToBeTheSame => testMultiLineResultSetWithHeaders
+[m[32m08.11.2021 - 18:03:34.407 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVWriter:204 => com.opencsv.CSVWriter:188
+[m[32m08.11.2021 - 18:03:34.415 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWriteAllAsList owns com.opencsv.CSVWriter:204
+[m[32m08.11.2021 - 18:03:34.415 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWriteAllAsList
+[m[32m08.11.2021 - 18:03:34.415 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWriteAllAsList to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.423 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because needToSetBothQuoteAndEscapeCharIfYouWantThemToBeTheSame => testMultiLineResultSetWithoutHeaders
+[m[32m08.11.2021 - 18:03:34.430 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVWriter:214 => com.opencsv.CSVWriter:256
+[m[32m08.11.2021 - 18:03:34.437 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testIOException owns com.opencsv.CSVWriter:275
+[m[32m08.11.2021 - 18:03:34.437 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testIOException
+[m[32m08.11.2021 - 18:03:34.437 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testIOException to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.444 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because needToSetBothQuoteAndEscapeCharIfYouWantThemToBeTheSame => testResultSetTrim
+[m[32m08.11.2021 - 18:03:34.451 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVWriter:316 => com.opencsv.CSVWriter:214
+[m[32m08.11.2021 - 18:03:34.457 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: needToSetBothQuoteAndEscapeCharIfYouWantThemToBeTheSame owns com.opencsv.CSVWriter:316
+[m[32m08.11.2021 - 18:03:34.457 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting needToSetBothQuoteAndEscapeCharIfYouWantThemToBeTheSame
+[m[32m08.11.2021 - 18:03:34.457 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC needToSetBothQuoteAndEscapeCharIfYouWantThemToBeTheSame to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.465 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testCase63 => testCase55
+[m[32m08.11.2021 - 18:03:34.471 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.CSVWriter:425 => com.opencsv.CSVWriter:424
+[m[32m08.11.2021 - 18:03:34.478 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: checkErrorReturnsTrueWhenPassedInPrintWriter owns com.opencsv.CSVWriter:425
+[m[32m08.11.2021 - 18:03:34.478 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting checkErrorReturnsTrueWhenPassedInPrintWriter
+[m[32m08.11.2021 - 18:03:34.478 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC checkErrorReturnsTrueWhenPassedInPrintWriter to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.486 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because beanReturnsFalseOnEmptyList => beanReturnsFalseOnNull
+[m[32m08.11.2021 - 18:03:34.492 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.RFC4180Parser:58 => com.opencsv.RFC4180Parser:57
+[m[32m08.11.2021 - 18:03:34.499 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWithSeparator owns com.opencsv.RFC4180ParserBuilder:102
+[m[32m08.11.2021 - 18:03:34.499 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWithSeparator
+[m[32m08.11.2021 - 18:03:34.499 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWithSeparator to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.507 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWriteNulls => testWriteNullsWithAnnotatedBean
+[m[32m08.11.2021 - 18:03:34.513 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.RFC4180ParserBuilder:115 => com.opencsv.RFC4180Parser:74
+[m[32m08.11.2021 - 18:03:34.519 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWithQuoteChar owns com.opencsv.RFC4180ParserBuilder:115
+[m[32m08.11.2021 - 18:03:34.519 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWithQuoteChar
+[m[32m08.11.2021 - 18:03:34.520 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWithQuoteChar to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.527 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWriteNulls => testWriteQuotes
+[m[32m08.11.2021 - 18:03:34.533 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.RFC4180ParserBuilder:59 => com.opencsv.RFC4180ParserBuilder:52
+[m[32m08.11.2021 - 18:03:34.538 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testDefaultBuilder owns com.opencsv.RFC4180ParserBuilder:59
+[m[32m08.11.2021 - 18:03:34.538 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testDefaultBuilder
+[m[32m08.11.2021 - 18:03:34.539 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testDefaultBuilder to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.545 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testWriteNulls => testWriteQuotesWithAnnotatedBean
+[m[32m08.11.2021 - 18:03:34.551 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.AbstractBeanField:103 => com.opencsv.bean.AbstractBeanField:102
+[m[32m08.11.2021 - 18:03:34.556 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: writeBadData owns com.opencsv.bean.AbstractBeanField:201
+[m[32m08.11.2021 - 18:03:34.556 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting writeBadData
+[m[32m08.11.2021 - 18:03:34.557 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC writeBadData to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.561 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testCase60 => testCase16
+[m[32m08.11.2021 - 18:03:34.564 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.AbstractBeanField:106 => com.opencsv.bean.AbstractBeanField:103
+[m[32m08.11.2021 - 18:03:34.566 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testCase60 owns com.opencsv.bean.AbstractBeanField:106
+[m[32m08.11.2021 - 18:03:34.567 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testCase60
+[m[32m08.11.2021 - 18:03:34.567 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testCase60 to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.570 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testCase21 => testCase63
+[m[32m08.11.2021 - 18:03:34.572 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.BeanFieldDate:104 => com.opencsv.bean.AbstractBeanField:81
+[m[32m08.11.2021 - 18:03:34.575 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testBadDataByName owns com.opencsv.bean.BeanFieldDate:104
+[m[32m08.11.2021 - 18:03:34.575 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testBadDataByName
+[m[32m08.11.2021 - 18:03:34.575 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testBadDataByName to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.577 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testCase21 => testCase11
+[m[32m08.11.2021 - 18:03:34.578 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.BeanFieldPrimitiveTypes:66 => com.opencsv.bean.BeanFieldPrimitiveTypes:65
+[m[32m08.11.2021 - 18:03:34.580 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testCase21 owns com.opencsv.bean.BeanFieldPrimitiveTypes:77
+[m[32m08.11.2021 - 18:03:34.580 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testCase21
+[m[32m08.11.2021 - 18:03:34.580 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testCase21 to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.582 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testCase51 => testCase7
+[m[32m08.11.2021 - 18:03:34.584 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.BeanToCsv:103 => com.opencsv.bean.BeanToCsv:102
+[m[32m08.11.2021 - 18:03:34.586 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testCase51 owns com.opencsv.bean.BeanFieldPrimitiveTypes:66
+[m[32m08.11.2021 - 18:03:34.586 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testCase51
+[m[32m08.11.2021 - 18:03:34.586 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testCase51 to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.588 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because getColumnIndex => getColumnIndexBeforeMappingSetReturnsNull
+[m[32m08.11.2021 - 18:03:34.590 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.BeanToCsv:103 => com.opencsv.bean.BeanToCsv:60
+[m[32m08.11.2021 - 18:03:34.591 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: beanReturnsFalseOnEmptyList owns com.opencsv.bean.BeanToCsv:103
+[m[32m08.11.2021 - 18:03:34.591 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting beanReturnsFalseOnEmptyList
+[m[32m08.11.2021 - 18:03:34.592 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC beanReturnsFalseOnEmptyList to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.593 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because getColumnIndex => getColumnIndexEmptyMappingReturnsNull
+[m[32m08.11.2021 - 18:03:34.595 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.ColumnPositionMappingStrategy:143 => com.opencsv.bean.ColumnPositionMappingStrategy:84
+[m[32m08.11.2021 - 18:03:34.596 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testWriteNulls owns com.opencsv.bean.BeanToCsv:110
+[m[32m08.11.2021 - 18:03:34.596 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testWriteNulls
+[m[32m08.11.2021 - 18:03:34.596 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testWriteNulls to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.598 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testParse => testParseWithTrailingSpaces
+[m[32m08.11.2021 - 18:03:34.599 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.CsvToBean:168 => com.opencsv.bean.CsvToBean:167
+[m[32m08.11.2021 - 18:03:34.600 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: writeBeansOneAtATime owns com.opencsv.bean.BeanToCsv:86
+[m[32m08.11.2021 - 18:03:34.600 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting writeBeansOneAtATime
+[m[32m08.11.2021 - 18:03:34.600 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC writeBeansOneAtATime to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.602 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testParse => parseBeanWithNoAnnotations
+[m[32m08.11.2021 - 18:03:34.603 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.CsvToBean:347 => com.opencsv.bean.CsvToBean:168
+[m[32m08.11.2021 - 18:03:34.605 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testGetColumnMapping owns com.opencsv.bean.ColumnPositionMappingStrategy:143
+[m[32m08.11.2021 - 18:03:34.605 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testGetColumnMapping
+[m[32m08.11.2021 - 18:03:34.605 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testGetColumnMapping to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.606 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testParse => parseBeanWithNoAnnotations
+[m[32m08.11.2021 - 18:03:34.607 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.CsvToBean:71 => com.opencsv.bean.CsvToBean:70
+[m[32m08.11.2021 - 18:03:34.609 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: getColumnIndex owns com.opencsv.bean.ColumnPositionMappingStrategy:59
+[m[32m08.11.2021 - 18:03:34.609 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting getColumnIndex
+[m[32m08.11.2021 - 18:03:34.609 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC getColumnIndex to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.611 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because testParse => testParse
+[m[32m08.11.2021 - 18:03:34.612 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.CsvToBeanBuilder:114 => com.opencsv.bean.AbstractCSVToBean:42
+[m[32m08.11.2021 - 18:03:34.613 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: writeBadDataCustom owns com.opencsv.bean.ColumnPositionMappingStrategy:64
+[m[32m08.11.2021 - 18:03:34.613 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting writeBadDataCustom
+[m[32m08.11.2021 - 18:03:34.614 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC writeBadDataCustom to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.615 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because getColumnIndexAfterParse => testParse
+[m[32m08.11.2021 - 18:03:34.616 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.CsvToBeanBuilder:114 => com.opencsv.bean.CsvToBeanBuilder:131
+[m[32m08.11.2021 - 18:03:34.617 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testColumnNameTranslationWithLineFiltering owns com.opencsv.bean.CsvToBean:347
+[m[32m08.11.2021 - 18:03:34.617 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testColumnNameTranslationWithLineFiltering
+[m[32m08.11.2021 - 18:03:34.617 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testColumnNameTranslationWithLineFiltering to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.618 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because getColumnIndexAfterParse => testParseWithSpacesInHeader
+[m[32m08.11.2021 - 18:03:34.619 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.CsvToBeanBuilder:132 => com.opencsv.bean.CsvToBeanBuilder:114
+[m[32m08.11.2021 - 18:03:34.620 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testMappingWithoutAnnotationsWithBuilder owns com.opencsv.bean.CsvToBeanBuilder:132
+[m[32m08.11.2021 - 18:03:34.620 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testMappingWithoutAnnotationsWithBuilder
+[m[32m08.11.2021 - 18:03:34.620 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testMappingWithoutAnnotationsWithBuilder to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.621 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because getColumnIndexAfterParse => testQuotedString
+[m[32m08.11.2021 - 18:03:34.621 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.CsvToBeanBuilder:225 => com.opencsv.bean.CsvToBeanBuilder:136
+[m[32m08.11.2021 - 18:03:34.622 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testMaximumBuilder owns com.opencsv.bean.CsvToBeanBuilder:225
+[m[32m08.11.2021 - 18:03:34.622 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testMaximumBuilder
+[m[32m08.11.2021 - 18:03:34.622 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testMaximumBuilder to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.623 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because throwsIllegalStateExceptionIfTypeNotSet => throwsIllegalStateExceptionIfTypeNotSet
+[m[32m08.11.2021 - 18:03:34.624 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.HeaderColumnNameMappingStrategy:155 => com.opencsv.bean.HeaderColumnNameMappingStrategy:153
+[m[32m08.11.2021 - 18:03:34.624 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: getColumnIndexWithoutHeaderThrowsException owns com.opencsv.bean.HeaderColumnNameMappingStrategy:149
+[m[32m08.11.2021 - 18:03:34.624 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting getColumnIndexWithoutHeaderThrowsException
+[m[32m08.11.2021 - 18:03:34.625 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC getColumnIndexWithoutHeaderThrowsException to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.625 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because columnNameMappingShouldBeCaseInsensitive => getColumnNameReturnsNullIfColumnNumberIsTooLarge
+[m[32m08.11.2021 - 18:03:34.626 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.HeaderColumnNameMappingStrategy:239 => com.opencsv.bean.HeaderColumnNameMappingStrategy:236
+[m[32m08.11.2021 - 18:03:34.626 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testBadConverter owns com.opencsv.bean.HeaderColumnNameMappingStrategy:239
+[m[32m08.11.2021 - 18:03:34.627 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testBadConverter
+[m[32m08.11.2021 - 18:03:34.627 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testBadConverter to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.627 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because columnNameMappingShouldBeCaseInsensitive => testParse
+[m[32m08.11.2021 - 18:03:34.628 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.HeaderColumnNameMappingStrategy:336 => com.opencsv.bean.HeaderColumnNameMappingStrategy:335
+[m[32m08.11.2021 - 18:03:34.628 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: throwsIllegalStateExceptionIfTypeNotSet owns com.opencsv.bean.HeaderColumnNameMappingStrategy:336
+[m[32m08.11.2021 - 18:03:34.629 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting throwsIllegalStateExceptionIfTypeNotSet
+[m[32m08.11.2021 - 18:03:34.629 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC throwsIllegalStateExceptionIfTypeNotSet to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.629 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because builderWithFilter => builderWithoutFilter
+[m[32m08.11.2021 - 18:03:34.630 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.HeaderColumnNameTranslateMappingStrategy:38 => com.opencsv.bean.CsvToBean:71
+[m[32m08.11.2021 - 18:03:34.630 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: columnNameMappingShouldBeCaseInsensitive owns com.opencsv.bean.HeaderColumnNameTranslateMappingStrategy:38
+[m[32m08.11.2021 - 18:03:34.630 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting columnNameMappingShouldBeCaseInsensitive
+[m[32m08.11.2021 - 18:03:34.630 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC columnNameMappingShouldBeCaseInsensitive to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.631 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because nextLineWithFilter => getColumnIndexAfterParse
+[m[32m08.11.2021 - 18:03:34.631 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.HeaderColumnNameMappingStrategy:155 => com.opencsv.bean.IterableCSVToBean:100
+[m[32m08.11.2021 - 18:03:34.632 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: builderWithFilter owns com.opencsv.bean.IterableCSVToBean:61
+[m[32m08.11.2021 - 18:03:34.632 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting builderWithFilter
+[m[32m08.11.2021 - 18:03:34.632 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC builderWithFilter to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.632 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because nextLineWithFilter => nextLine
+[m[32m08.11.2021 - 18:03:34.633 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.HeaderColumnNameMappingStrategy:155 => com.opencsv.bean.IterableCSVToBean:103
+[m[32m08.11.2021 - 18:03:34.633 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: defaultBuilderMissingInformation owns com.opencsv.bean.IterableCSVToBeanBuilder:64
+[m[32m08.11.2021 - 18:03:34.633 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting defaultBuilderMissingInformation
+[m[32m08.11.2021 - 18:03:34.633 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC defaultBuilderMissingInformation to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.634 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because readWithIteratorAndFilter => nextLineWithFilter
+[m[32m08.11.2021 - 18:03:34.634 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.HeaderColumnNameMappingStrategy:155 => com.opencsv.bean.IterableCSVToBean:104
+[m[32m08.11.2021 - 18:03:34.634 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: readWithIteratorAndFilter owns com.opencsv.bean.HeaderColumnNameMappingStrategy:155
+[m[32m08.11.2021 - 18:03:34.634 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting readWithIteratorAndFilter
+[m[32m08.11.2021 - 18:03:34.634 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC readWithIteratorAndFilter to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.635 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.IterableCSVToBeanBuilder:68 => com.opencsv.bean.IterableCSVToBeanBuilder:67
+[m[32m08.11.2021 - 18:03:34.635 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: willThrowExceptionIfMissingReader owns com.opencsv.bean.IterableCSVToBeanBuilder:68
+[m[32m08.11.2021 - 18:03:34.635 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting willThrowExceptionIfMissingReader
+[m[32m08.11.2021 - 18:03:34.635 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC willThrowExceptionIfMissingReader to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.635 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.bean.customconverter.ConvertGermanToBoolean:63 => com.opencsv.bean.customconverter.ConvertGermanToBoolean:62
+[m[32m08.11.2021 - 18:03:34.635 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: testBadDataCustomByName owns com.opencsv.bean.customconverter.ConvertGermanToBoolean:63
+[m[32m08.11.2021 - 18:03:34.635 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testBadDataCustomByName
+[m[32m08.11.2021 - 18:03:34.636 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testBadDataCustomByName to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.636 [DEBUG] DelayedGreedyReductionStrategy.performAttributeReduction() - AR because com.opencsv.exceptions.CsvBadConverterException:43 => com.opencsv.exceptions.CsvBadConverterException:34
+[m[32m08.11.2021 - 18:03:34.636 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: codeCoverageExceptions owns com.opencsv.exceptions.CsvBadConverterException:43
+[m[32m08.11.2021 - 18:03:34.636 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting codeCoverageExceptions
+[m[32m08.11.2021 - 18:03:34.636 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC codeCoverageExceptions to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.636 [DEBUG] DelayedGreedyReductionStrategy.performGreedySelection() - Applying greedy heuristic on table with size 16
+[m[32m08.11.2021 - 18:03:34.637 [DEBUG] DelayedGreedyReductionStrategy.performGreedySelection() - Identified 1 selection candidates
+[m[32m08.11.2021 - 18:03:34.637 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting testIteratorFunctionality
+[m[32m08.11.2021 - 18:03:34.638 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC testIteratorFunctionality to set of retained TCs
+[m[32m08.11.2021 - 18:03:34.705 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because hasNextWorks => initialReadReturnsStrings
+[m[32m08.11.2021 - 18:03:34.705 [DEBUG] DelayedGreedyReductionStrategy.performObjectReduction() - OR because hasNextWorks => canCreateIteratorFromReader
+[m[32m08.11.2021 - 18:03:34.706 [DEBUG] DelayedGreedyReductionStrategy.performOwnerReduction() - Owner found: hasNextWorks owns com.opencsv.CSVIterator:19
+[m[32m08.11.2021 - 18:03:34.706 [DEBUG] DelayedGreedyReductionStrategy.selectTC() - Selecting hasNextWorks
+[m[32m08.11.2021 - 18:03:34.706 [DEBUG] DelayedGreedyReductionStrategy.addSelectedTCToRTS() - Adding TC hasNextWorks to set of retained TCs
+[m[m08.11.2021 - 18:03:34.706 [INFO ] DelayedGreedyReductionStrategy.reduce() - The greedy heuristic was used 1 times --> reduction result might not be optimal.
+[m[m08.11.2021 - 18:03:34.708 [INFO ] JUnitTestSuiteReducer.reduce() - Finished test suite reduction
+[m[m08.11.2021 - 18:03:34.708 [INFO ] JUnitTestSuiteReducer.reduce() - Reduced test suite from 262 to 60 test cases: 202 redundant test cases found
+[m[m08.11.2021 - 18:03:34.710 [INFO ] JUnitTestSuiteReducer.generateReport() - Generated report and wrote it to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/tsr-report-%x%.xml
+[m[m08.11.2021 - 18:03:34.711 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path ./src/test/java
+[m[m08.11.2021 - 18:03:35.041 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CsvSample.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/integrationTest/issue3189428/CsvSample.java
+[m[m08.11.2021 - 18:03:35.043 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CsvToBeanFilterTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/CsvToBeanFilterTest.java
+[m[m08.11.2021 - 18:03:35.043 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MockClob.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/MockClob.java
+[m[m08.11.2021 - 18:03:35.044 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CustomTestMapper.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/CustomTestMapper.java
+[m[m08.11.2021 - 18:03:35.044 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote DataReader.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/integrationTest/issue2153020/DataReader.java
+[m[m08.11.2021 - 18:03:35.045 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote isClosedTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/integrationTest/isClosed/isClosedTest.java
+[m[m08.11.2021 - 18:03:35.046 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MockBean.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/MockBean.java
+[m[m08.11.2021 - 18:03:35.046 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote DataReader.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/integrationTest/issue2564366/DataReader.java
+[m[m08.11.2021 - 18:03:35.047 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote IterableCSVToBeanBuilderTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/IterableCSVToBeanBuilderTest.java
+[m[m08.11.2021 - 18:03:35.047 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CsvToBeanDoubleTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/CsvToBeanDoubleTest.java
+[m[m08.11.2021 - 18:03:35.048 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote GetterMissing.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/GetterMissing.java
+[m[m08.11.2021 - 18:03:35.048 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Bug133Bean.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/Bug133Bean.java
+[m[m08.11.2021 - 18:03:35.054 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CSVParserTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/CSVParserTest.java
+[m[m08.11.2021 - 18:03:35.054 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote GetterPrivate.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/GetterPrivate.java
+[m[m08.11.2021 - 18:03:35.055 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BindByNameUnknownType.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/BindByNameUnknownType.java
+[m[m08.11.2021 - 18:03:35.055 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MockUserBean.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/integrationTest/issue3402853/MockUserBean.java
+[m[m08.11.2021 - 18:03:35.058 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BeanToCsvTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/BeanToCsvTest.java
+[m[m08.11.2021 - 18:03:35.059 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote HeaderColumnNameMappingStrategyUserTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/integrationTest/issue3402853/HeaderColumnNameMappingStrategyUserTest.java
+[m[m08.11.2021 - 18:03:35.060 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote HeaderColumnNameMappingStrategyTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/HeaderColumnNameMappingStrategyTest.java
+[m[m08.11.2021 - 18:03:35.060 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TestUtilitiesTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/TestUtilitiesTest.java
+[m[m08.11.2021 - 18:03:35.064 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote StatefulBeanToCsvTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/StatefulBeanToCsvTest.java
+[m[m08.11.2021 - 18:03:35.064 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CSVIteratorTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/CSVIteratorTest.java
+[m[m08.11.2021 - 18:03:35.065 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MinimalCsvBindBeanForWriting.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/MinimalCsvBindBeanForWriting.java
+[m[m08.11.2021 - 18:03:35.065 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MinimalCsvBindByPositionBeanForWriting.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/MinimalCsvBindByPositionBeanForWriting.java
+[m[m08.11.2021 - 18:03:35.065 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote UnbindableMockBean.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/UnbindableMockBean.java
+[m[m08.11.2021 - 18:03:35.066 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CSVReaderBuilderTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/CSVReaderBuilderTest.java
+[m[m08.11.2021 - 18:03:35.072 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CSVReaderTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/CSVReaderTest.java
+[m[m08.11.2021 - 18:03:35.072 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ConverterComplexClassForCustomAnnotation.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/ConverterComplexClassForCustomAnnotation.java
+[m[m08.11.2021 - 18:03:35.073 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LineReaderTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/stream/reader/LineReaderTest.java
+[m[m08.11.2021 - 18:03:35.080 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote AnnotationTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/AnnotationTest.java
+[m[m08.11.2021 - 18:03:35.081 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote SimplePartiallyAnnotatedMockBean.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/SimplePartiallyAnnotatedMockBean.java
+[m[m08.11.2021 - 18:03:35.081 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TestUtilities.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/TestUtilities.java
+[m[m08.11.2021 - 18:03:35.082 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ComplexClassForCustomAnnotation.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/ComplexClassForCustomAnnotation.java
+[m[m08.11.2021 - 18:03:35.082 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BindByNameUnknownTypeLegacy.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/BindByNameUnknownTypeLegacy.java
+[m[m08.11.2021 - 18:03:35.083 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote IterableCSVToBeanTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/IterableCSVToBeanTest.java
+[m[m08.11.2021 - 18:03:35.084 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote OpencsvTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/OpencsvTest.java
+[m[m08.11.2021 - 18:03:35.085 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote HeaderColumnNameTranslateMappingStrategyTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/HeaderColumnNameTranslateMappingStrategyTest.java
+[m[m08.11.2021 - 18:03:35.086 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BindCustomToWrongDataType.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/BindCustomToWrongDataType.java
+[m[m08.11.2021 - 18:03:35.092 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CSVWriterTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/CSVWriterTest.java
+[m[m08.11.2021 - 18:03:35.096 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CsvToBeanTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/CsvToBeanTest.java
+[m[m08.11.2021 - 18:03:35.097 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TestCase80.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/TestCase80.java
+[m[m08.11.2021 - 18:03:35.102 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote AnnotatedMockBeanCustom.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/AnnotatedMockBeanCustom.java
+[m[m08.11.2021 - 18:03:35.102 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MinimalCsvBindByNameBeanForWriting.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/MinimalCsvBindByNameBeanForWriting.java
+[m[m08.11.2021 - 18:03:35.102 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ComplexDerivedClassForCustomAnnotation.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/ComplexDerivedClassForCustomAnnotation.java
+[m[m08.11.2021 - 18:03:35.103 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CSVWriterExceptionThrower.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/CSVWriterExceptionThrower.java
+[m[m08.11.2021 - 18:03:35.110 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ResultSetHelperServiceTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/ResultSetHelperServiceTest.java
+[m[m08.11.2021 - 18:03:35.112 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote UniCodeTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/UniCodeTest.java
+[m[m08.11.2021 - 18:03:35.113 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MockResultSetMetaDataBuilder.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/MockResultSetMetaDataBuilder.java
+[m[m08.11.2021 - 18:03:35.113 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BadIntConverter.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/customconverter/BadIntConverter.java
+[m[m08.11.2021 - 18:03:35.114 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CSVParserBuilderTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/CSVParserBuilderTest.java
+[m[m08.11.2021 - 18:03:35.114 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote AnnotatedMockBean.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/AnnotatedMockBean.java
+[m[m08.11.2021 - 18:03:35.116 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ColumnPositionMappingStrategyTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/ColumnPositionMappingStrategyTest.java
+[m[m08.11.2021 - 18:03:35.118 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MockResultSetBuilder.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/MockResultSetBuilder.java
+[m[m08.11.2021 - 18:03:35.121 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ResultSetColumnNameHelperServiceTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/ResultSetColumnNameHelperServiceTest.java
+[m[m08.11.2021 - 18:03:35.122 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote SimpleAnnotatedMockBeanPrivateFields.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/SimpleAnnotatedMockBeanPrivateFields.java
+[m[m08.11.2021 - 18:03:35.123 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote SR34Test.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/integrationTest/SR34/SR34Test.java
+[m[m08.11.2021 - 18:03:35.123 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote RFC4180ParserBuilderTest.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/RFC4180ParserBuilderTest.java
+[m[m08.11.2021 - 18:03:35.123 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote SimpleAnnotatedMockBean.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/SimpleAnnotatedMockBean.java
+[m[m08.11.2021 - 18:03:35.123 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TestCase34.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/TestCase34.java
+[m[m08.11.2021 - 18:03:35.124 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote AnnotatedMockBeanFullDerived.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/AnnotatedMockBeanFullDerived.java
+[m[m08.11.2021 - 18:03:35.129 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote AnnotatedMockBeanFull.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/AnnotatedMockBeanFull.java
+[m[m08.11.2021 - 18:03:35.130 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote SimpleAnnotatedMockBeanAllModifierTypes.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/SimpleAnnotatedMockBeanAllModifierTypes.java
+[m[m08.11.2021 - 18:03:35.130 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TestCases21And63.java to /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen/com/opencsv/bean/mocks/TestCases21And63.java
+[m[m08.11.2021 - 18:03:35.130 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[m[m08.11.2021 - 18:03:35.130 [INFO ] JUnitJSRFacade.logTime() - * Facade Statistics:
+[m[m08.11.2021 - 18:03:35.131 [INFO ] JUnitJSRFacade.logTime() - * Parsing took: 0.712 seconds
+[m[m08.11.2021 - 18:03:35.131 [INFO ] JUnitJSRFacade.logTime() - * Reduction took: 1.83 seconds
+[m[m08.11.2021 - 18:03:35.131 [INFO ] JUnitJSRFacade.logTime() - * Serialization took: 0.419 seconds
+[m[m08.11.2021 - 18:03:35.131 [INFO ] JUnitJSRFacade.logTime() - * Overall: 2.961 seconds
+[m[m08.11.2021 - 18:03:35.131 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[mSuccessfully reduced your test suite!
++----------------------------------- Summary -----------------------------------+
+| Test suite size: 262 test cases
++-------------------------------------------------------------------------------+
+| Found 60 relevant test cases:
+|    com.opencsv.CSVParserTest:returnPendingIfNullIsPassedIntoParseLineMulti
+|    com.opencsv.CSVParserTest:returnNullWhenNullPassedIn
+|    com.opencsv.CSVParserTest:parseSimpleQuotedStringWithSpaces
+|    com.opencsv.CSVParserTest:whichCharactersAreEscapable
+|    com.opencsv.CSVParserTest:parseQuotedStringWithDefinedSeperatorAndQuote
+|    com.opencsv.CSVParserBuilderTest:testWithIgnoreLeadingWhiteSpace
+|    com.opencsv.CSVParserTest:parseQuotedStringWithDefinedSeperator
+|    com.opencsv.CSVParserBuilderTest:testWithIgnoreQuotations
+|    com.opencsv.CSVParserBuilderTest:testDefaultBuilder
+|    com.opencsv.bean.CsvToBeanTest:bug133ShouldNotThrowNullPointerExceptionWhenProcessingEmptyWithNoAnnotations
+|    com.opencsv.CSVParserBuilderTest:testWithQuoteChar
+|    com.opencsv.CSVParserBuilderTest:testWithEscapeChar
+|    com.opencsv.CSVParserBuilderTest:testWithStrictQuotes
+|    com.opencsv.CSVReaderTest:testSkippingLines
+|    com.opencsv.CSVReaderTest:featureRequest60TreatEmptyDelimitedFieldsAsNull
+|    com.opencsv.CSVParserTest:featureRequest60TreatEmptyFieldsAsNull
+|    com.opencsv.CSVReaderTest:testSkippingLinesWithDifferentEscape
+|    com.opencsv.CSVReaderTest:bug106ParseLineWithCarriageReturnNewLineStrictQuotes
+|    com.opencsv.CSVReaderTest:linesAndRecordsRead
+|    com.opencsv.CSVReaderBuilderTest:testDefaultBuilder
+|    com.opencsv.CSVReaderBuilderTest:builderWithNullFieldIndicator
+|    com.opencsv.CSVReaderTest:issue108ReaderPlaysWellWithChannels
+|    com.opencsv.CSVReaderTest:parseQuotedStringWithDefinedSeperator
+|    com.opencsv.CSVReaderBuilderTest:testWithKeepCR
+|    com.opencsv.CSVReaderTest:testASingleQuoteAsDataElement
+|    com.opencsv.bean.BeanToCsvTest:writeSingleBeanMethodReturnsFalseIfNullPassedIn
+|    com.opencsv.CSVReaderTest:testParseLineStrictQuote
+|    com.opencsv.CSVWriterTest:testWriteAllAsList
+|    com.opencsv.CSVWriterTest:testIOException
+|    com.opencsv.CSVWriterTest:needToSetBothQuoteAndEscapeCharIfYouWantThemToBeTheSame
+|    com.opencsv.CSVWriterTest:checkErrorReturnsTrueWhenPassedInPrintWriter
+|    com.opencsv.RFC4180ParserBuilderTest:testWithSeparator
+|    com.opencsv.RFC4180ParserBuilderTest:testWithQuoteChar
+|    com.opencsv.RFC4180ParserBuilderTest:testDefaultBuilder
+|    com.opencsv.bean.StatefulBeanToCsvTest:writeBadData
+|    com.opencsv.bean.AnnotationTest:testCase60
+|    com.opencsv.bean.AnnotationTest:testBadDataByName
+|    com.opencsv.bean.AnnotationTest:testCase21
+|    com.opencsv.bean.AnnotationTest:testCase51
+|    com.opencsv.bean.BeanToCsvTest:beanReturnsFalseOnEmptyList
+|    com.opencsv.bean.BeanToCsvTest:testWriteNulls
+|    com.opencsv.bean.BeanToCsvTest:writeBeansOneAtATime
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:testGetColumnMapping
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:getColumnIndex
+|    com.opencsv.bean.StatefulBeanToCsvTest:writeBadDataCustom
+|    com.opencsv.bean.CsvToBeanFilterTest:testColumnNameTranslationWithLineFiltering
+|    com.opencsv.bean.CsvToBeanTest:testMappingWithoutAnnotationsWithBuilder
+|    com.opencsv.bean.CsvToBeanTest:testMaximumBuilder
+|    com.opencsv.bean.HeaderColumnNameMappingStrategyTest:getColumnIndexWithoutHeaderThrowsException
+|    com.opencsv.bean.AnnotationTest:testBadConverter
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:throwsIllegalStateExceptionIfTypeNotSet
+|    com.opencsv.bean.HeaderColumnNameTranslateMappingStrategyTest:columnNameMappingShouldBeCaseInsensitive
+|    com.opencsv.bean.IterableCSVToBeanBuilderTest:builderWithFilter
+|    com.opencsv.bean.IterableCSVToBeanBuilderTest:defaultBuilderMissingInformation
+|    com.opencsv.bean.IterableCSVToBeanTest:readWithIteratorAndFilter
+|    com.opencsv.bean.IterableCSVToBeanBuilderTest:willThrowExceptionIfMissingReader
+|    com.opencsv.bean.AnnotationTest:testBadDataCustomByName
+|    com.opencsv.bean.AnnotationTest:codeCoverageExceptions
+|    com.opencsv.CSVReaderTest:testIteratorFunctionality
+|    com.opencsv.CSVIteratorTest:hasNextWorks
++-------------------------------------------------------------------------------+
+| Found 202 redundant test cases:
+|    com.opencsv.bean.IterableCSVToBeanBuilderTest:builderWithoutFilter
+|    com.opencsv.bean.CsvToBeanDoubleTest:parseBeanWithNoAnnotations
+|    com.opencsv.CSVParserTest:testParseLine
+|    com.opencsv.CSVParserTest:parseSimpleString
+|    com.opencsv.CSVParserTest:parseSimpleQuotedString
+|    com.opencsv.CSVParserTest:testParsedLineWithInternalQuota
+|    com.opencsv.CSVParserTest:parseQuotedStringWithCommas
+|    com.opencsv.CSVParserTest:parseEmptyElements
+|    com.opencsv.CSVParserTest:parseMultiLinedQuoted
+|    com.opencsv.CSVParserTest:parseMultiLinedQuotedwithCarriageReturns
+|    com.opencsv.CSVParserTest:testADoubleQuoteAsDataElement
+|    com.opencsv.CSVParserTest:testEscapedDoubleQuoteAsDataElement
+|    com.opencsv.CSVParserTest:parseQuotedQuoteCharacters
+|    com.opencsv.CSVParserTest:parseMultipleQuotes
+|    com.opencsv.CSVParserTest:parseTrickyString
+|    com.opencsv.CSVParserTest:testAMultiLineInsideQuotes
+|    com.opencsv.CSVParserTest:testStrictQuoteSimple
+|    com.opencsv.CSVParserTest:testNotStrictQuoteSimple
+|    com.opencsv.CSVParserTest:testStrictQuoteWithSpacesAndTabs
+|    com.opencsv.CSVParserTest:testNotStrictQuoteWithSpacesAndTabs
+|    com.opencsv.CSVParserTest:testStrictQuoteWithGarbage
+|    com.opencsv.CSVParserTest:testCanIgnoreQuotations
+|    com.opencsv.CSVParserTest:testFalseIgnoreQuotations
+|    com.opencsv.CSVParserTest:testIssue3314579
+|    com.opencsv.CSVParserTest:testIssue2263439
+|    com.opencsv.CSVParserTest:testIssue2859181
+|    com.opencsv.CSVParserTest:testIssue2726363
+|    com.opencsv.CSVParserTest:anIOExceptionThrownifStringEndsInsideAQuotedString
+|    com.opencsv.CSVParserTest:parseLineMultiAllowsQuotesAcrossMultipleLines
+|    com.opencsv.CSVParserTest:pendingIsClearedAfterCallToParseLine
+|    com.opencsv.CSVParserTest:spacesAtEndOfQuotedStringDoNotCountIfStrictQuotesIsTrue
+|    com.opencsv.CSVParserTest:validateEscapeStringBeforeRealTest
+|    com.opencsv.CSVParserTest:whitespaceBeforeEscape
+|    com.opencsv.CSVParserTest:testIssue2958242WithoutQuotes
+|    com.opencsv.CSVParserTest:quoteAndEscapeCannotBeTheSame
+|    com.opencsv.CSVParserTest:quoteAndEscapeCanBeTheSameIfNull
+|    com.opencsv.CSVParserTest:separatorCharacterCannotBeNull
+|    com.opencsv.CSVParserTest:separatorAndEscapeCannotBeTheSame
+|    com.opencsv.CSVParserTest:separatorAndQuoteCannotBeTheSame
+|    com.opencsv.CSVParserTest:parserHandlesNullInString
+|    com.opencsv.CSVParserTest:featureRequest60ByDefaultEmptyFieldsAreBlank
+|    com.opencsv.CSVParserTest:featureRequest60TreatEmptyDelimitedFieldsAsNull
+|    com.opencsv.CSVParserTest:featureRequest60TreatEmptyFieldsDelimitedOrNotAsNull
+|    com.opencsv.CSVParserTest:testStrictQuotesEndsFieldAtQuote
+|    com.opencsv.CSVParserTest:testStrictQuotesEndsFieldAtQuoteWithEscapedQuoteInMiddle
+|    com.opencsv.CSVParserTest:testNotStrictQuotesAllowsEmbeddedEscapedQuote
+|    com.opencsv.CSVParserTest:testNotStrictQuotesAllowsEmbeddedQuote
+|    com.opencsv.CSVParserTest:issue93ParsingEmptyDoubleQuoteField
+|    com.opencsv.bean.BeanToCsvTest:throwRuntimeExceptionWhenExceptionIsThrown
+|    com.opencsv.bean.BeanToCsvTest:beanReturnsFalseOnNull
+|    com.opencsv.bean.BeanToCsvTest:testWriteQuotes
+|    com.opencsv.bean.BeanToCsvTest:handleException
+|    com.opencsv.bean.BeanToCsvTest:testWriteQuotesWithAnnotatedBean
+|    com.opencsv.bean.BeanToCsvTest:testWriteNullsWithAnnotatedBean
+|    com.opencsv.bean.HeaderColumnNameMappingStrategyTest:getColumnIndexAfterParse
+|    com.opencsv.bean.HeaderColumnNameMappingStrategyTest:testParse
+|    com.opencsv.bean.HeaderColumnNameMappingStrategyTest:testQuotedString
+|    com.opencsv.bean.HeaderColumnNameMappingStrategyTest:testParseWithSpacesInHeader
+|    com.opencsv.bean.HeaderColumnNameMappingStrategyTest:verifyColumnNames
+|    com.opencsv.bean.HeaderColumnNameMappingStrategyTest:throwsIllegalStateExceptionIfTypeNotSet
+|    com.opencsv.TestUtilitiesTest:displayStringArray
+|    com.opencsv.bean.StatefulBeanToCsvTest:writeGoodDataCustom
+|    com.opencsv.CSVIteratorTest:readerExceptionCausesRunTimeException
+|    com.opencsv.CSVIteratorTest:removethrowsUnsupportedOperationException
+|    com.opencsv.CSVIteratorTest:initialReadReturnsStrings
+|    com.opencsv.CSVReaderBuilderTest:testNullReader
+|    com.opencsv.CSVReaderBuilderTest:testWithCSVParserNull
+|    com.opencsv.CSVReaderBuilderTest:testWithCSVParser
+|    com.opencsv.CSVReaderBuilderTest:testWithSkipLines
+|    com.opencsv.CSVReaderBuilderTest:testWithSkipLinesZero
+|    com.opencsv.CSVReaderBuilderTest:testWithSkipLinesNegative
+|    com.opencsv.CSVReaderBuilderTest:testWithVerifyReader
+|    com.opencsv.stream.reader.LineReaderTest:lineReaderWillKeepCR
+|    com.opencsv.stream.reader.LineReaderTest:lineReaderWillRemoveCR
+|    com.opencsv.stream.reader.LineReaderTest:lineReaderKeepingCRWillHandleStringWithNoLinefeed
+|    com.opencsv.stream.reader.LineReaderTest:lineReaderNoCRWillHandleStringWithNoLinefeed
+|    com.opencsv.stream.reader.LineReaderTest:lineReaderKeepingCRWillHandleEmptyString
+|    com.opencsv.stream.reader.LineReaderTest:lineReaderNoCRWillHandleEmptyString
+|    com.opencsv.bean.AnnotationTest:testGoodDataByName
+|    com.opencsv.bean.AnnotationTest:testGoodDataByPosition
+|    com.opencsv.bean.AnnotationTest:testGoodDataCustomByName
+|    com.opencsv.bean.AnnotationTest:testGoodDataCustomByPosition
+|    com.opencsv.bean.AnnotationTest:testCase7
+|    com.opencsv.bean.AnnotationTest:testCase11
+|    com.opencsv.bean.AnnotationTest:testCase55
+|    com.opencsv.bean.AnnotationTest:testCase63
+|    com.opencsv.bean.AnnotationTest:testCase16
+|    com.opencsv.bean.IterableCSVToBeanTest:nextLine
+|    com.opencsv.bean.IterableCSVToBeanTest:nextLineWithFilter
+|    com.opencsv.bean.IterableCSVToBeanTest:readWithIterator
+|    com.opencsv.OpencsvTest:testWriteRead
+|    com.opencsv.bean.HeaderColumnNameTranslateMappingStrategyTest:testParse
+|    com.opencsv.bean.HeaderColumnNameTranslateMappingStrategyTest:getColumnNameReturnsNullIfColumnNumberIsTooLarge
+|    com.opencsv.CSVWriterTest:correctlyParseNullString
+|    com.opencsv.CSVWriterTest:correctlyParserNullObject
+|    com.opencsv.CSVWriterTest:testParseLine
+|    com.opencsv.CSVWriterTest:testSpecialCharacters
+|    com.opencsv.CSVWriterTest:parseLineWithBothEscapeAndQuoteChar
+|    com.opencsv.CSVWriterTest:testParseLineWithNoEscapeChar
+|    com.opencsv.CSVWriterTest:parseLineWithNoEscapeCharAndQuotes
+|    com.opencsv.CSVWriterTest:testWriteAllAsIterable
+|    com.opencsv.CSVWriterTest:testWriteAllObjects
+|    com.opencsv.CSVWriterTest:testNoQuoteChars
+|    com.opencsv.CSVWriterTest:testNoQuoteCharsAndNoEscapeChars
+|    com.opencsv.CSVWriterTest:testIntelligentQuotes
+|    com.opencsv.CSVWriterTest:testNullValues
+|    com.opencsv.CSVWriterTest:testStreamFlushing
+|    com.opencsv.CSVWriterTest:flushWillThrowIOException
+|    com.opencsv.CSVWriterTest:flushQuietlyWillNotThrowException
+|    com.opencsv.CSVWriterTest:testAlternateEscapeChar
+|    com.opencsv.CSVWriterTest:embeddedQuoteInString
+|    com.opencsv.CSVWriterTest:testNoQuotingNoEscaping
+|    com.opencsv.CSVWriterTest:testNestedQuotes
+|    com.opencsv.CSVWriterTest:testAlternateLineFeeds
+|    com.opencsv.CSVWriterTest:testResultSetWithHeaders
+|    com.opencsv.CSVWriterTest:testMultiLineResultSetWithHeaders
+|    com.opencsv.CSVWriterTest:testResultSetWithoutHeaders
+|    com.opencsv.CSVWriterTest:testMultiLineResultSetWithoutHeaders
+|    com.opencsv.CSVWriterTest:testResultSetTrim
+|    com.opencsv.CSVWriterTest:issue123SeparatorEscapedWhenQuoteIsNoQuoteChar
+|    com.opencsv.CSVWriterTest:issue123SeparatorEscapedWhenQuoteIsNoQuoteCharSpecifingNoneDefaultEscapeChar
+|    com.opencsv.bean.CsvToBeanTest:throwRuntimeExceptionWhenExceptionIsThrown
+|    com.opencsv.bean.CsvToBeanTest:throwRuntimeExceptionLineWhenExceptionIsThrown
+|    com.opencsv.bean.CsvToBeanTest:parseBeanWithNoAnnotations
+|    com.opencsv.bean.CsvToBeanTest:parseBeanWithAnnotations
+|    com.opencsv.bean.CsvToBeanTest:parseBeanWithSomeAnnotations
+|    com.opencsv.bean.CsvToBeanTest:parseAnnotatedBeanWithAllValidDataTypes
+|    com.opencsv.bean.CsvToBeanTest:parseAnnotatedBeanWithPrivateField
+|    com.opencsv.bean.CsvToBeanTest:parseAnnotatedBeanWithFieldsOfAllAccessModifierTypes
+|    com.opencsv.bean.CsvToBeanTest:throwRuntimeExceptionWhenUnsupportedDataTypeUsedInAnnotatedBean
+|    com.opencsv.bean.CsvToBeanTest:throwRuntimeExceptionWhenRequiredFieldNotProvidedInAnnotatedBean
+|    com.opencsv.bean.CsvToBeanTest:throwIllegalStateWhenParseWithoutArgumentsIsCalled
+|    com.opencsv.bean.CsvToBeanTest:throwIllegalStateWhenOnlyReaderIsSpecifiedToParseWithoutArguments
+|    com.opencsv.bean.CsvToBeanTest:throwIllegalStateWhenOnlyMapperIsSpecifiedToParseWithoutArguments
+|    com.opencsv.bean.CsvToBeanTest:throwIllegalStateWhenReaderNotProvidedInBuilder
+|    com.opencsv.bean.CsvToBeanTest:throwIllegalStateWhenTypeAndMapperNotProvidedInBuilder
+|    com.opencsv.bean.CsvToBeanTest:testMinimumBuilder
+|    com.opencsv.bean.CsvToBeanTest:testColumnMappingStrategyWithBuilder
+|    com.opencsv.ResultSetHelperServiceTest:canPrintColumnNames
+|    com.opencsv.ResultSetHelperServiceTest:getObjectFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getBitFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getBooleanFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getBigIntFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getBigDecimalFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:issue121ConvertingNaNForDoubleOrFloat
+|    com.opencsv.ResultSetHelperServiceTest:issue121ConvertingPositiveInfinityForDoubleOrFloat
+|    com.opencsv.ResultSetHelperServiceTest:issue121ConvertingNegativeInfinityForDoubleOrFloat
+|    com.opencsv.ResultSetHelperServiceTest:getIntegerFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getCharFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getCharHandlesNulls
+|    com.opencsv.ResultSetHelperServiceTest:getUnsupportedFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getDateFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getDateFromResultSetUsingCustomFormat
+|    com.opencsv.ResultSetHelperServiceTest:setDateFormat
+|    com.opencsv.ResultSetHelperServiceTest:getTimeFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getTimestampFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getTimestampFromResultSetWithCustomFormat
+|    com.opencsv.ResultSetHelperServiceTest:setDateTimeFormat
+|    com.opencsv.ResultSetHelperServiceTest:getClobFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getEmptyClobFromResultSet
+|    com.opencsv.ResultSetHelperServiceTest:getLargeClobFromResultSet
+|    com.opencsv.UniCodeTest:canParseUnicode
+|    com.opencsv.UniCodeTest:readerTest
+|    com.opencsv.UniCodeTest:writerTest
+|    com.opencsv.UniCodeTest:runUniCodeThroughCSVReader
+|    com.opencsv.UniCodeTest:runUniCodeThroughCSVWriter
+|    com.opencsv.UniCodeTest:runASCIIThroughCSVWriter
+|    com.opencsv.UniCodeTest:writeThenReadAscii
+|    com.opencsv.UniCodeTest:writeThenReadTwiceAscii
+|    com.opencsv.UniCodeTest:writeThenReadTwiceUnicode
+|    com.opencsv.UniCodeTest:writeThenReadTwiceMixedUnicode
+|    com.opencsv.CSVParserBuilderTest:testWithSeparator
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:getColumnIndexBeforeMappingSetReturnsNull
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:getColumnIndexEmptyMappingReturnsNull
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:testParse
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:testParseWithTrailingSpaces
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:testGetColumnNames
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:testGetColumnNamesArray
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:getColumnNamesWhenNullArray
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:getColumnNamesWhenNullColumnName
+|    com.opencsv.bean.ColumnPositionMappingStrategyTest:getColumnNamesWhenEmptyMapping
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:canPrintColumnNames
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:setColumnNames
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:getColumnNamesWithSubsetOutOfOrder
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:numberOfColumnsNamesMustMatchNumberOfHeaders
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:cannotHaveNullColumnName
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:cannotHaveEmptyColumnName
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:cannotHaveSpaceColumnName
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:cannotHaveNullHeaderName
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:cannotHaveEmptyHeaderName
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:cannotHaveSpaceHeaderName
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:getColumnNamesThrowsExceptionIfColumnDoesNotExist
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:getBooleanFromResultSet
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:getBooleanSubsetFromResultSet
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:getSubsetWithTrim
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:getCharSetWithNullAndTrim
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:getTimestampFromResultSetWithCustomFormat
+|    com.opencsv.ResultSetColumnNameHelperServiceTest:getSubsetFromResultSetWithCustomFormat
+|    integrationTest.SR34.SR34Test:defaultReaderInterpetsNullCorrectly
+|    integrationTest.SR34.SR34Test:doubleBufferedReaderInterpetsNullCorrectly
+|    integrationTest.SR34.SR34Test:usingNullAsDelimeterWillFailBecauseYouAreEscapingTheQuote
+|    integrationTest.SR34.SR34Test:youNeedToEscapeTheNullCharactersIfUsingNullAsEscape
++-------------------------------------------------------------------------------+
+| Wrote reduced test suite code to: /home/lukas/workspace/master-benchmark/results/opencsv/cc/del/gen
++-------------------------------------------------------------------------------+

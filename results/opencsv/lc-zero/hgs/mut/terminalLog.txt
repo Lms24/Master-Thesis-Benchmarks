@@ -1,0 +1,294 @@
+HEAD ist jetzt bei 0b79fe2 [opencsv] add project
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.opencsv:opencsv >-------------------------
+[INFO] Building opencsv 3.9-cygri
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ opencsv ---
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/opencsv/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ opencsv ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/opencsv/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ opencsv ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 53 source files to /home/lukas/workspace/master-benchmark/projects/opencsv/target/classes
+[WARNING] Unable to autodetect 'javac' path, using 'javac' from the environment.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ opencsv ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ opencsv ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 23 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ opencsv ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 63 source files to /home/lukas/workspace/master-benchmark/projects/opencsv/target/test-classes
+[WARNING] Unable to autodetect 'javac' path, using 'javac' from the environment.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ opencsv ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.opencsv.ResultSetColumnNameHelperServiceTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.mockito.cglib.core.ReflectUtils$2 (file:/home/lukas/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of org.mockito.cglib.core.ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 0.231 sec - in com.opencsv.ResultSetColumnNameHelperServiceTest
+Running com.opencsv.OpencsvTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in com.opencsv.OpencsvTest
+Running com.opencsv.TestUtilitiesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in com.opencsv.TestUtilitiesTest
+Running com.opencsv.CSVReaderBuilderTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.001 sec - in com.opencsv.CSVReaderBuilderTest
+Running com.opencsv.UniCodeTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 10, Time elapsed: 0 sec - in com.opencsv.UniCodeTest
+Running com.opencsv.CSVParserBuilderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0 sec - in com.opencsv.CSVParserBuilderTest
+Running com.opencsv.CSVReaderTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 23, Time elapsed: 0.001 sec - in com.opencsv.CSVReaderTest
+Running com.opencsv.stream.reader.LineReaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0 sec - in com.opencsv.stream.reader.LineReaderTest
+Running com.opencsv.RFC4180ParserBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.opencsv.RFC4180ParserBuilderTest
+Running com.opencsv.CSVParserTest
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 42, Time elapsed: 0.007 sec - in com.opencsv.CSVParserTest
+Running com.opencsv.CSVWriterTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 22, Time elapsed: 0.026 sec - in com.opencsv.CSVWriterTest
+Running com.opencsv.bean.IterableCSVToBeanTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.037 sec - in com.opencsv.bean.IterableCSVToBeanTest
+Running com.opencsv.bean.IterableCSVToBeanBuilderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.006 sec - in com.opencsv.bean.IterableCSVToBeanBuilderTest
+Running com.opencsv.bean.HeaderColumnNameTranslateMappingStrategyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.001 sec - in com.opencsv.bean.HeaderColumnNameTranslateMappingStrategyTest
+Running com.opencsv.bean.AnnotationTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 0.189 sec - in com.opencsv.bean.AnnotationTest
+Running com.opencsv.bean.CsvToBeanFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.opencsv.bean.CsvToBeanFilterTest
+Running com.opencsv.bean.BeanToCsvTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.004 sec - in com.opencsv.bean.BeanToCsvTest
+Running com.opencsv.bean.ColumnPositionMappingStrategyTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 0 sec - in com.opencsv.bean.ColumnPositionMappingStrategyTest
+Running com.opencsv.bean.HeaderColumnNameMappingStrategyTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0 sec - in com.opencsv.bean.HeaderColumnNameMappingStrategyTest
+Running com.opencsv.bean.CsvToBeanTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 14, Time elapsed: 0.017 sec - in com.opencsv.bean.CsvToBeanTest
+Running com.opencsv.bean.StatefulBeanToCsvTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.06 sec - in com.opencsv.bean.StatefulBeanToCsvTest
+Running com.opencsv.bean.CsvToBeanDoubleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in com.opencsv.bean.CsvToBeanDoubleTest
+Running com.opencsv.CSVIteratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.001 sec - in com.opencsv.CSVIteratorTest
+Running com.opencsv.ResultSetHelperServiceTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 14, Time elapsed: 0.091 sec - in com.opencsv.ResultSetHelperServiceTest
+Running integrationTest.isClosed.isClosedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in integrationTest.isClosed.isClosedTest
+Running integrationTest.issue3402853.HeaderColumnNameMappingStrategyUserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in integrationTest.issue3402853.HeaderColumnNameMappingStrategyUserTest
+Running integrationTest.SR34.SR34Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0 sec - in integrationTest.SR34.SR34Test
+
+Results :
+
+Tests run: 288, Failures: 0, Errors: 0, Skipped: 197
+
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.0:jar (default-jar) @ opencsv ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/opencsv/target/opencsv-3.9-cygri.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.0.0:jar (attach-sources) > generate-sources @ opencsv >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:3.0.0:jar (attach-sources) < generate-sources @ opencsv <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.0:jar (attach-sources) @ opencsv ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/opencsv/target/opencsv-3.9-cygri-sources.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (make-assembly) @ opencsv ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/opencsv/target/opencsv-3.9-cygri-fat-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ opencsv ---
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/opencsv/target/opencsv-3.9-cygri.jar to /home/lukas/.m2/repository/com/opencsv/opencsv/3.9-cygri/opencsv-3.9-cygri.jar
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/opencsv/pom.xml to /home/lukas/.m2/repository/com/opencsv/opencsv/3.9-cygri/opencsv-3.9-cygri.pom
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/opencsv/target/opencsv-3.9-cygri-sources.jar to /home/lukas/.m2/repository/com/opencsv/opencsv/3.9-cygri/opencsv-3.9-cygri-sources.jar
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/opencsv/target/opencsv-3.9-cygri-fat-tests.jar to /home/lukas/.m2/repository/com/opencsv/opencsv/3.9-cygri/opencsv-3.9-cygri-fat-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.672 s
+[INFO] Finished at: 2021-11-08T18:48:21+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.opencsv:opencsv >-------------------------
+[INFO] Building opencsv 3.9-cygri
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (default-cli) @ opencsv ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] Cannot include project artifact: com.opencsv:opencsv:jar:3.9-cygri; it doesn't have an associated file or directory.
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/opencsv/target/opencsv-3.9-cygri-fat-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.683 s
+[INFO] Finished at: 2021-11-08T18:48:24+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.opencsv:opencsv >-------------------------
+[INFO] Building opencsv 3.9-cygri
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.7.2:mutationCoverage (default-cli) @ opencsv ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum constructor filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : TestNG plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /home/lukas/workspace/master-benchmark/projects/opencsv/target/classes
+[INFO] Defaulting target classes to match packages in build directory
+[INFO] Defaulting target tests to match packages in test build directory
+18:48:26 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+18:48:26 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+18:48:26 PIT >> INFO : Created  35 mutation test units in pre scan
+18:48:26 PIT >> INFO : Sending 116 test classes to minion
+18:48:26 PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\18:48:27 PIT >> INFO : MINION : WARNING: An illegal reflective access operation has occurred
+18:48:27 PIT >> INFO : MINION : WARNING: Illegal reflective access by org.mockito.cglib.core.ReflectUtils$2 (file:/home/lukas/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+18:48:27 PIT >> INFO : MINION : WARNING: Please consider reporting this to the maintainers of org.mockito.cglib.core.ReflectUtils$2
+18:48:27 PIT >> INFO : MINION : WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+18:48:27 PIT >> INFO : MINION : WARNING: All illegal access operations will be denied in a future release
+|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-18:48:28 PIT >> INFO : Calculated coverage in 1 seconds.
+18:48:28 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+18:48:28 PIT >> INFO : Created  35 mutation test units
+18:48:32 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:48:37 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\18:48:46 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:48:50 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\|/-\|/-\|/-\|/-\18:49:12 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\|/-\|/-\18:49:19 PIT >> INFO : Completed in 52 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 10 Killed 9 (90%)
+> KILLED 7 SURVIVED 0 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 23 Killed 19 (83%)
+> KILLED 18 SURVIVED 2 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 29 Killed 14 (48%)
+> KILLED 14 SURVIVED 10 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 5 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 105 Killed 70 (67%)
+> KILLED 70 SURVIVED 15 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 20 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 42 Killed 29 (69%)
+> KILLED 29 SURVIVED 10 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 3 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 119 Killed 101 (85%)
+> KILLED 101 SURVIVED 11 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 27 Killed 20 (74%)
+> KILLED 20 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 6 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 41 Killed 28 (68%)
+> KILLED 27 SURVIVED 5 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 8 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 24 Killed 16 (67%)
+> KILLED 16 SURVIVED 6 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 294 Killed 267 (91%)
+> KILLED 266 SURVIVED 9 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 18 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : 1 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 50 seconds
+--------------------------------------------------------------------------------
+> Total  : 52 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 1372/1557 (88%)
+>> Generated 714 mutations Killed 573 (80%)
+>> Mutations with no coverage 72. Test strength 89%
+>> Ran 1279 tests (1.79 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  54.083 s
+[INFO] Finished at: 2021-11-08T18:49:19+01:00
+[INFO] ------------------------------------------------------------------------
+HEAD ist jetzt bei 0b79fe2 [opencsv] add project
