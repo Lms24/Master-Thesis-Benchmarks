@@ -3,7 +3,7 @@ cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 
 alias jsr='java -jar -Xmx16g ~/workspace/master-jsr/jsr/JSR-CLI/build/libs/JSR-CLI-1.0-SNAPSHOT.jar'
 
-PROJECT_NAME="acii-table"
+PROJECT_NAME="ascii-table"
 TEST_DIR="./src/test/java/"
 SRC_DIR="./src/main/java"
 CLASS_DIR="target/classes"

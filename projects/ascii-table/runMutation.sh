@@ -2,7 +2,7 @@
 cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" 
 
 
-PROJECT_NAME="acii-table"
+PROJECT_NAME="ascii-table"
 RESULTS_BASE_DIR="../../results/$PROJECT_NAME"
 TEST_SRC_DIR="src/test/java"
 TOP_PACKAGE="com"
