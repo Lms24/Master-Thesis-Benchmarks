@@ -1,0 +1,258 @@
+HEAD ist jetzt bei b3bea61 [minimal-json] fix runMutation.sh
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.eclipsesource.minimal-json:minimal-json >-------------
+[INFO] Building minimal-json 0.9.6-SNAPSHOT
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ minimal-json ---
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ minimal-json ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ minimal-json ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ minimal-json ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ minimal-json ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ minimal-json ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.eclipsesource.json.ParseException_Test
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.028 s - in com.eclipsesource.json.ParseException_Test
+[INFO] Running com.eclipsesource.json.WritingBuffer_Test
+[WARNING] Tests run: 12, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 0 s - in com.eclipsesource.json.WritingBuffer_Test
+[INFO] Running com.eclipsesource.json.Json_Test
+[WARNING] Tests run: 32, Failures: 0, Errors: 0, Skipped: 24, Time elapsed: 0.002 s - in com.eclipsesource.json.Json_Test
+[INFO] Running com.eclipsesource.json.PrettyPrint_Test
+[WARNING] Tests run: 15, Failures: 0, Errors: 0, Skipped: 13, Time elapsed: 0.001 s - in com.eclipsesource.json.PrettyPrint_Test
+[INFO] Running com.eclipsesource.json.JsonNumber_Test
+[WARNING] Tests run: 24, Failures: 0, Errors: 0, Skipped: 21, Time elapsed: 0.003 s - in com.eclipsesource.json.JsonNumber_Test
+[INFO] Running com.eclipsesource.json.test.mocking.Mocking_Test
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0 s - in com.eclipsesource.json.test.mocking.Mocking_Test
+[INFO] Running com.eclipsesource.json.JsonValue_Test
+[WARNING] Tests run: 24, Failures: 0, Errors: 0, Skipped: 10, Time elapsed: 0.001 s - in com.eclipsesource.json.JsonValue_Test
+[INFO] Running com.eclipsesource.json.JsonString_Test
+[WARNING] Tests run: 13, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 0.001 s - in com.eclipsesource.json.JsonString_Test
+[INFO] Running com.eclipsesource.json.JsonParser_Test
+[WARNING] Tests run: 77, Failures: 0, Errors: 0, Skipped: 72, Time elapsed: 0.012 s - in com.eclipsesource.json.JsonParser_Test
+[INFO] Running com.eclipsesource.json.JsonArray_Test
+[WARNING] Tests run: 82, Failures: 0, Errors: 0, Skipped: 64, Time elapsed: 0.023 s - in com.eclipsesource.json.JsonArray_Test
+[INFO] Running com.eclipsesource.json.JsonObject_Test
+[WARNING] Tests run: 135, Failures: 0, Errors: 0, Skipped: 106, Time elapsed: 0.018 s - in com.eclipsesource.json.JsonObject_Test
+[INFO] Running com.eclipsesource.json.JsonLiteral_Test
+[WARNING] Tests run: 17, Failures: 0, Errors: 0, Skipped: 16, Time elapsed: 0 s - in com.eclipsesource.json.JsonLiteral_Test
+[INFO] Running com.eclipsesource.json.JsonWriter_Test
+[WARNING] Tests run: 19, Failures: 0, Errors: 0, Skipped: 19, Time elapsed: 0 s - in com.eclipsesource.json.JsonWriter_Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 457, Failures: 0, Errors: 0, Skipped: 375
+[INFO] 
+[INFO] 
+[INFO] --- maven-bundle-plugin:1.4.0:bundle (default-bundle) @ minimal-json ---
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (make-assembly) @ minimal-json ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target/minimal-json-0.9.6-SNAPSHOT-fat-tests.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.4:jar (attach-sources) > generate-sources @ minimal-json >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.4:jar (attach-sources) < generate-sources @ minimal-json <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:2.4:jar (attach-sources) @ minimal-json ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target/minimal-json-0.9.6-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ minimal-json ---
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target/minimal-json-0.9.6-SNAPSHOT.jar to /home/lukas/.m2/repository/com/eclipsesource/minimal-json/minimal-json/0.9.6-SNAPSHOT/minimal-json-0.9.6-SNAPSHOT.jar
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/pom.xml to /home/lukas/.m2/repository/com/eclipsesource/minimal-json/minimal-json/0.9.6-SNAPSHOT/minimal-json-0.9.6-SNAPSHOT.pom
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target/minimal-json-0.9.6-SNAPSHOT-fat-tests.jar to /home/lukas/.m2/repository/com/eclipsesource/minimal-json/minimal-json/0.9.6-SNAPSHOT/minimal-json-0.9.6-SNAPSHOT-fat-tests.jar
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target/minimal-json-0.9.6-SNAPSHOT-sources.jar to /home/lukas/.m2/repository/com/eclipsesource/minimal-json/minimal-json/0.9.6-SNAPSHOT/minimal-json-0.9.6-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:1.4.0:install (default-install) @ minimal-json ---
+[INFO] Parsing file:/home/lukas/.m2/repository/repository.xml
+[INFO] Installing com/eclipsesource/minimal-json/minimal-json/0.9.6-SNAPSHOT/minimal-json-0.9.6-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.898 s
+[INFO] Finished at: 2021-11-09T09:33:50+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.eclipsesource.minimal-json:minimal-json >-------------
+[INFO] Building minimal-json 0.9.6-SNAPSHOT
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (default-cli) @ minimal-json ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] Cannot include project artifact: com.eclipsesource.minimal-json:minimal-json:bundle:0.9.6-SNAPSHOT; it doesn't have an associated file or directory.
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target/minimal-json-0.9.6-SNAPSHOT-fat-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.271 s
+[INFO] Finished at: 2021-11-09T09:33:52+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.eclipsesource.minimal-json:minimal-json >-------------
+[INFO] Building minimal-json 0.9.6-SNAPSHOT
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.7.2:mutationCoverage (default-cli) @ minimal-json ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum constructor filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : TestNG plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /home/lukas/workspace/master-benchmark/projects/minimal-json/com.eclipsesource.json/target/classes
+[INFO] Defaulting target classes to match packages in build directory
+[INFO] Defaulting target tests to match packages in test build directory
+09:33:54 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+09:33:54 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+09:33:54 PIT >> INFO : Created  21 mutation test units in pre scan
+09:33:54 PIT >> INFO : Sending 82 test classes to minion
+09:33:54 PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/09:33:55 PIT >> INFO : Calculated coverage in 1 seconds.
+09:33:56 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+09:33:56 PIT >> INFO : Created  21 mutation test units
+09:34:00 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+09:34:05 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+09:34:09 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+09:34:12 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+09:34:16 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\09:34:27 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+09:34:30 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\|/-\|/-\|/09:34:38 PIT >> INFO : Completed in 43 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 31 Killed 6 (19%)
+> KILLED 6 SURVIVED 22 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 3 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 4 Killed 4 (100%)
+> KILLED 3 SURVIVED 0 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 25 Killed 22 (88%)
+> KILLED 22 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 143 Killed 111 (78%)
+> KILLED 107 SURVIVED 22 TIMED_OUT 4 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 10 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 50 Killed 18 (36%)
+> KILLED 17 SURVIVED 17 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 15 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 90 Killed 60 (67%)
+> KILLED 60 SURVIVED 22 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 8 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 58 Killed 25 (43%)
+> KILLED 25 SURVIVED 27 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 6 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 16 Killed 11 (69%)
+> KILLED 11 SURVIVED 4 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 31 Killed 21 (68%)
+> KILLED 21 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 9 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 163 Killed 126 (77%)
+> KILLED 125 SURVIVED 25 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 12 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : 1 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 41 seconds
+--------------------------------------------------------------------------------
+> Total  : 43 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 767/904 (85%)
+>> Generated 611 mutations Killed 404 (66%)
+>> Mutations with no coverage 66. Test strength 74%
+>> Ran 1057 tests (1.73 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  44.634 s
+[INFO] Finished at: 2021-11-09T09:34:38+01:00
+[INFO] ------------------------------------------------------------------------
+HEAD ist jetzt bei b3bea61 [minimal-json] fix runMutation.sh
