@@ -1,0 +1,242 @@
+HEAD ist jetzt bei 4102fd7 [ascii-table] add project w/ modified TS
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.github.freva:ascii-table:jar:1.2.0
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 81, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< com.github.freva:ascii-table >--------------------
+[INFO] Building com.github.freva:ascii-table 1.2.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ ascii-table ---
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/ascii-table/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ascii-table ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/ascii-table/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ascii-table ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 5 source files to /home/lukas/workspace/master-benchmark/projects/ascii-table/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ascii-table ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/ascii-table/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ascii-table ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files to /home/lukas/workspace/master-benchmark/projects/ascii-table/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ ascii-table ---
+[INFO] Surefire report directory: /home/lukas/workspace/master-benchmark/projects/ascii-table/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.github.freva.asciitable.AsciiTableTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 18, Time elapsed: 0.09 sec
+Running com.github.freva.asciitable.LineUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 18
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ascii-table ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/ascii-table/target/ascii-table-1.2.0.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (make-assembly) @ ascii-table ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/ascii-table/target/ascii-table-1.2.0-fat-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ ascii-table ---
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/ascii-table/target/ascii-table-1.2.0.jar to /home/lukas/.m2/repository/com/github/freva/ascii-table/1.2.0/ascii-table-1.2.0.jar
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/ascii-table/pom.xml to /home/lukas/.m2/repository/com/github/freva/ascii-table/1.2.0/ascii-table-1.2.0.pom
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/ascii-table/target/ascii-table-1.2.0-fat-tests.jar to /home/lukas/.m2/repository/com/github/freva/ascii-table/1.2.0/ascii-table-1.2.0-fat-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.540 s
+[INFO] Finished at: 2021-11-09T12:03:38+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.github.freva:ascii-table:jar:1.2.0
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 81, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< com.github.freva:ascii-table >--------------------
+[INFO] Building com.github.freva:ascii-table 1.2.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.6:single (default-cli) @ ascii-table ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[WARNING] Cannot include project artifact: com.github.freva:ascii-table:jar:1.2.0; it doesn't have an associated file or directory.
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/ascii-table/target/ascii-table-1.2.0-fat-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.833 s
+[INFO] Finished at: 2021-11-09T12:03:40+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.github.freva:ascii-table:jar:1.2.0
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 81, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< com.github.freva:ascii-table >--------------------
+[INFO] Building com.github.freva:ascii-table 1.2.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.7.2:mutationCoverage (default-cli) @ ascii-table ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum constructor filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : TestNG plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /home/lukas/workspace/master-benchmark/projects/ascii-table/target/classes
+[INFO] Defaulting target classes to match packages in build directory
+[INFO] Defaulting target tests to match packages in test build directory
+12:03:41 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+12:03:42 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+12:03:42 PIT >> INFO : Created  5 mutation test units in pre scan
+12:03:42 PIT >> INFO : Sending 9 test classes to minion
+12:03:42 PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/12:03:42 PIT >> INFO : Calculated coverage in 0 seconds.
+12:03:42 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+12:03:42 PIT >> INFO : Created  5 mutation test units
+12:03:46 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+12:03:50 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+12:03:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/12:03:59 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+12:04:02 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+12:04:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+12:04:10 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/12:04:12 PIT >> INFO : Completed in 30 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 23 Killed 14 (61%)
+> KILLED 13 SURVIVED 6 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 3 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 8 Killed 6 (75%)
+> KILLED 5 SURVIVED 0 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 10 Killed 6 (60%)
+> KILLED 6 SURVIVED 4 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 6 Killed 4 (67%)
+> KILLED 4 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 2 Killed 1 (50%)
+> KILLED 0 SURVIVED 1 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 21 Killed 9 (43%)
+> KILLED 9 SURVIVED 3 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 9 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 27 Killed 15 (56%)
+> KILLED 14 SURVIVED 8 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 4 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 19 Killed 12 (63%)
+> KILLED 12 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 51 Killed 42 (82%)
+> KILLED 39 SURVIVED 5 TIMED_OUT 3 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 4 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : < 1 second
+> build mutation tests : < 1 second
+> run mutation analysis : 30 seconds
+--------------------------------------------------------------------------------
+> Total  : 30 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 159/212 (75%)
+>> Generated 167 mutations Killed 109 (65%)
+>> Mutations with no coverage 30. Test strength 80%
+>> Ran 131 tests (0.78 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  31.723 s
+[INFO] Finished at: 2021-11-09T12:04:12+01:00
+[INFO] ------------------------------------------------------------------------
+HEAD ist jetzt bei 4102fd7 [ascii-table] add project w/ modified TS

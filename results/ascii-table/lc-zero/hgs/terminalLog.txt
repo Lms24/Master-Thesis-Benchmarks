@@ -1,0 +1,112 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+[32m09.11.2021 - 11:56:08.732 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Current absolute path is: /home/lukas/workspace/master-benchmark/projects/ascii-table
+[m[32m09.11.2021 - 11:56:08.798 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to jar: /home/lukas/workspace/master-benchmark/projects/ascii-table/target/ascii-table-1.2.0-fat-tests.jar
+[m[32m09.11.2021 - 11:56:08.798 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to slicer: /home/lukas/workspace/master-jsr/slicer/Slicer4J
+[m[32m09.11.2021 - 11:56:08.798 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out dir: /home/lukas/workspace/master-benchmark/results/acii-table/lc-zero/hgs
+[m[32m09.11.2021 - 11:56:08.799 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out logging jar: /home/lukas/workspace/master-jsr/slicer/DynamicSlicingCore/DynamicSlicingLoggingClasses/DynamicSlicingLogger.jar
+[m[m09.11.2021 - 11:56:08.866 [INFO ] ParsingStrategy.parseTestSuiteFromFilePath() - Parsing test suite from File Path
+[m[m09.11.2021 - 11:56:08.866 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path ./src/test/java
+[m[m09.11.2021 - 11:56:09.196 [INFO ] ParsingStrategy.parseTestSuite() - Found 20 test cases
+[m[m09.11.2021 - 11:56:09.198 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefault has 2 assertions: 
+ assertEquals(expected, actualArray); ref {actualArray, expected} [47-47],
+ assertEquals(expected, actualObjects); ref {actualObjects, expected} [48-48]
+[m[m09.11.2021 - 11:56:09.199 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithHeader has 2 assertions: 
+ assertEquals(expected, actualArray); ref {actualArray, expected} [79-79],
+ assertEquals(expected, actualObjects); ref {actualObjects, expected} [80-80]
+[m[m09.11.2021 - 11:56:09.199 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithHeaderAndFooter has 2 assertions: 
+ assertEquals(expected, actualArray); ref {actualArray, expected} [113-113],
+ assertEquals(expected, actualObjects); ref {actualObjects, expected} [114-114]
+[m[m09.11.2021 - 11:56:09.199 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultNoOutsideBorder has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [142-142]
+[m[m09.11.2021 - 11:56:09.200 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultNoDataSeparators has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [169-169]
+[m[m09.11.2021 - 11:56:09.200 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultNoDataSeparatorsNoOutsideBorders has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [194-194]
+[m[m09.11.2021 - 11:56:09.200 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultNoBorders has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [217-217]
+[m[m09.11.2021 - 11:56:09.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultFancyBorders has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [247-247]
+[m[m09.11.2021 - 11:56:09.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithAlignments has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [277-277]
+[m[m09.11.2021 - 11:56:09.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithMaxWidth has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [316-316]
+[m[m09.11.2021 - 11:56:09.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithParagraphs has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [362-362]
+[m[m09.11.2021 - 11:56:09.202 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateNullInHeader has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [378-378]
+[m[m09.11.2021 - 11:56:09.202 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateNullInData has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [394-394]
+[m[m09.11.2021 - 11:56:09.203 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateDifferentSizedHeaderDataColumns has 2 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [414-414],
+ assertEquals(expected, actual); ref {actual, expected} [429-429]
+[m[m09.11.2021 - 11:56:09.203 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateTooFewHeaderColumns has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [447-447]
+[m[m09.11.2021 - 11:56:09.203 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testObjectDataArray has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [458-458]
+[m[m09.11.2021 - 11:56:09.203 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::calculatesCorrectColumnWidthWithLineBreak has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [470-470]
+[m[m09.11.2021 - 11:56:09.204 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateTooFewBorderChars has 0 assertions: 
+ 
+[m[m09.11.2021 - 11:56:09.204 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testTextSplitting has 1 assertions: 
+ assertEquals(expected, AsciiTable.splitTextIntoLinesOfMaxLength(str, 12)); ref {str, expected, AsciiTable} [489-489]
+[m[m09.11.2021 - 11:56:09.205 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.AsciiTableTest::testJustify has 6 assertions: 
+ assertJustify(expected[i], string, values()[i], 14, 0); ref {string, expected, i} [498-498],
+ assertJustify(expectedWithPadding[i], string, values()[i], 14, 3); ref {string, expectedWithPadding, i} [499-499],
+ assertJustify(expectedOddLengthCenter, string, CENTER, 9, 0); ref {CENTER, expectedOddLengthCenter, string} [503-503],
+ // Justifying to same length or less is a no-op
+assertJustify(string, string, CENTER, string.length(), 0); ref {CENTER, string} [506-506],
+ assertJustify(string, string, CENTER, string.length() - 1, 0); ref {CENTER, string} [507-507],
+ // Since padding is included in length, justifying to same length with padding should be no-op
+assertJustify(string, string, CENTER, string.length(), 3); ref {CENTER, string} [510-510]
+[m[m09.11.2021 - 11:56:09.206 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m09.11.2021 - 11:56:09.207 [INFO ] ParsingStrategy.lambda$parseTestSuite$14() - Testcase com.github.freva.asciitable.LineUtilsTest::linesIteratorTest has 1 assertions: 
+ assertEquals(Arrays.asList("", "", "Some text", "", "more text", "text", "end"), LineUtils.lines("\n\nSome text\r\n\rmore text\rtext\nend").collect(Collectors.toList())); ref {Collectors, LineUtils, Arrays} [14-15]
+[m[m09.11.2021 - 11:56:09.208 [INFO ] ParsingStrategy.mergePartialSuites() - ====================================================================
+[m[m09.11.2021 - 11:56:09.208 [INFO ] ParsingStrategy.mergePartialSuites() - Finished parsing the test suite.
+[m[m09.11.2021 - 11:56:09.210 [INFO ] ParsingStrategy.mergePartialSuites() - It contains 21 test cases and 29 assertions.
+[m[m09.11.2021 - 11:56:09.248 [INFO ] JUnitTestSuiteReducer.reduce() - Starting test suite reduction
+[m[m09.11.2021 - 11:56:09.262 [INFO ] GreedyHGSReductionStrategy.getRemovedTCs() - Keeping 0 Zero-Coverage test cases in the reduced test suite.
+[m[m09.11.2021 - 11:56:09.262 [INFO ] JUnitTestSuiteReducer.reduce() - Finished test suite reduction
+[m[m09.11.2021 - 11:56:09.262 [INFO ] JUnitTestSuiteReducer.reduce() - Reduced test suite from 21 to 6 test cases: 15 redundant test cases found
+[m[m09.11.2021 - 11:56:09.265 [INFO ] JUnitTestSuiteReducer.generateReport() - Generated report and wrote it to /home/lukas/workspace/master-benchmark/results/acii-table/lc-zero/hgs/tsr-report-%x%.xml
+[m[m09.11.2021 - 11:56:09.265 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path ./src/test/java
+[m[m09.11.2021 - 11:56:09.368 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote AsciiTableTest.java to /home/lukas/workspace/master-benchmark/results/acii-table/lc-zero/hgs/gen/com/github/freva/asciitable/AsciiTableTest.java
+[m[m09.11.2021 - 11:56:09.369 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LineUtilsTest.java to /home/lukas/workspace/master-benchmark/results/acii-table/lc-zero/hgs/gen/com/github/freva/asciitable/LineUtilsTest.java
+[m[m09.11.2021 - 11:56:09.369 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[m[m09.11.2021 - 11:56:09.369 [INFO ] JUnitJSRFacade.logTime() - * Facade Statistics:
+[m[m09.11.2021 - 11:56:09.370 [INFO ] JUnitJSRFacade.logTime() - * Parsing took: 0.344 seconds
+[m[m09.11.2021 - 11:56:09.370 [INFO ] JUnitJSRFacade.logTime() - * Reduction took: 0.055 seconds
+[m[m09.11.2021 - 11:56:09.371 [INFO ] JUnitJSRFacade.logTime() - * Serialization took: 0.104 seconds
+[m[m09.11.2021 - 11:56:09.371 [INFO ] JUnitJSRFacade.logTime() - * Overall: 0.503 seconds
+[m[m09.11.2021 - 11:56:09.371 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[mSuccessfully reduced your test suite!
++----------------------------------- Summary -----------------------------------+
+| Test suite size: 21 test cases
++-------------------------------------------------------------------------------+
+| Found 6 relevant test cases:
+|    com.github.freva.asciitable.AsciiTableTest:testObjectDataArray
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithAlignments
+|    com.github.freva.asciitable.AsciiTableTest:testValidateTooFewBorderChars
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithParagraphs
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithMaxWidth
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithHeader
++-------------------------------------------------------------------------------+
+| Found 15 redundant test cases:
+|    com.github.freva.asciitable.AsciiTableTest:testValidateDifferentSizedHeaderDataColumns
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithHeaderAndFooter
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultFancyBorders
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultNoOutsideBorder
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultNoDataSeparatorsNoOutsideBorders
+|    com.github.freva.asciitable.AsciiTableTest:testJustify
+|    com.github.freva.asciitable.AsciiTableTest:testValidateNullInData
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultNoBorders
+|    com.github.freva.asciitable.AsciiTableTest:calculatesCorrectColumnWidthWithLineBreak
+|    com.github.freva.asciitable.AsciiTableTest:testValidateTooFewHeaderColumns
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultNoDataSeparators
+|    com.github.freva.asciitable.AsciiTableTest:testValidateNullInHeader
+|    com.github.freva.asciitable.LineUtilsTest:linesIteratorTest
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefault
+|    com.github.freva.asciitable.AsciiTableTest:testTextSplitting
++-------------------------------------------------------------------------------+
+| Wrote reduced test suite code to: /home/lukas/workspace/master-benchmark/results/acii-table/lc-zero/hgs/gen
++-------------------------------------------------------------------------------+
