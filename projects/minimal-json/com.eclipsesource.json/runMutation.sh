@@ -3,7 +3,7 @@ cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 
 
 PROJECT_NAME="minimal-json"
-RESULTS_BASE_DIR="../../results/$PROJECT_NAME"
+RESULTS_BASE_DIR="../../../results/$PROJECT_NAME"
 TEST_SRC_DIR="src/test/java"
 TOP_PACKAGE="*"
 
