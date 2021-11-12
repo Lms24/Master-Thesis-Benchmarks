@@ -37,6 +37,7 @@ import org.junit.runners.Parameterized.Parameters;
  * Compare FastDateParser with SimpleDateFormat 
  */
 @RunWith(Parameterized.class)
+@Ignore("Not supported by JSR")
 public class FastDateParserSDFTest {
 
     @Parameters(name= "{index}: {0} {1} {2}")
