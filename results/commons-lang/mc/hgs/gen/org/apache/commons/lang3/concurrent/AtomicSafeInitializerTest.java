@@ -20,6 +20,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 
 /**
  * Test class for {@code AtomicSafeInitializer}.
@@ -55,6 +56,7 @@ public class AtomicSafeInitializerTest extends AbstractConcurrentInitializerTest
      * @throws java.lang.InterruptedException because {@link #testGetConcurrent()} may throw it
      */
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testNumberOfInitializeInvocations() throws ConcurrentException, InterruptedException {
         testGetConcurrent();
         assertEquals("Wrong number of invocations", 1, initializer.initCounter.get());
@@ -77,5 +79,17 @@ public class AtomicSafeInitializerTest extends AbstractConcurrentInitializerTest
             initCounter.incrementAndGet();
             return new Object();
         }
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testGetMultipleTimes() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testGetConcurrent() {
     }
 }

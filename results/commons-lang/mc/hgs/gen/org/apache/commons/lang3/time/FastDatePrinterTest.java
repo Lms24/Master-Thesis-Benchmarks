@@ -26,8 +26,8 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
 import org.apache.commons.lang3.SerializationUtils;
-import org.junit.Test;
 import org.junit.Ignore;
+import org.junit.Test;
 
 /**
  * Unit tests {@link org.apache.commons.lang3.time.FastDatePrinter}.
@@ -187,6 +187,7 @@ public class FastDatePrinterTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLang303() {
         final Calendar cal = Calendar.getInstance();
         cal.set(2004, 11, 31);
@@ -221,6 +222,7 @@ public class FastDatePrinterTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testEquals() {
         final DatePrinter printer1 = getInstance(YYYY_MM_DD);
         final DatePrinter printer2 = getInstance(YYYY_MM_DD);
@@ -230,6 +232,7 @@ public class FastDatePrinterTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void testToStringContainsName() {
         final DatePrinter printer = getInstance(YYYY_MM_DD);
         assertTrue(printer.toString().startsWith("FastDate"));
@@ -257,7 +260,7 @@ public class FastDatePrinterTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
+    @Ignore("Not supported by Slicer4")
     public void testTimeZoneAsZ() throws Exception {
         Calendar c = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
         FastDateFormat noColonFormat = FastDateFormat.getInstance("Z");
@@ -308,6 +311,7 @@ public class FastDatePrinterTest {
     }
 
     @Test
+    @Ignore("Redundant Test Case (identified by JSR)")
     public void test1806() throws ParseException {
         for (Expected1806 trial : Expected1806.values()) {
             Calendar cal = initializeCalendar(trial.zone);

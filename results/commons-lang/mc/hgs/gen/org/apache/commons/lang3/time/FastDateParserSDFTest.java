@@ -35,6 +35,7 @@ import org.junit.runners.Parameterized.Parameters;
  * Compare FastDateParser with SimpleDateFormat
  */
 @RunWith(Parameterized.class)
+@Ignore("Not supported by JSR")
 public class FastDateParserSDFTest {
 
     @Parameters(name = "{index}: {0} {1} {2}")
@@ -101,25 +102,21 @@ public class FastDateParserSDFTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testOriginal() throws Exception {
         checkParse(input);
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testOriginalPP() throws Exception {
         checkParsePosition(input);
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testUpperCase() throws Exception {
         checkParse(input.toUpperCase(locale));
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testUpperCasePP() throws Exception {
         checkParsePosition(input.toUpperCase(locale));
     }
@@ -127,7 +124,6 @@ public class FastDateParserSDFTest {
     @Test
     // not currently supported
     @Ignore
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLowerCase() throws Exception {
         checkParse(input.toLowerCase(locale));
     }
@@ -135,7 +131,6 @@ public class FastDateParserSDFTest {
     @Test
     // not currently supported
     @Ignore
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLowerCasePP() throws Exception {
         checkParsePosition(input.toLowerCase(locale));
     }

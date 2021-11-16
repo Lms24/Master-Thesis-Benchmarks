@@ -38,4 +38,46 @@ public class DefaultExceptionContextTest extends AbstractExceptionContextTest<De
         exceptionContext = new DefaultExceptionContext();
         exceptionContext.getFormattedExceptionMessage(null);
     }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testAddContextValue() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testSetContextValue() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testGetFirstContextValue() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testGetContextValues() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testGetContextLabels() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testGetContextEntries() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testJavaSerialization() {
+    }
 }

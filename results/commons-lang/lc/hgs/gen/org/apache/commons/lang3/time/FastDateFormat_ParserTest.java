@@ -18,6 +18,8 @@ package org.apache.commons.lang3.time;
 
 import java.util.Locale;
 import java.util.TimeZone;
+import org.junit.Test;
+import org.junit.Ignore;
 
 /**
  * Unit tests for the parse methods of FastDateFormat
@@ -29,5 +31,137 @@ public class FastDateFormat_ParserTest extends FastDateParserTest {
     @Override
     protected DateParser getInstance(final String format, final TimeZone timeZone, final Locale locale) {
         return FastDateFormat.getInstance(format, timeZone, locale);
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void test_Equality_Hash() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testParseZone() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testParseLongShort() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLocales_Long_AD() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLocales_Long_BC() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLocales_Short_AD() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLocales_Short_BC() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLocales_LongNoEra_AD() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLocales_LongNoEra_BC() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLocales_ShortNoEra_AD() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLocales_ShortNoEra_BC() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testParseNumerics() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testQuotes() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLANG_831() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testShortDateStyleWithLocales() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLowYearPadding() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testMilleniumBug() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLang538() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testPatternMatches() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLocaleMatches() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testTimeZoneMatches() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testLang996() {
     }
 }

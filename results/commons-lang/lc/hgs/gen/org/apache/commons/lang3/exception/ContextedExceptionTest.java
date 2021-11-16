@@ -101,4 +101,28 @@ public class ContextedExceptionTest extends AbstractExceptionContextTest<Context
         exceptionContext = new ContextedException(null, new Exception(TEST_MESSAGE), new DefaultExceptionContext());
         assertNull(exceptionContext.getRawMessage());
     }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testAddContextValue() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testSetContextValue() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testGetContextEntries() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testJavaSerialization() {
+    }
 }

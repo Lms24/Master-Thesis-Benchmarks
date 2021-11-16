@@ -96,7 +96,6 @@ public class ReflectionToStringBuilderMutateInspectConcurrencyTest {
 
     @Test
     @Ignore
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testConcurrency() throws Exception {
         final TestFixture testFixture = new TestFixture();
         final int numMutators = 10;

@@ -27,7 +27,6 @@ import java.util.List;
 import java.util.Set;
 import org.apache.commons.lang3.SerializationUtils;
 import org.apache.commons.lang3.tuple.Pair;
-import org.junit.Ignore;
 
 /**
  * Abstract test of an ExceptionContext implementation.
@@ -54,7 +53,6 @@ public abstract class AbstractExceptionContextTest<T extends ExceptionContext & 
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testAddContextValue() {
         final String message = exceptionContext.getFormattedExceptionMessage(TEST_MESSAGE);
         assertTrue(message.indexOf(TEST_MESSAGE) >= 0);
@@ -79,7 +77,6 @@ public abstract class AbstractExceptionContextTest<T extends ExceptionContext & 
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testSetContextValue() {
         exceptionContext.addContextValue("test2", "different value");
         exceptionContext.setContextValue("test3", "3");
@@ -104,7 +101,6 @@ public abstract class AbstractExceptionContextTest<T extends ExceptionContext & 
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetFirstContextValue() {
         exceptionContext.addContextValue("test2", "different value");
         assertTrue(exceptionContext.getFirstContextValue("test1") == null);
@@ -115,7 +111,6 @@ public abstract class AbstractExceptionContextTest<T extends ExceptionContext & 
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetContextValues() {
         exceptionContext.addContextValue("test2", "different value");
         assertEquals(exceptionContext.getContextValues("test1"), Collections.singletonList(null));
@@ -125,7 +120,6 @@ public abstract class AbstractExceptionContextTest<T extends ExceptionContext & 
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetContextLabels() {
         assertEquals(5, exceptionContext.getContextEntries().size());
         exceptionContext.addContextValue("test2", "different value");
@@ -139,7 +133,6 @@ public abstract class AbstractExceptionContextTest<T extends ExceptionContext & 
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetContextEntries() {
         assertEquals(5, exceptionContext.getContextEntries().size());
         exceptionContext.addContextValue("test2", "different value");
@@ -154,7 +147,6 @@ public abstract class AbstractExceptionContextTest<T extends ExceptionContext & 
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testJavaSerialization() {
         exceptionContext.setContextValue("test Poorly written obj", "serializable replacement");
         final T clone = (T) SerializationUtils.deserialize(SerializationUtils.serialize(exceptionContext));

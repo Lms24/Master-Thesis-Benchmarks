@@ -63,21 +63,18 @@ public class ReflectionToStringBuilderConcurrencyTest {
 
     @Test
     @Ignore
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testLinkedList() throws InterruptedException, ExecutionException {
         this.testConcurrency(new CollectionHolder<List<Integer>>(new LinkedList<Integer>()));
     }
 
     @Test
     @Ignore
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testArrayList() throws InterruptedException, ExecutionException {
         this.testConcurrency(new CollectionHolder<List<Integer>>(new ArrayList<Integer>()));
     }
 
     @Test
     @Ignore
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testCopyOnWriteArrayList() throws InterruptedException, ExecutionException {
         this.testConcurrency(new CollectionHolder<List<Integer>>(new CopyOnWriteArrayList<Integer>()));
     }

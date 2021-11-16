@@ -17,6 +17,8 @@
 package org.apache.commons.lang3.concurrent;
 
 import org.junit.Before;
+import org.junit.Test;
+import org.junit.Ignore;
 
 /**
  * Test class for {@code LazyInitializer}.
@@ -57,5 +59,17 @@ public class LazyInitializerTest extends AbstractConcurrentInitializerTest {
         protected Object initialize() {
             return new Object();
         }
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testGetMultipleTimes() {
+    }
+
+    @Override
+    @Test
+    @Ignore("Redundant Test Case (identified and added to concrete class by JSR)")
+    public void testGetConcurrent() {
     }
 }

@@ -20,7 +20,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import java.util.concurrent.CountDownLatch;
 import org.junit.Test;
-import org.junit.Ignore;
 
 /**
  * <p>
@@ -43,7 +42,6 @@ public abstract class AbstractConcurrentInitializerTest {
      * @throws org.apache.commons.lang3.concurrent.ConcurrentException because the object under test may throw it
      */
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGet() throws ConcurrentException {
         assertNotNull("No managed object", createInitializer().get());
     }
@@ -55,7 +53,6 @@ public abstract class AbstractConcurrentInitializerTest {
      * @throws org.apache.commons.lang3.concurrent.ConcurrentException because the object under test may throw it
      */
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetMultipleTimes() throws ConcurrentException {
         final ConcurrentInitializer<Object> initializer = createInitializer();
         final Object obj = initializer.get();
@@ -72,7 +69,6 @@ public abstract class AbstractConcurrentInitializerTest {
      * @throws java.lang.InterruptedException because the threading API my throw it
      */
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testGetConcurrent() throws ConcurrentException, InterruptedException {
         final ConcurrentInitializer<Object> initializer = createInitializer();
         final int threadCount = 20;

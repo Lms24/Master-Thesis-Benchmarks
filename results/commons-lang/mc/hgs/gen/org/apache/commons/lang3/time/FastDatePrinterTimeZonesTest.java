@@ -23,12 +23,13 @@ import java.util.Calendar;
 import java.util.Collection;
 import java.util.List;
 import java.util.TimeZone;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.junit.Ignore;
 
 @RunWith(Parameterized.class)
+@Ignore("Not supported by JSR (no Coverage add anyway)")
 public class FastDatePrinterTimeZonesTest {
 
     private static final String PATTERN = "h:mma z";
@@ -50,7 +51,6 @@ public class FastDatePrinterTimeZonesTest {
     }
 
     @Test
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testCalendarTimezoneRespected() {
         final Calendar cal = Calendar.getInstance(timeZone);
         final SimpleDateFormat sdf = new SimpleDateFormat(PATTERN);
