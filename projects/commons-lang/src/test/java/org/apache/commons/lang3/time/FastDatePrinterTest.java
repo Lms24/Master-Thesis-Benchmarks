@@ -28,6 +28,7 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 import org.apache.commons.lang3.SerializationUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -264,6 +265,7 @@ public class FastDatePrinterTest {
     }
 
     @Test
+    @Ignore("Not supported by Slicer4")
     public void testTimeZoneAsZ() throws Exception {
         Calendar c = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
         FastDateFormat noColonFormat = FastDateFormat.getInstance("Z");
