@@ -1,0 +1,690 @@
+HEAD ist jetzt bei c569c8b [ascii-table] add gitignore
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.commons:commons-lang3 >------------------
+[INFO] Building Apache Commons Lang 3.4
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ commons-lang3 ---
+[INFO] Deleting /home/lukas/workspace/master-benchmark/projects/commons-lang/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ commons-lang3 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (javadoc.resources) @ commons-lang3 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/lukas/workspace/master-benchmark/projects/commons-lang/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ commons-lang3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ commons-lang3 ---
+[INFO] Executing: /bin/sh -c cd /home/lukas/workspace/master-benchmark/projects/commons-lang && svn --non-interactive info
+[INFO] Working directory: /home/lukas/workspace/master-benchmark/projects/commons-lang
+[INFO] Storing buildNumber: ?????? at timestamp: 1637065437902
+[INFO] Executing: /bin/sh -c cd /home/lukas/workspace/master-benchmark/projects/commons-lang && svn --non-interactive info
+[INFO] Working directory: /home/lukas/workspace/master-benchmark/projects/commons-lang
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/lukas/workspace/master-benchmark/projects/commons-lang/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 133 source files to /home/lukas/workspace/master-benchmark/projects/commons-lang/target/classes
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-lang/src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java: Some input files use or override a deprecated API.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-lang/src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-lang/src/main/java/org/apache/commons/lang3/SerializationUtils.java: /home/lukas/workspace/master-benchmark/projects/commons-lang/src/main/java/org/apache/commons/lang3/SerializationUtils.java uses unchecked or unsafe operations.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-lang/src/main/java/org/apache/commons/lang3/SerializationUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (bundle-manifest) @ commons-lang3 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (checkAPIcompatibility) @ commons-lang3 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 148 source files to /home/lukas/workspace/master-benchmark/projects/commons-lang/target/test-classes
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-lang/src/test/java/org/apache/commons/lang3/reflect/InheritanceUtilsTest.java: Some input files use or override a deprecated API.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-lang/src/test/java/org/apache/commons/lang3/reflect/InheritanceUtilsTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-lang/src/test/java/org/apache/commons/lang3/exception/AbstractExceptionContextTest.java: /home/lukas/workspace/master-benchmark/projects/commons-lang/src/test/java/org/apache/commons/lang3/exception/AbstractExceptionContextTest.java uses unchecked or unsafe operations.
+[INFO] /home/lukas/workspace/master-benchmark/projects/commons-lang/src/test/java/org/apache/commons/lang3/exception/AbstractExceptionContextTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ commons-lang3 ---
+[INFO] Surefire report directory: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.commons.lang3.BooleanUtilsTest
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.011 sec - in org.apache.commons.lang3.BooleanUtilsTest
+Running org.apache.commons.lang3.CharSetTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.apache.commons.lang3.CharSetTest
+Running org.apache.commons.lang3.ClassPathUtilsTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.lang3.ClassPathUtilsTest
+Running org.apache.commons.lang3.ArrayUtilsAddTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.ArrayUtilsAddTest
+Running org.apache.commons.lang3.SystemUtilsTest
+Can't test IS_JAVA value: 11.0.12
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.apache.commons.lang3.SystemUtilsTest
+Running org.apache.commons.lang3.LocaleUtilsTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.052 sec - in org.apache.commons.lang3.LocaleUtilsTest
+Running org.apache.commons.lang3.SerializationUtilsTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.029 sec - in org.apache.commons.lang3.SerializationUtilsTest
+Running org.apache.commons.lang3.ArrayUtilsTest
+Tests run: 205, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 0.037 sec - in org.apache.commons.lang3.ArrayUtilsTest
+Running org.apache.commons.lang3.StringUtilsIsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.commons.lang3.StringUtilsIsTest
+Running org.apache.commons.lang3.RangeTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 sec - in org.apache.commons.lang3.RangeTest
+Running org.apache.commons.lang3.reflect.InheritanceUtilsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.reflect.InheritanceUtilsTest
+Running org.apache.commons.lang3.reflect.MethodUtilsTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.021 sec - in org.apache.commons.lang3.reflect.MethodUtilsTest
+Running org.apache.commons.lang3.reflect.ConstructorUtilsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in org.apache.commons.lang3.reflect.ConstructorUtilsTest
+Running org.apache.commons.lang3.reflect.TypeUtilsTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.019 sec - in org.apache.commons.lang3.reflect.TypeUtilsTest
+Running org.apache.commons.lang3.reflect.TypeLiteralTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.reflect.TypeLiteralTest
+Running org.apache.commons.lang3.reflect.FieldUtilsTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.commons.lang3.reflect.FieldUtils (file:/home/lukas/workspace/master-benchmark/projects/commons-lang/target/classes/) to field java.lang.reflect.Field.modifiers
+WARNING: Please consider reporting this to the maintainers of org.apache.commons.lang3.reflect.FieldUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.017 sec - in org.apache.commons.lang3.reflect.FieldUtilsTest
+Running org.apache.commons.lang3.StringUtilsSubstringTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.StringUtilsSubstringTest
+Running org.apache.commons.lang3.CharSetUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.CharSetUtilsTest
+Running org.apache.commons.lang3.ClassUtilsTest
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.011 sec - in org.apache.commons.lang3.ClassUtilsTest
+Running org.apache.commons.lang3.RandomUtilsTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in org.apache.commons.lang3.RandomUtilsTest
+Running org.apache.commons.lang3.StringUtilsTrimEmptyTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.apache.commons.lang3.StringUtilsTrimEmptyTest
+Running org.apache.commons.lang3.AnnotationUtilsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.apache.commons.lang3.AnnotationUtilsTest
+Running org.apache.commons.lang3.event.EventUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 sec - in org.apache.commons.lang3.event.EventUtilsTest
+Running org.apache.commons.lang3.event.EventListenerSupportTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.apache.commons.lang3.event.EventListenerSupportTest
+Running org.apache.commons.lang3.ValidateTest
+Tests run: 63, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 0.006 sec - in org.apache.commons.lang3.ValidateTest
+Running org.apache.commons.lang3.RandomStringUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.commons.lang3.RandomStringUtilsTest
+Running org.apache.commons.lang3.NotImplementedExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.NotImplementedExceptionTest
+Running org.apache.commons.lang3.CharEncodingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in org.apache.commons.lang3.CharEncodingTest
+Running org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.008 sec - in org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest
+Running org.apache.commons.lang3.CharSequenceUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.CharSequenceUtilsTest
+Running org.apache.commons.lang3.ArrayUtilsRemoveTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.ArrayUtilsRemoveTest
+Running org.apache.commons.lang3.mutable.MutableLongTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.mutable.MutableLongTest
+Running org.apache.commons.lang3.mutable.MutableBooleanTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.mutable.MutableBooleanTest
+Running org.apache.commons.lang3.mutable.MutableIntTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.mutable.MutableIntTest
+Running org.apache.commons.lang3.mutable.MutableShortTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.001 sec - in org.apache.commons.lang3.mutable.MutableShortTest
+Running org.apache.commons.lang3.mutable.MutableDoubleTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.mutable.MutableDoubleTest
+Running org.apache.commons.lang3.mutable.MutableFloatTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.lang3.mutable.MutableFloatTest
+Running org.apache.commons.lang3.mutable.MutableObjectTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.mutable.MutableObjectTest
+Running org.apache.commons.lang3.mutable.MutableByteTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.001 sec - in org.apache.commons.lang3.mutable.MutableByteTest
+Running org.apache.commons.lang3.ConversionTest
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 sec - in org.apache.commons.lang3.ConversionTest
+Running org.apache.commons.lang3.tuple.MutablePairTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.tuple.MutablePairTest
+Running org.apache.commons.lang3.tuple.PairTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.commons.lang3.tuple.PairTest
+Running org.apache.commons.lang3.tuple.ImmutableTripleTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.tuple.ImmutableTripleTest
+Running org.apache.commons.lang3.tuple.TripleTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.tuple.TripleTest
+Running org.apache.commons.lang3.tuple.ImmutablePairTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.tuple.ImmutablePairTest
+Running org.apache.commons.lang3.tuple.MutableTripleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.tuple.MutableTripleTest
+Running org.apache.commons.lang3.EnumUtilsTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.lang3.EnumUtilsTest
+Running org.apache.commons.lang3.concurrent.BackgroundInitializerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.008 sec - in org.apache.commons.lang3.concurrent.BackgroundInitializerTest
+Running org.apache.commons.lang3.concurrent.BasicThreadFactoryTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.lang3.concurrent.BasicThreadFactoryTest
+Running org.apache.commons.lang3.concurrent.LazyInitializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.lang3.concurrent.LazyInitializerTest
+Running org.apache.commons.lang3.concurrent.ConstantInitializerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.concurrent.ConstantInitializerTest
+Running org.apache.commons.lang3.concurrent.TimedSemaphoreTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.16 sec - in org.apache.commons.lang3.concurrent.TimedSemaphoreTest
+Running org.apache.commons.lang3.concurrent.ConcurrentUtilsTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.005 sec - in org.apache.commons.lang3.concurrent.ConcurrentUtilsTest
+Running org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.012 sec - in org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest
+Running org.apache.commons.lang3.concurrent.AtomicSafeInitializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.commons.lang3.concurrent.AtomicSafeInitializerTest
+Running org.apache.commons.lang3.concurrent.AtomicInitializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in org.apache.commons.lang3.concurrent.AtomicInitializerTest
+Running org.apache.commons.lang3.concurrent.CallableBackgroundInitializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.concurrent.CallableBackgroundInitializerTest
+Running org.apache.commons.lang3.HashSetvBitSetTest
+Ratio=83% array=100 count=1 extract=3739547 bitset=3125046
+Ratio=54% array=100 count=10 extract=6073422 bitset=3321733
+Ratio=11% array=100 count=50 extract=22119224 bitset=2595908
+Ratio=11% array=100 count=100 extract=18522293 bitset=2057329
+Ratio=116% array=1000 count=10 extract=13334562 bitset=15554014
+Ratio=50% array=1000 count=100 extract=31279763 bitset=15833058
+Ratio=4% array=1000 count=500 extract=50786995 bitset=2214672
+Ratio=0% array=1000 count=1000 extract=55390023 bitset=398451
+Ratio=46% count=0 hash=139845 bits=64473
+Ratio=25% count=5 hash=811653 bits=209604
+Ratio=24% count=10 hash=1326817 bits=324925
+Ratio=22% count=200 hash=28326665 bits=6253599
+Ratio=15% count=50 hash=3994808 bits=626918
+Ratio=18% count=100 hash=7822326 bits=1416059
+Ratio=15% count=1000 hash=72005271 bits=11299596
+Ratio=18% count=2000 hash=130846491 bits=23841893
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.553 sec - in org.apache.commons.lang3.HashSetvBitSetTest
+Running org.apache.commons.lang3.StringUtilsTest
+Tests run: 124, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.032 sec - in org.apache.commons.lang3.StringUtilsTest
+Running org.apache.commons.lang3.StringUtilsStartsEndsWithTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.StringUtilsStartsEndsWithTest
+Running org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.003 sec - in org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+Running org.apache.commons.lang3.exception.DefaultExceptionContextTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 sec - in org.apache.commons.lang3.exception.DefaultExceptionContextTest
+Running org.apache.commons.lang3.exception.ContextedRuntimeExceptionTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.commons.lang3.exception.ContextedRuntimeExceptionTest
+Running org.apache.commons.lang3.exception.ContextedExceptionTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 sec - in org.apache.commons.lang3.exception.ContextedExceptionTest
+Running org.apache.commons.lang3.exception.ExceptionUtilsTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.01 sec - in org.apache.commons.lang3.exception.ExceptionUtilsTest
+Running org.apache.commons.lang3.CharUtilsTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.CharUtilsTest
+Running org.apache.commons.lang3.ObjectUtilsTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.004 sec - in org.apache.commons.lang3.ObjectUtilsTest
+Running org.apache.commons.lang3.math.NumberUtilsTest
+Tests run: 91, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.007 sec - in org.apache.commons.lang3.math.NumberUtilsTest
+Running org.apache.commons.lang3.math.IEEE754rUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.math.IEEE754rUtilsTest
+Running org.apache.commons.lang3.math.FractionTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.053 sec - in org.apache.commons.lang3.math.FractionTest
+Running org.apache.commons.lang3.JavaVersionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.JavaVersionTest
+Running org.apache.commons.lang3.StringEscapeUtilsTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.176 sec - in org.apache.commons.lang3.StringEscapeUtilsTest
+Running org.apache.commons.lang3.BitFieldTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.BitFieldTest
+Running org.apache.commons.lang3.CharRangeTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.apache.commons.lang3.CharRangeTest
+Running org.apache.commons.lang3.text.CompositeFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.lang3.text.CompositeFormatTest
+Running org.apache.commons.lang3.text.WordUtilsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.text.WordUtilsTest
+Running org.apache.commons.lang3.text.StrLookupTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.text.StrLookupTest
+Running org.apache.commons.lang3.text.translate.NumericEntityEscaperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.NumericEntityEscaperTest
+Running org.apache.commons.lang3.text.translate.OctalUnescaperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.OctalUnescaperTest
+Running org.apache.commons.lang3.text.translate.LookupTranslatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.LookupTranslatorTest
+Running org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemoverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemoverTest
+Running org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest
+Running org.apache.commons.lang3.text.translate.EntityArraysTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.EntityArraysTest
+Running org.apache.commons.lang3.text.translate.UnicodeUnescaperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.UnicodeUnescaperTest
+Running org.apache.commons.lang3.text.translate.UnicodeEscaperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.text.translate.UnicodeEscaperTest
+Running org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Tests run: 51, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.001 sec - in org.apache.commons.lang3.text.StrBuilderAppendInsertTest
+Running org.apache.commons.lang3.text.ExtendedMessageFormatTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.739 sec - in org.apache.commons.lang3.text.ExtendedMessageFormatTest
+Running org.apache.commons.lang3.text.StrMatcherTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.StrMatcherTest
+Running org.apache.commons.lang3.text.FormattableUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.text.FormattableUtilsTest
+Running org.apache.commons.lang3.text.StrTokenizerTest
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec - in org.apache.commons.lang3.text.StrTokenizerTest
+Running org.apache.commons.lang3.text.StrBuilderTest
+Tests run: 90, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.006 sec - in org.apache.commons.lang3.text.StrBuilderTest
+Running org.apache.commons.lang3.text.StrSubstitutorTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.005 sec - in org.apache.commons.lang3.text.StrSubstitutorTest
+Running org.apache.commons.lang3.time.FastDateParserSDFTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.time.FastDateParserSDFTest
+Running org.apache.commons.lang3.time.DateFormatUtilsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.apache.commons.lang3.time.DateFormatUtilsTest
+Running org.apache.commons.lang3.time.StopWatchTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.756 sec - in org.apache.commons.lang3.time.StopWatchTest
+Running org.apache.commons.lang3.time.FastDateFormatTest
+>>FastDateFormatTest: FastDateParser:1303  SimpleDateFormat:2499
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.425 sec - in org.apache.commons.lang3.time.FastDateFormatTest
+Running org.apache.commons.lang3.time.FastDatePrinterTimeZonesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.time.FastDatePrinterTimeZonesTest
+Running org.apache.commons.lang3.time.DurationFormatUtilsTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.437 sec - in org.apache.commons.lang3.time.DurationFormatUtilsTest
+Running org.apache.commons.lang3.time.FastDateFormat_PrinterTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.007 sec - in org.apache.commons.lang3.time.FastDateFormat_PrinterTest
+Running org.apache.commons.lang3.time.FastDateFormat_ParserTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 2.825 sec - in org.apache.commons.lang3.time.FastDateFormat_ParserTest
+Running org.apache.commons.lang3.time.DateUtilsRoundingTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.009 sec - in org.apache.commons.lang3.time.DateUtilsRoundingTest
+Running org.apache.commons.lang3.time.FastDateParserTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 1.416 sec - in org.apache.commons.lang3.time.FastDateParserTest
+Running org.apache.commons.lang3.time.DateUtilsTest
+DateUtilsTest: Default Locale=de_AT
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.001 sec - in org.apache.commons.lang3.time.DateUtilsTest
+Running org.apache.commons.lang3.time.DateUtilsFragmentTest
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.001 sec - in org.apache.commons.lang3.time.DateUtilsFragmentTest
+Running org.apache.commons.lang3.time.FastDatePrinterTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0 sec - in org.apache.commons.lang3.time.FastDatePrinterTest
+Running org.apache.commons.lang3.builder.ReflectionToStringBuilderMutateInspectConcurrencyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.ReflectionToStringBuilderMutateInspectConcurrencyTest
+Running org.apache.commons.lang3.builder.ToStringBuilderTest
+Tests run: 74, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.02 sec - in org.apache.commons.lang3.builder.ToStringBuilderTest
+Running org.apache.commons.lang3.builder.MultiLineToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.MultiLineToStringStyleTest
+Running org.apache.commons.lang3.builder.DefaultToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.DefaultToStringStyleTest
+Running org.apache.commons.lang3.builder.NoClassNameToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.NoClassNameToStringStyleTest
+Running org.apache.commons.lang3.builder.MultilineRecursiveToStringStyleTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.lang3.builder.MultilineRecursiveToStringStyleTest
+Running org.apache.commons.lang3.builder.ToStringStyleConcurrencyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.967 sec - in org.apache.commons.lang3.builder.ToStringStyleConcurrencyTest
+Running org.apache.commons.lang3.builder.JsonToStringStyleTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.JsonToStringStyleTest
+Running org.apache.commons.lang3.builder.DiffBuilderTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.008 sec - in org.apache.commons.lang3.builder.DiffBuilderTest
+Running org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.HashCodeBuilderAndEqualsBuilderTest
+Running org.apache.commons.lang3.builder.DiffResultTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.DiffResultTest
+Running org.apache.commons.lang3.builder.NoFieldNamesToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.NoFieldNamesToStringStyleTest
+Running org.apache.commons.lang3.builder.ShortPrefixToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.ShortPrefixToStringStyleTest
+Running org.apache.commons.lang3.builder.ToStringStyleTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.ToStringStyleTest
+Running org.apache.commons.lang3.builder.SimpleToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.SimpleToStringStyleTest
+Running org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest
+Running org.apache.commons.lang3.builder.CompareToBuilderTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.004 sec - in org.apache.commons.lang3.builder.CompareToBuilderTest
+Running org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest
+Running org.apache.commons.lang3.builder.RecursiveToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.lang3.builder.RecursiveToStringStyleTest
+Running org.apache.commons.lang3.builder.DiffTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.DiffTest
+Running org.apache.commons.lang3.builder.HashCodeBuilderTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 sec - in org.apache.commons.lang3.builder.HashCodeBuilderTest
+Running org.apache.commons.lang3.builder.StandardToStringStyleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0 sec - in org.apache.commons.lang3.builder.StandardToStringStyleTest
+Running org.apache.commons.lang3.builder.EqualsBuilderTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 sec - in org.apache.commons.lang3.builder.EqualsBuilderTest
+
+Results :
+
+
+
+
+Tests run: 2635, Failures: 0, Errors: 0, Skipped: 137
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ commons-lang3 ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-assembly-plugin:3.3.0:single (make-assembly) @ commons-lang3 ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[INFO] Reading assembly descriptor: src/assembly/bin.xml
+[INFO] Reading assembly descriptor: src/assembly/src.xml
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-fat-tests.jar
+[INFO] Building tar: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-bin.tar.gz
+[INFO] Building zip: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-bin.zip
+[INFO] Building tar: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-src.tar.gz
+[INFO] Building zip: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-src.zip
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:test-jar (default) @ commons-lang3 ---
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ commons-lang3 ---
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4.jar to /home/lukas/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/commons-lang/pom.xml to /home/lukas/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-fat-tests.jar to /home/lukas/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-fat-tests.jar
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-bin.tar.gz to /home/lukas/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-bin.tar.gz
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-bin.zip to /home/lukas/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-bin.zip
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-src.tar.gz to /home/lukas/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-src.tar.gz
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-src.zip to /home/lukas/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-src.zip
+[INFO] Installing /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-tests.jar to /home/lukas/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  27.852 s
+[INFO] Finished at: 2021-11-16T13:24:24+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.commons:commons-lang3 >------------------
+[INFO] Building Apache Commons Lang 3.4
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-assembly-plugin:3.3.0:single (default-cli) @ commons-lang3 ---
+[INFO] Reading assembly descriptor: src/assembly/assembly.xml
+[INFO] Reading assembly descriptor: src/assembly/bin.xml
+[INFO] Reading assembly descriptor: src/assembly/src.xml
+[WARNING] Cannot include project artifact: org.apache.commons:commons-lang3:jar:3.4; it doesn't have an associated file or directory.
+[INFO] Building jar: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-fat-tests.jar
+[INFO] Building tar: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-bin.tar.gz
+[INFO] Building zip: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-bin.zip
+[INFO] Building tar: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-src.tar.gz
+[INFO] Building zip: /home/lukas/workspace/master-benchmark/projects/commons-lang/target/commons-lang3-3.4-src.zip
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.898 s
+[INFO] Finished at: 2021-11-16T13:24:27+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.commons:commons-lang3 >------------------
+[INFO] Building Apache Commons Lang 3.4
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.7.2:mutationCoverage (default-cli) @ commons-lang3 ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum constructor filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : TestNG plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /home/lukas/workspace/master-benchmark/projects/commons-lang/target/classes
+[INFO] Defaulting target classes to match packages in build directory
+[INFO] Defaulting target tests to match packages in test build directory
+13:24:29 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+13:24:33 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+13:24:33 PIT >> INFO : Created  196 mutation test units in pre scan
+13:24:33 PIT >> INFO : Sending 539 test classes to minion
+13:24:33 PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/13:24:36 PIT >> INFO : MINION : WARNING: An illegal reflective access operation has occurred
+13:24:36 PIT >> INFO : MINION : WARNING: Illegal reflective access by org.apache.commons.lang3.builder.CompareToBuilder (file:/home/lukas/workspace/master-benchmark/projects/commons-lang/target/classes/) to field java.lang.String.value
+13:24:36 PIT >> INFO : MINION : WARNING: Please consider reporting this to the maintainers of org.apache.commons.lang3.builder.CompareToBuilder
+13:24:36 PIT >> INFO : MINION : WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+13:24:36 PIT >> INFO : MINION : WARNING: All illegal access operations will be denied in a future release
+-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\13:24:54 PIT >> INFO : Calculated coverage in 21 seconds.
+13:24:58 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+13:24:58 PIT >> INFO : Created  196 mutation test units
+13:25:07 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:25:11 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:25:23 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:25:28 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:25:40 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:25:46 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:25:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:25:59 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:26:08 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:26:21 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:26:25 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:26:31 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:26:39 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-13:27:21 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:27:26 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:27:31 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:27:38 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:27:41 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:27:48 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:27:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:27:58 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:28:03 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/13:28:29 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\13:28:47 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:28:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:28:55 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:28:59 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:02 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:10 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:13 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:18 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:22 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:25 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:29 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\13:29:45 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:50 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:53 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:29:57 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:01 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:04 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:08 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:12 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:16 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:20 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:24 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|13:30:30 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/13:30:37 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:42 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:47 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-13:30:56 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:30:59 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:03 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:07 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:11 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:15 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:18 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:22 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:26 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:30 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:33 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:37 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:40 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:44 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:47 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:55 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:31:58 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:02 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:09 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:13 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:16 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:20 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:24 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:27 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\13:32:31 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:37 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:40 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:44 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:32:48 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\13:33:00 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:33:08 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:33:19 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:33:27 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:33:32 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:33:42 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:33:46 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:33:50 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:33:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:33:57 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:34:02 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:34:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-13:34:36 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|13:35:05 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:35:12 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:35:16 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:35:20 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|13:35:33 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:35:37 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-13:35:42 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|13:35:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:35:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:35:58 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:36:01 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:36:05 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:36:08 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\13:36:18 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\|/-13:36:28 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:36:32 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\13:36:59 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:37:03 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:37:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:37:10 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:37:14 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:37:18 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:37:21 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:37:25 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/13:37:29 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|13:37:38 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/13:37:42 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:37:46 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|13:37:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:37:55 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\|/13:38:03 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+13:38:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/13:38:11 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/-\|/-\|/-13:38:24 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|13:39:11 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\13:39:46 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\|/-\|13:39:52 PIT >> INFO : Completed in 922 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 1145 Killed 638 (56%)
+> KILLED 619 SURVIVED 486 TIMED_OUT 19 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 21 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 373 Killed 351 (94%)
+> KILLED 328 SURVIVED 7 TIMED_OUT 23 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 15 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 650 Killed 583 (90%)
+> KILLED 577 SURVIVED 32 TIMED_OUT 6 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 35 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 773 Killed 556 (72%)
+> KILLED 545 SURVIVED 126 TIMED_OUT 11 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 91 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 542 Killed 401 (74%)
+> KILLED 401 SURVIVED 59 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 82 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+>> Generated 18 Killed 17 (94%)
+> KILLED 14 SURVIVED 1 TIMED_OUT 3 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 1329 Killed 1073 (81%)
+> KILLED 1072 SURVIVED 117 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 139 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 1286 Killed 1007 (78%)
+> KILLED 984 SURVIVED 235 TIMED_OUT 23 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 44 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 638 Killed 574 (90%)
+> KILLED 574 SURVIVED 17 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 47 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 318 Killed 269 (85%)
+> KILLED 269 SURVIVED 13 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 36 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 4199 Killed 3932 (94%)
+> KILLED 3887 SURVIVED 109 TIMED_OUT 45 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 158 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : 3 seconds
+> scan classpath : < 1 second
+> coverage and dependency analysis : 21 seconds
+> build mutation tests : 2 seconds
+> run mutation analysis : 14 minutes and 53 seconds
+--------------------------------------------------------------------------------
+> Total  : 15 minutes and 21 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 12421/13428 (93%)
+>> Generated 11271 mutations Killed 9401 (83%)
+>> Mutations with no coverage 668. Test strength 89%
+>> Ran 19411 tests (1.72 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15:23 min
+[INFO] Finished at: 2021-11-16T13:39:52+01:00
+[INFO] ------------------------------------------------------------------------
+HEAD ist jetzt bei c569c8b [ascii-table] add gitignore
