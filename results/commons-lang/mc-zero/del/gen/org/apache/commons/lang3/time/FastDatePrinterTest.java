@@ -260,7 +260,6 @@ public class FastDatePrinterTest {
 
     @Test
     @Ignore("Not supported by Slicer4")
-    @Ignore("Redundant Test Case (identified by JSR)")
     public void testTimeZoneAsZ() throws Exception {
         Calendar c = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
         FastDateFormat noColonFormat = FastDateFormat.getInstance("Z");
