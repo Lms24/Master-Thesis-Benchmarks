@@ -57,5 +57,5 @@ and their fault detection capability (FDC) loss. FDC was measured via mutation t
 ### Results Data
 
 This repository contains the output of all TSR runs per project in each propject's sub-directory. 
-Additionally, the file `results.csv` contains all raw data of our benchmark condensed in one `CSV` file.
+Additionally, the file [`results.csv`](results/results.CSV) contains all raw data of our benchmark condensed in one `CSV` file.
 
