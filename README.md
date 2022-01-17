@@ -37,16 +37,16 @@ We used ten real-world, open source Java projects available on GitHub, resulting
 
 | ID         | Project name  | Used version  | Brief description |
 |----------- | ------------- | ------------- | ------------- |
-| 1          | commons-lang  | 3.4 (2015)    | Provides additional features and utilities to the `java.lang` API  |
-| 2          | commons-io    | 2.6 (2017)    | Provides utilities to work with files, input, output, streams and readers  |
-| 3          | opencsv       | 3.3 (2016)    | A simple `CSV` file parser for Java  |
-| 4          | commons-cli   | 1.4 (2017)    | A CLI command parsing and utility library  |
-| 5          | commons-csv   | 1.6 (2019)  | A library to read, parse and write `CSV` files  |
-| 6          | minimal-json  | 0.9.6 (2016)    | A minimalistic and performance-focused `JSON` parser  |
-| 7          | java-tuple    | 1.2.1 (2020)    | Provides the Tuple datatype to the Java language  |
-| 8          | json-simple   | 1.1.1 (2021)    | A simple libary to read, parse and write `JSON` files  |
-| 9          | confucius     | 1.3 (2021)    | A library of application configuration utilities and datatypes  |
-| 10         | ascii-table     | 1,2 (2021)    | A small library to create customizable ASCII tables in Java command line applications  |
+| 1          | [commons-lang](https://github.com/apache/commons-lang)  | 3.4 (2015)    | Provides additional features and utilities to the `java.lang` API  |
+| 2          | [commons-io](https://github.com/apache/commons-io)    | 2.6 (2017)    | Provides utilities to work with files, input, output, streams and readers  |
+| 3          | [opencsv](https://github.com/cygri/opencsv)       | 3.3 (2016)    | A simple `CSV` file parser for Java  |
+| 4          | [commons-cli](https://github.com/apache/commons-cli)   | 1.4 (2017)    | A CLI command parsing and utility library  |
+| 5          | [commons-csv](https://github.com/apache/commons-csv)   | 1.6 (2019)  | A library to read, parse and write `CSV` files  |
+| 6          | [minimal-json](https://github.com/ralfstx/minimal-json)  | 0.9.6 (2016)    | A minimalistic and performance-focused `JSON` parser  |
+| 7          | [java-tuple](https://github.com/andrebreves/java-tuple)    | 1.2.1 (2020)    | Provides the Tuple datatype to the Java language  |
+| 8          | [json-simple](https://github.com/fangyidong/json-simple)   | 1.1.1 (2021)    | A simple libary to read, parse and write `JSON` files  |
+| 9          | [confucius](https://github.com/IvanTrendafilov/Confucius)     | 1.3 (2021)    | A library of application configuration utilities and datatypes  |
+| 10         | [ascii-table](https://github.com/freva/ascii-table)     | 1.2 (2021)    | A small library to create customizable ASCII tables in Java command line applications  |
 
 
 ## Evaluation & Comparison
